@@ -27,18 +27,19 @@ export default function Home() {
       </header>
 
       {/* Language Switcher - Positioned for iframe */}
-      <div className="sticky top-0 z-50 bg-white dark:bg-slate-950 border-b p-2 flex justify-end">
+      <div className="sticky top-0 z-50 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 border-b p-2 flex justify-end">
         <LanguageSwitcher />
       </div>
 
       {/* Main Content */}
-      <main className="container py-8 pb-32">
+      <main className="w-full bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950">
+        <div className="container py-8 pb-32">
         <Card className="border-0 shadow-lg">
-          <CardHeader className="bg-gradient-to-r from-blue-500 to-indigo-500 dark:from-blue-600 dark:to-indigo-600 border-b">
-            <CardTitle className="text-white">
+          <CardHeader className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 border-b">
+            <CardTitle>
               {isSimplified ? '集数查询' : '集數查詢'}
             </CardTitle>
-            <CardDescription className="text-blue-100">
+            <CardDescription>
               {isSimplified ? '支持动画集数、标题等关键词查询' : '支援動畫集數、標題等關鍵詞查詢'}
             </CardDescription>
           </CardHeader>
@@ -74,9 +75,8 @@ export default function Home() {
               {activeTab === 'overseas' && <AnimeList key="overseas" version="overseas" />}
             </div>
           </CardContent>
-        </Card>
-
-
+          </Card>
+        </div>
       </main>
     </div>
   );
