@@ -1,0 +1,7202 @@
+[
+{
+"number": 1,
+"titleZh": "雲霄飛車殺人事件",
+"titleJp": "ジェットコースター殺人事件",
+"manga": "Vol.1"
+},
+{
+"number": 2,
+"titleZh": "社長千金綁架事件",
+"titleJp": "社長令嬢誘拐事件",
+"manga": "Vol.1"
+},
+{
+"number": 3,
+"titleZh": "偶像密室殺人事件",
+"titleJp": "アイドル密室殺人事件",
+"manga": "Vol.1"
+},
+{
+"number": 4,
+"titleZh": "大都會暗號地圖事件",
+"titleJp": "大都会暗号マップ事件",
+"manga": "Vol.4"
+},
+{
+"number": 5,
+"titleZh": "新幹線大爆破事件",
+"titleJp": "新幹線大爆破事件",
+"manga": "Vol.4"
+},
+{
+"number": 6,
+"titleZh": "情人節殺人事件",
+"titleJp": "バレンタイン殺人事件",
+"manga": "動畫原創"
+},
+{
+"number": 7,
+"titleZh": "每月一件禮物恐嚇事件",
+"titleJp": "毎月一件プレゼント脅迫事件",
+"manga": "Vol.3"
+},
+{
+"number": 8,
+"titleZh": "美術館老闆殺人事件",
+"titleJp": "美術館オーナー殺人事件",
+"manga": "Vol.4"
+},
+{
+"number": 9,
+"titleZh": "\"天下一\"夜祭殺人事件",
+"titleJp": "\"天下一\"夜祭殺人事件",
+"manga": "Vol.6~7"
+},
+{
+"number": 10,
+"titleZh": "職業足球選手恐嚇事件",
+"titleJp": "プロサッカー選手脅迫事件",
+"manga": "Vol.7~8"
+},
+{
+"number": 11,
+"titleZh": "第11集事件",
+"titleJp": "第11話事件",
+"manga": "Vol.3"
+},
+{
+"number": 12,
+"titleZh": "第12集事件",
+"titleJp": "第12話事件",
+"manga": "Vol.3"
+},
+{
+"number": 13,
+"titleZh": "第13集事件",
+"titleJp": "第13話事件",
+"manga": "Vol.3"
+},
+{
+"number": 14,
+"titleZh": "第14集事件",
+"titleJp": "第14話事件",
+"manga": "動畫原創"
+},
+{
+"number": 15,
+"titleZh": "第15集事件",
+"titleJp": "第15話事件",
+"manga": "Vol.4"
+},
+{
+"number": 16,
+"titleZh": "第16集事件",
+"titleJp": "第16話事件",
+"manga": "Vol.4"
+},
+{
+"number": 17,
+"titleZh": "第17集事件",
+"titleJp": "第17話事件",
+"manga": "Vol.4"
+},
+{
+"number": 18,
+"titleZh": "第18集事件",
+"titleJp": "第18話事件",
+"manga": "Vol.4"
+},
+{
+"number": 19,
+"titleZh": "第19集事件",
+"titleJp": "第19話事件",
+"manga": "Vol.4"
+},
+{
+"number": 20,
+"titleZh": "第20集事件",
+"titleJp": "第20話事件",
+"manga": "Vol.5"
+},
+{
+"number": 21,
+"titleZh": "第21集事件",
+"titleJp": "第21話事件",
+"manga": "動畫原創"
+},
+{
+"number": 22,
+"titleZh": "第22集事件",
+"titleJp": "第22話事件",
+"manga": "Vol.5"
+},
+{
+"number": 23,
+"titleZh": "第23集事件",
+"titleJp": "第23話事件",
+"manga": "Vol.5"
+},
+{
+"number": 24,
+"titleZh": "第24集事件",
+"titleJp": "第24話事件",
+"manga": "Vol.5"
+},
+{
+"number": 25,
+"titleZh": "第25集事件",
+"titleJp": "第25話事件",
+"manga": "Vol.6"
+},
+{
+"number": 26,
+"titleZh": "第26集事件",
+"titleJp": "第26話事件",
+"manga": "Vol.6"
+},
+{
+"number": 27,
+"titleZh": "第27集事件",
+"titleJp": "第27話事件",
+"manga": "Vol.6"
+},
+{
+"number": 28,
+"titleZh": "第28集事件",
+"titleJp": "第28話事件",
+"manga": "動畫原創"
+},
+{
+"number": 29,
+"titleZh": "第29集事件",
+"titleJp": "第29話事件",
+"manga": "Vol.6"
+},
+{
+"number": 30,
+"titleZh": "第30集事件",
+"titleJp": "第30話事件",
+"manga": "Vol.7"
+},
+{
+"number": 31,
+"titleZh": "第31集事件",
+"titleJp": "第31話事件",
+"manga": "Vol.7"
+},
+{
+"number": 32,
+"titleZh": "第32集事件",
+"titleJp": "第32話事件",
+"manga": "Vol.7"
+},
+{
+"number": 33,
+"titleZh": "第33集事件",
+"titleJp": "第33話事件",
+"manga": "Vol.7"
+},
+{
+"number": 34,
+"titleZh": "第34集事件",
+"titleJp": "第34話事件",
+"manga": "Vol.7"
+},
+{
+"number": 35,
+"titleZh": "第35集事件",
+"titleJp": "第35話事件",
+"manga": "動畫原創"
+},
+{
+"number": 36,
+"titleZh": "第36集事件",
+"titleJp": "第36話事件",
+"manga": "Vol.8"
+},
+{
+"number": 37,
+"titleZh": "第37集事件",
+"titleJp": "第37話事件",
+"manga": "Vol.8"
+},
+{
+"number": 38,
+"titleZh": "第38集事件",
+"titleJp": "第38話事件",
+"manga": "Vol.8"
+},
+{
+"number": 39,
+"titleZh": "第39集事件",
+"titleJp": "第39話事件",
+"manga": "Vol.8"
+},
+{
+"number": 40,
+"titleZh": "第40集事件",
+"titleJp": "第40話事件",
+"manga": "Vol.9"
+},
+{
+"number": 41,
+"titleZh": "第41集事件",
+"titleJp": "第41話事件",
+"manga": "Vol.9"
+},
+{
+"number": 42,
+"titleZh": "第42集事件",
+"titleJp": "第42話事件",
+"manga": "動畫原創"
+},
+{
+"number": 43,
+"titleZh": "第43集事件",
+"titleJp": "第43話事件",
+"manga": "Vol.9"
+},
+{
+"number": 44,
+"titleZh": "第44集事件",
+"titleJp": "第44話事件",
+"manga": "Vol.9"
+},
+{
+"number": 45,
+"titleZh": "第45集事件",
+"titleJp": "第45話事件",
+"manga": "Vol.10"
+},
+{
+"number": 46,
+"titleZh": "第46集事件",
+"titleJp": "第46話事件",
+"manga": "Vol.10"
+},
+{
+"number": 47,
+"titleZh": "第47集事件",
+"titleJp": "第47話事件",
+"manga": "Vol.10"
+},
+{
+"number": 48,
+"titleZh": "第48集事件",
+"titleJp": "第48話事件",
+"manga": "Vol.10"
+},
+{
+"number": 49,
+"titleZh": "第49集事件",
+"titleJp": "第49話事件",
+"manga": "動畫原創"
+},
+{
+"number": 50,
+"titleZh": "第50集事件",
+"titleJp": "第50話事件",
+"manga": "Vol.11"
+},
+{
+"number": 51,
+"titleZh": "第51集事件",
+"titleJp": "第51話事件",
+"manga": "Vol.11"
+},
+{
+"number": 52,
+"titleZh": "第52集事件",
+"titleJp": "第52話事件",
+"manga": "Vol.11"
+},
+{
+"number": 53,
+"titleZh": "第53集事件",
+"titleJp": "第53話事件",
+"manga": "Vol.11"
+},
+{
+"number": 54,
+"titleZh": "第54集事件",
+"titleJp": "第54話事件",
+"manga": "Vol.11"
+},
+{
+"number": 55,
+"titleZh": "第55集事件",
+"titleJp": "第55話事件",
+"manga": "Vol.12"
+},
+{
+"number": 56,
+"titleZh": "第56集事件",
+"titleJp": "第56話事件",
+"manga": "動畫原創"
+},
+{
+"number": 57,
+"titleZh": "第57集事件",
+"titleJp": "第57話事件",
+"manga": "Vol.12"
+},
+{
+"number": 58,
+"titleZh": "第58集事件",
+"titleJp": "第58話事件",
+"manga": "Vol.12"
+},
+{
+"number": 59,
+"titleZh": "第59集事件",
+"titleJp": "第59話事件",
+"manga": "Vol.12"
+},
+{
+"number": 60,
+"titleZh": "第60集事件",
+"titleJp": "第60話事件",
+"manga": "Vol.13"
+},
+{
+"number": 61,
+"titleZh": "第61集事件",
+"titleJp": "第61話事件",
+"manga": "Vol.13"
+},
+{
+"number": 62,
+"titleZh": "第62集事件",
+"titleJp": "第62話事件",
+"manga": "Vol.13"
+},
+{
+"number": 63,
+"titleZh": "第63集事件",
+"titleJp": "第63話事件",
+"manga": "動畫原創"
+},
+{
+"number": 64,
+"titleZh": "第64集事件",
+"titleJp": "第64話事件",
+"manga": "Vol.13"
+},
+{
+"number": 65,
+"titleZh": "第65集事件",
+"titleJp": "第65話事件",
+"manga": "Vol.14"
+},
+{
+"number": 66,
+"titleZh": "第66集事件",
+"titleJp": "第66話事件",
+"manga": "Vol.14"
+},
+{
+"number": 67,
+"titleZh": "第67集事件",
+"titleJp": "第67話事件",
+"manga": "Vol.14"
+},
+{
+"number": 68,
+"titleZh": "第68集事件",
+"titleJp": "第68話事件",
+"manga": "Vol.14"
+},
+{
+"number": 69,
+"titleZh": "第69集事件",
+"titleJp": "第69話事件",
+"manga": "Vol.14"
+},
+{
+"number": 70,
+"titleZh": "第70集事件",
+"titleJp": "第70話事件",
+"manga": "動畫原創"
+},
+{
+"number": 71,
+"titleZh": "第71集事件",
+"titleJp": "第71話事件",
+"manga": "Vol.15"
+},
+{
+"number": 72,
+"titleZh": "第72集事件",
+"titleJp": "第72話事件",
+"manga": "Vol.15"
+},
+{
+"number": 73,
+"titleZh": "第73集事件",
+"titleJp": "第73話事件",
+"manga": "Vol.15"
+},
+{
+"number": 74,
+"titleZh": "第74集事件",
+"titleJp": "第74話事件",
+"manga": "Vol.15"
+},
+{
+"number": 75,
+"titleZh": "第75集事件",
+"titleJp": "第75話事件",
+"manga": "Vol.16"
+},
+{
+"number": 76,
+"titleZh": "第76集事件",
+"titleJp": "第76話事件",
+"manga": "Vol.16"
+},
+{
+"number": 77,
+"titleZh": "第77集事件",
+"titleJp": "第77話事件",
+"manga": "動畫原創"
+},
+{
+"number": 78,
+"titleZh": "第78集事件",
+"titleJp": "第78話事件",
+"manga": "Vol.16"
+},
+{
+"number": 79,
+"titleZh": "第79集事件",
+"titleJp": "第79話事件",
+"manga": "Vol.16"
+},
+{
+"number": 80,
+"titleZh": "第80集事件",
+"titleJp": "第80話事件",
+"manga": "Vol.17"
+},
+{
+"number": 81,
+"titleZh": "第81集事件",
+"titleJp": "第81話事件",
+"manga": "Vol.17"
+},
+{
+"number": 82,
+"titleZh": "第82集事件",
+"titleJp": "第82話事件",
+"manga": "Vol.17"
+},
+{
+"number": 83,
+"titleZh": "第83集事件",
+"titleJp": "第83話事件",
+"manga": "Vol.17"
+},
+{
+"number": 84,
+"titleZh": "第84集事件",
+"titleJp": "第84話事件",
+"manga": "動畫原創"
+},
+{
+"number": 85,
+"titleZh": "第85集事件",
+"titleJp": "第85話事件",
+"manga": "Vol.18"
+},
+{
+"number": 86,
+"titleZh": "第86集事件",
+"titleJp": "第86話事件",
+"manga": "Vol.18"
+},
+{
+"number": 87,
+"titleZh": "第87集事件",
+"titleJp": "第87話事件",
+"manga": "Vol.18"
+},
+{
+"number": 88,
+"titleZh": "第88集事件",
+"titleJp": "第88話事件",
+"manga": "Vol.18"
+},
+{
+"number": 89,
+"titleZh": "第89集事件",
+"titleJp": "第89話事件",
+"manga": "Vol.18"
+},
+{
+"number": 90,
+"titleZh": "第90集事件",
+"titleJp": "第90話事件",
+"manga": "Vol.19"
+},
+{
+"number": 91,
+"titleZh": "第91集事件",
+"titleJp": "第91話事件",
+"manga": "動畫原創"
+},
+{
+"number": 92,
+"titleZh": "第92集事件",
+"titleJp": "第92話事件",
+"manga": "Vol.19"
+},
+{
+"number": 93,
+"titleZh": "第93集事件",
+"titleJp": "第93話事件",
+"manga": "Vol.19"
+},
+{
+"number": 94,
+"titleZh": "第94集事件",
+"titleJp": "第94話事件",
+"manga": "Vol.19"
+},
+{
+"number": 95,
+"titleZh": "第95集事件",
+"titleJp": "第95話事件",
+"manga": "Vol.20"
+},
+{
+"number": 96,
+"titleZh": "第96集事件",
+"titleJp": "第96話事件",
+"manga": "Vol.20"
+},
+{
+"number": 97,
+"titleZh": "第97集事件",
+"titleJp": "第97話事件",
+"manga": "Vol.20"
+},
+{
+"number": 98,
+"titleZh": "第98集事件",
+"titleJp": "第98話事件",
+"manga": "動畫原創"
+},
+{
+"number": 99,
+"titleZh": "第99集事件",
+"titleJp": "第99話事件",
+"manga": "Vol.20"
+},
+{
+"number": 100,
+"titleZh": "第100集事件",
+"titleJp": "第100話事件",
+"manga": "Vol.21"
+},
+{
+"number": 101,
+"titleZh": "第101集事件",
+"titleJp": "第101話事件",
+"manga": "Vol.21"
+},
+{
+"number": 102,
+"titleZh": "第102集事件",
+"titleJp": "第102話事件",
+"manga": "Vol.21"
+},
+{
+"number": 103,
+"titleZh": "第103集事件",
+"titleJp": "第103話事件",
+"manga": "Vol.21"
+},
+{
+"number": 104,
+"titleZh": "第104集事件",
+"titleJp": "第104話事件",
+"manga": "Vol.21"
+},
+{
+"number": 105,
+"titleZh": "第105集事件",
+"titleJp": "第105話事件",
+"manga": "動畫原創"
+},
+{
+"number": 106,
+"titleZh": "第106集事件",
+"titleJp": "第106話事件",
+"manga": "Vol.22"
+},
+{
+"number": 107,
+"titleZh": "第107集事件",
+"titleJp": "第107話事件",
+"manga": "Vol.22"
+},
+{
+"number": 108,
+"titleZh": "第108集事件",
+"titleJp": "第108話事件",
+"manga": "Vol.22"
+},
+{
+"number": 109,
+"titleZh": "第109集事件",
+"titleJp": "第109話事件",
+"manga": "Vol.22"
+},
+{
+"number": 110,
+"titleZh": "第110集事件",
+"titleJp": "第110話事件",
+"manga": "Vol.23"
+},
+{
+"number": 111,
+"titleZh": "第111集事件",
+"titleJp": "第111話事件",
+"manga": "Vol.23"
+},
+{
+"number": 112,
+"titleZh": "第112集事件",
+"titleJp": "第112話事件",
+"manga": "動畫原創"
+},
+{
+"number": 113,
+"titleZh": "第113集事件",
+"titleJp": "第113話事件",
+"manga": "Vol.23"
+},
+{
+"number": 114,
+"titleZh": "第114集事件",
+"titleJp": "第114話事件",
+"manga": "Vol.23"
+},
+{
+"number": 115,
+"titleZh": "第115集事件",
+"titleJp": "第115話事件",
+"manga": "Vol.24"
+},
+{
+"number": 116,
+"titleZh": "第116集事件",
+"titleJp": "第116話事件",
+"manga": "Vol.24"
+},
+{
+"number": 117,
+"titleZh": "第117集事件",
+"titleJp": "第117話事件",
+"manga": "Vol.24"
+},
+{
+"number": 118,
+"titleZh": "第118集事件",
+"titleJp": "第118話事件",
+"manga": "Vol.24"
+},
+{
+"number": 119,
+"titleZh": "第119集事件",
+"titleJp": "第119話事件",
+"manga": "動畫原創"
+},
+{
+"number": 120,
+"titleZh": "第120集事件",
+"titleJp": "第120話事件",
+"manga": "Vol.25"
+},
+{
+"number": 121,
+"titleZh": "第121集事件",
+"titleJp": "第121話事件",
+"manga": "Vol.25"
+},
+{
+"number": 122,
+"titleZh": "第122集事件",
+"titleJp": "第122話事件",
+"manga": "Vol.25"
+},
+{
+"number": 123,
+"titleZh": "第123集事件",
+"titleJp": "第123話事件",
+"manga": "Vol.25"
+},
+{
+"number": 124,
+"titleZh": "第124集事件",
+"titleJp": "第124話事件",
+"manga": "Vol.25"
+},
+{
+"number": 125,
+"titleZh": "第125集事件",
+"titleJp": "第125話事件",
+"manga": "Vol.26"
+},
+{
+"number": 126,
+"titleZh": "第126集事件",
+"titleJp": "第126話事件",
+"manga": "動畫原創"
+},
+{
+"number": 127,
+"titleZh": "第127集事件",
+"titleJp": "第127話事件",
+"manga": "Vol.26"
+},
+{
+"number": 128,
+"titleZh": "第128集事件",
+"titleJp": "第128話事件",
+"manga": "Vol.26"
+},
+{
+"number": 129,
+"titleZh": "第129集事件",
+"titleJp": "第129話事件",
+"manga": "Vol.26"
+},
+{
+"number": 130,
+"titleZh": "第130集事件",
+"titleJp": "第130話事件",
+"manga": "Vol.27"
+},
+{
+"number": 131,
+"titleZh": "第131集事件",
+"titleJp": "第131話事件",
+"manga": "Vol.27"
+},
+{
+"number": 132,
+"titleZh": "第132集事件",
+"titleJp": "第132話事件",
+"manga": "Vol.27"
+},
+{
+"number": 133,
+"titleZh": "第133集事件",
+"titleJp": "第133話事件",
+"manga": "動畫原創"
+},
+{
+"number": 134,
+"titleZh": "第134集事件",
+"titleJp": "第134話事件",
+"manga": "Vol.27"
+},
+{
+"number": 135,
+"titleZh": "第135集事件",
+"titleJp": "第135話事件",
+"manga": "Vol.28"
+},
+{
+"number": 136,
+"titleZh": "第136集事件",
+"titleJp": "第136話事件",
+"manga": "Vol.28"
+},
+{
+"number": 137,
+"titleZh": "第137集事件",
+"titleJp": "第137話事件",
+"manga": "Vol.28"
+},
+{
+"number": 138,
+"titleZh": "第138集事件",
+"titleJp": "第138話事件",
+"manga": "Vol.28"
+},
+{
+"number": 139,
+"titleZh": "第139集事件",
+"titleJp": "第139話事件",
+"manga": "Vol.28"
+},
+{
+"number": 140,
+"titleZh": "第140集事件",
+"titleJp": "第140話事件",
+"manga": "動畫原創"
+},
+{
+"number": 141,
+"titleZh": "第141集事件",
+"titleJp": "第141話事件",
+"manga": "Vol.29"
+},
+{
+"number": 142,
+"titleZh": "第142集事件",
+"titleJp": "第142話事件",
+"manga": "Vol.29"
+},
+{
+"number": 143,
+"titleZh": "第143集事件",
+"titleJp": "第143話事件",
+"manga": "Vol.29"
+},
+{
+"number": 144,
+"titleZh": "第144集事件",
+"titleJp": "第144話事件",
+"manga": "Vol.29"
+},
+{
+"number": 145,
+"titleZh": "第145集事件",
+"titleJp": "第145話事件",
+"manga": "Vol.30"
+},
+{
+"number": 146,
+"titleZh": "第146集事件",
+"titleJp": "第146話事件",
+"manga": "Vol.30"
+},
+{
+"number": 147,
+"titleZh": "第147集事件",
+"titleJp": "第147話事件",
+"manga": "動畫原創"
+},
+{
+"number": 148,
+"titleZh": "第148集事件",
+"titleJp": "第148話事件",
+"manga": "Vol.30"
+},
+{
+"number": 149,
+"titleZh": "第149集事件",
+"titleJp": "第149話事件",
+"manga": "Vol.30"
+},
+{
+"number": 150,
+"titleZh": "第150集事件",
+"titleJp": "第150話事件",
+"manga": "Vol.31"
+},
+{
+"number": 151,
+"titleZh": "第151集事件",
+"titleJp": "第151話事件",
+"manga": "Vol.31"
+},
+{
+"number": 152,
+"titleZh": "第152集事件",
+"titleJp": "第152話事件",
+"manga": "Vol.31"
+},
+{
+"number": 153,
+"titleZh": "第153集事件",
+"titleJp": "第153話事件",
+"manga": "Vol.31"
+},
+{
+"number": 154,
+"titleZh": "第154集事件",
+"titleJp": "第154話事件",
+"manga": "動畫原創"
+},
+{
+"number": 155,
+"titleZh": "第155集事件",
+"titleJp": "第155話事件",
+"manga": "Vol.32"
+},
+{
+"number": 156,
+"titleZh": "第156集事件",
+"titleJp": "第156話事件",
+"manga": "Vol.32"
+},
+{
+"number": 157,
+"titleZh": "第157集事件",
+"titleJp": "第157話事件",
+"manga": "Vol.32"
+},
+{
+"number": 158,
+"titleZh": "第158集事件",
+"titleJp": "第158話事件",
+"manga": "Vol.32"
+},
+{
+"number": 159,
+"titleZh": "第159集事件",
+"titleJp": "第159話事件",
+"manga": "Vol.32"
+},
+{
+"number": 160,
+"titleZh": "第160集事件",
+"titleJp": "第160話事件",
+"manga": "Vol.33"
+},
+{
+"number": 161,
+"titleZh": "第161集事件",
+"titleJp": "第161話事件",
+"manga": "動畫原創"
+},
+{
+"number": 162,
+"titleZh": "第162集事件",
+"titleJp": "第162話事件",
+"manga": "Vol.33"
+},
+{
+"number": 163,
+"titleZh": "第163集事件",
+"titleJp": "第163話事件",
+"manga": "Vol.33"
+},
+{
+"number": 164,
+"titleZh": "第164集事件",
+"titleJp": "第164話事件",
+"manga": "Vol.33"
+},
+{
+"number": 165,
+"titleZh": "第165集事件",
+"titleJp": "第165話事件",
+"manga": "Vol.34"
+},
+{
+"number": 166,
+"titleZh": "第166集事件",
+"titleJp": "第166話事件",
+"manga": "Vol.34"
+},
+{
+"number": 167,
+"titleZh": "第167集事件",
+"titleJp": "第167話事件",
+"manga": "Vol.34"
+},
+{
+"number": 168,
+"titleZh": "第168集事件",
+"titleJp": "第168話事件",
+"manga": "動畫原創"
+},
+{
+"number": 169,
+"titleZh": "第169集事件",
+"titleJp": "第169話事件",
+"manga": "Vol.34"
+},
+{
+"number": 170,
+"titleZh": "第170集事件",
+"titleJp": "第170話事件",
+"manga": "Vol.35"
+},
+{
+"number": 171,
+"titleZh": "第171集事件",
+"titleJp": "第171話事件",
+"manga": "Vol.35"
+},
+{
+"number": 172,
+"titleZh": "第172集事件",
+"titleJp": "第172話事件",
+"manga": "Vol.35"
+},
+{
+"number": 173,
+"titleZh": "第173集事件",
+"titleJp": "第173話事件",
+"manga": "Vol.35"
+},
+{
+"number": 174,
+"titleZh": "第174集事件",
+"titleJp": "第174話事件",
+"manga": "Vol.35"
+},
+{
+"number": 175,
+"titleZh": "第175集事件",
+"titleJp": "第175話事件",
+"manga": "動畫原創"
+},
+{
+"number": 176,
+"titleZh": "第176集事件",
+"titleJp": "第176話事件",
+"manga": "Vol.36"
+},
+{
+"number": 177,
+"titleZh": "第177集事件",
+"titleJp": "第177話事件",
+"manga": "Vol.36"
+},
+{
+"number": 178,
+"titleZh": "第178集事件",
+"titleJp": "第178話事件",
+"manga": "Vol.36"
+},
+{
+"number": 179,
+"titleZh": "第179集事件",
+"titleJp": "第179話事件",
+"manga": "Vol.36"
+},
+{
+"number": 180,
+"titleZh": "第180集事件",
+"titleJp": "第180話事件",
+"manga": "Vol.37"
+},
+{
+"number": 181,
+"titleZh": "第181集事件",
+"titleJp": "第181話事件",
+"manga": "Vol.37"
+},
+{
+"number": 182,
+"titleZh": "第182集事件",
+"titleJp": "第182話事件",
+"manga": "動畫原創"
+},
+{
+"number": 183,
+"titleZh": "第183集事件",
+"titleJp": "第183話事件",
+"manga": "Vol.37"
+},
+{
+"number": 184,
+"titleZh": "第184集事件",
+"titleJp": "第184話事件",
+"manga": "Vol.37"
+},
+{
+"number": 185,
+"titleZh": "第185集事件",
+"titleJp": "第185話事件",
+"manga": "Vol.38"
+},
+{
+"number": 186,
+"titleZh": "第186集事件",
+"titleJp": "第186話事件",
+"manga": "Vol.38"
+},
+{
+"number": 187,
+"titleZh": "第187集事件",
+"titleJp": "第187話事件",
+"manga": "Vol.38"
+},
+{
+"number": 188,
+"titleZh": "第188集事件",
+"titleJp": "第188話事件",
+"manga": "Vol.38"
+},
+{
+"number": 189,
+"titleZh": "第189集事件",
+"titleJp": "第189話事件",
+"manga": "動畫原創"
+},
+{
+"number": 190,
+"titleZh": "第190集事件",
+"titleJp": "第190話事件",
+"manga": "Vol.39"
+},
+{
+"number": 191,
+"titleZh": "第191集事件",
+"titleJp": "第191話事件",
+"manga": "Vol.39"
+},
+{
+"number": 192,
+"titleZh": "第192集事件",
+"titleJp": "第192話事件",
+"manga": "Vol.39"
+},
+{
+"number": 193,
+"titleZh": "第193集事件",
+"titleJp": "第193話事件",
+"manga": "Vol.39"
+},
+{
+"number": 194,
+"titleZh": "第194集事件",
+"titleJp": "第194話事件",
+"manga": "Vol.39"
+},
+{
+"number": 195,
+"titleZh": "第195集事件",
+"titleJp": "第195話事件",
+"manga": "Vol.40"
+},
+{
+"number": 196,
+"titleZh": "第196集事件",
+"titleJp": "第196話事件",
+"manga": "動畫原創"
+},
+{
+"number": 197,
+"titleZh": "第197集事件",
+"titleJp": "第197話事件",
+"manga": "Vol.40"
+},
+{
+"number": 198,
+"titleZh": "第198集事件",
+"titleJp": "第198話事件",
+"manga": "Vol.40"
+},
+{
+"number": 199,
+"titleZh": "第199集事件",
+"titleJp": "第199話事件",
+"manga": "Vol.40"
+},
+{
+"number": 200,
+"titleZh": "第200集事件",
+"titleJp": "第200話事件",
+"manga": "Vol.41"
+},
+{
+"number": 201,
+"titleZh": "第201集事件",
+"titleJp": "第201話事件",
+"manga": "Vol.41"
+},
+{
+"number": 202,
+"titleZh": "第202集事件",
+"titleJp": "第202話事件",
+"manga": "Vol.41"
+},
+{
+"number": 203,
+"titleZh": "第203集事件",
+"titleJp": "第203話事件",
+"manga": "動畫原創"
+},
+{
+"number": 204,
+"titleZh": "第204集事件",
+"titleJp": "第204話事件",
+"manga": "Vol.41"
+},
+{
+"number": 205,
+"titleZh": "第205集事件",
+"titleJp": "第205話事件",
+"manga": "Vol.42"
+},
+{
+"number": 206,
+"titleZh": "第206集事件",
+"titleJp": "第206話事件",
+"manga": "Vol.42"
+},
+{
+"number": 207,
+"titleZh": "第207集事件",
+"titleJp": "第207話事件",
+"manga": "Vol.42"
+},
+{
+"number": 208,
+"titleZh": "第208集事件",
+"titleJp": "第208話事件",
+"manga": "Vol.42"
+},
+{
+"number": 209,
+"titleZh": "第209集事件",
+"titleJp": "第209話事件",
+"manga": "Vol.42"
+},
+{
+"number": 210,
+"titleZh": "第210集事件",
+"titleJp": "第210話事件",
+"manga": "動畫原創"
+},
+{
+"number": 211,
+"titleZh": "第211集事件",
+"titleJp": "第211話事件",
+"manga": "Vol.43"
+},
+{
+"number": 212,
+"titleZh": "第212集事件",
+"titleJp": "第212話事件",
+"manga": "Vol.43"
+},
+{
+"number": 213,
+"titleZh": "第213集事件",
+"titleJp": "第213話事件",
+"manga": "Vol.43"
+},
+{
+"number": 214,
+"titleZh": "第214集事件",
+"titleJp": "第214話事件",
+"manga": "Vol.43"
+},
+{
+"number": 215,
+"titleZh": "第215集事件",
+"titleJp": "第215話事件",
+"manga": "Vol.44"
+},
+{
+"number": 216,
+"titleZh": "第216集事件",
+"titleJp": "第216話事件",
+"manga": "Vol.44"
+},
+{
+"number": 217,
+"titleZh": "第217集事件",
+"titleJp": "第217話事件",
+"manga": "動畫原創"
+},
+{
+"number": 218,
+"titleZh": "第218集事件",
+"titleJp": "第218話事件",
+"manga": "Vol.44"
+},
+{
+"number": 219,
+"titleZh": "第219集事件",
+"titleJp": "第219話事件",
+"manga": "Vol.44"
+},
+{
+"number": 220,
+"titleZh": "第220集事件",
+"titleJp": "第220話事件",
+"manga": "Vol.45"
+},
+{
+"number": 221,
+"titleZh": "第221集事件",
+"titleJp": "第221話事件",
+"manga": "Vol.45"
+},
+{
+"number": 222,
+"titleZh": "第222集事件",
+"titleJp": "第222話事件",
+"manga": "Vol.45"
+},
+{
+"number": 223,
+"titleZh": "第223集事件",
+"titleJp": "第223話事件",
+"manga": "Vol.45"
+},
+{
+"number": 224,
+"titleZh": "第224集事件",
+"titleJp": "第224話事件",
+"manga": "動畫原創"
+},
+{
+"number": 225,
+"titleZh": "第225集事件",
+"titleJp": "第225話事件",
+"manga": "Vol.46"
+},
+{
+"number": 226,
+"titleZh": "第226集事件",
+"titleJp": "第226話事件",
+"manga": "Vol.46"
+},
+{
+"number": 227,
+"titleZh": "第227集事件",
+"titleJp": "第227話事件",
+"manga": "Vol.46"
+},
+{
+"number": 228,
+"titleZh": "第228集事件",
+"titleJp": "第228話事件",
+"manga": "Vol.46"
+},
+{
+"number": 229,
+"titleZh": "第229集事件",
+"titleJp": "第229話事件",
+"manga": "Vol.46"
+},
+{
+"number": 230,
+"titleZh": "第230集事件",
+"titleJp": "第230話事件",
+"manga": "Vol.47"
+},
+{
+"number": 231,
+"titleZh": "第231集事件",
+"titleJp": "第231話事件",
+"manga": "動畫原創"
+},
+{
+"number": 232,
+"titleZh": "第232集事件",
+"titleJp": "第232話事件",
+"manga": "Vol.47"
+},
+{
+"number": 233,
+"titleZh": "第233集事件",
+"titleJp": "第233話事件",
+"manga": "Vol.47"
+},
+{
+"number": 234,
+"titleZh": "第234集事件",
+"titleJp": "第234話事件",
+"manga": "Vol.47"
+},
+{
+"number": 235,
+"titleZh": "第235集事件",
+"titleJp": "第235話事件",
+"manga": "Vol.48"
+},
+{
+"number": 236,
+"titleZh": "第236集事件",
+"titleJp": "第236話事件",
+"manga": "Vol.48"
+},
+{
+"number": 237,
+"titleZh": "第237集事件",
+"titleJp": "第237話事件",
+"manga": "Vol.48"
+},
+{
+"number": 238,
+"titleZh": "第238集事件",
+"titleJp": "第238話事件",
+"manga": "動畫原創"
+},
+{
+"number": 239,
+"titleZh": "第239集事件",
+"titleJp": "第239話事件",
+"manga": "Vol.48"
+},
+{
+"number": 240,
+"titleZh": "第240集事件",
+"titleJp": "第240話事件",
+"manga": "Vol.49"
+},
+{
+"number": 241,
+"titleZh": "第241集事件",
+"titleJp": "第241話事件",
+"manga": "Vol.49"
+},
+{
+"number": 242,
+"titleZh": "第242集事件",
+"titleJp": "第242話事件",
+"manga": "Vol.49"
+},
+{
+"number": 243,
+"titleZh": "第243集事件",
+"titleJp": "第243話事件",
+"manga": "Vol.49"
+},
+{
+"number": 244,
+"titleZh": "第244集事件",
+"titleJp": "第244話事件",
+"manga": "Vol.49"
+},
+{
+"number": 245,
+"titleZh": "第245集事件",
+"titleJp": "第245話事件",
+"manga": "動畫原創"
+},
+{
+"number": 246,
+"titleZh": "第246集事件",
+"titleJp": "第246話事件",
+"manga": "Vol.50"
+},
+{
+"number": 247,
+"titleZh": "第247集事件",
+"titleJp": "第247話事件",
+"manga": "Vol.50"
+},
+{
+"number": 248,
+"titleZh": "第248集事件",
+"titleJp": "第248話事件",
+"manga": "Vol.50"
+},
+{
+"number": 249,
+"titleZh": "第249集事件",
+"titleJp": "第249話事件",
+"manga": "Vol.50"
+},
+{
+"number": 250,
+"titleZh": "第250集事件",
+"titleJp": "第250話事件",
+"manga": "Vol.51"
+},
+{
+"number": 251,
+"titleZh": "第251集事件",
+"titleJp": "第251話事件",
+"manga": "Vol.51"
+},
+{
+"number": 252,
+"titleZh": "第252集事件",
+"titleJp": "第252話事件",
+"manga": "動畫原創"
+},
+{
+"number": 253,
+"titleZh": "第253集事件",
+"titleJp": "第253話事件",
+"manga": "Vol.51"
+},
+{
+"number": 254,
+"titleZh": "第254集事件",
+"titleJp": "第254話事件",
+"manga": "Vol.51"
+},
+{
+"number": 255,
+"titleZh": "第255集事件",
+"titleJp": "第255話事件",
+"manga": "Vol.52"
+},
+{
+"number": 256,
+"titleZh": "第256集事件",
+"titleJp": "第256話事件",
+"manga": "Vol.52"
+},
+{
+"number": 257,
+"titleZh": "第257集事件",
+"titleJp": "第257話事件",
+"manga": "Vol.52"
+},
+{
+"number": 258,
+"titleZh": "第258集事件",
+"titleJp": "第258話事件",
+"manga": "Vol.52"
+},
+{
+"number": 259,
+"titleZh": "第259集事件",
+"titleJp": "第259話事件",
+"manga": "動畫原創"
+},
+{
+"number": 260,
+"titleZh": "第260集事件",
+"titleJp": "第260話事件",
+"manga": "Vol.53"
+},
+{
+"number": 261,
+"titleZh": "第261集事件",
+"titleJp": "第261話事件",
+"manga": "Vol.53"
+},
+{
+"number": 262,
+"titleZh": "第262集事件",
+"titleJp": "第262話事件",
+"manga": "Vol.53"
+},
+{
+"number": 263,
+"titleZh": "第263集事件",
+"titleJp": "第263話事件",
+"manga": "Vol.53"
+},
+{
+"number": 264,
+"titleZh": "第264集事件",
+"titleJp": "第264話事件",
+"manga": "Vol.53"
+},
+{
+"number": 265,
+"titleZh": "第265集事件",
+"titleJp": "第265話事件",
+"manga": "Vol.54"
+},
+{
+"number": 266,
+"titleZh": "第266集事件",
+"titleJp": "第266話事件",
+"manga": "動畫原創"
+},
+{
+"number": 267,
+"titleZh": "第267集事件",
+"titleJp": "第267話事件",
+"manga": "Vol.54"
+},
+{
+"number": 268,
+"titleZh": "第268集事件",
+"titleJp": "第268話事件",
+"manga": "Vol.54"
+},
+{
+"number": 269,
+"titleZh": "第269集事件",
+"titleJp": "第269話事件",
+"manga": "Vol.54"
+},
+{
+"number": 270,
+"titleZh": "第270集事件",
+"titleJp": "第270話事件",
+"manga": "Vol.55"
+},
+{
+"number": 271,
+"titleZh": "第271集事件",
+"titleJp": "第271話事件",
+"manga": "Vol.55"
+},
+{
+"number": 272,
+"titleZh": "第272集事件",
+"titleJp": "第272話事件",
+"manga": "Vol.55"
+},
+{
+"number": 273,
+"titleZh": "第273集事件",
+"titleJp": "第273話事件",
+"manga": "動畫原創"
+},
+{
+"number": 274,
+"titleZh": "第274集事件",
+"titleJp": "第274話事件",
+"manga": "Vol.55"
+},
+{
+"number": 275,
+"titleZh": "第275集事件",
+"titleJp": "第275話事件",
+"manga": "Vol.56"
+},
+{
+"number": 276,
+"titleZh": "第276集事件",
+"titleJp": "第276話事件",
+"manga": "Vol.56"
+},
+{
+"number": 277,
+"titleZh": "第277集事件",
+"titleJp": "第277話事件",
+"manga": "Vol.56"
+},
+{
+"number": 278,
+"titleZh": "第278集事件",
+"titleJp": "第278話事件",
+"manga": "Vol.56"
+},
+{
+"number": 279,
+"titleZh": "第279集事件",
+"titleJp": "第279話事件",
+"manga": "Vol.56"
+},
+{
+"number": 280,
+"titleZh": "第280集事件",
+"titleJp": "第280話事件",
+"manga": "動畫原創"
+},
+{
+"number": 281,
+"titleZh": "第281集事件",
+"titleJp": "第281話事件",
+"manga": "Vol.57"
+},
+{
+"number": 282,
+"titleZh": "第282集事件",
+"titleJp": "第282話事件",
+"manga": "Vol.57"
+},
+{
+"number": 283,
+"titleZh": "第283集事件",
+"titleJp": "第283話事件",
+"manga": "Vol.57"
+},
+{
+"number": 284,
+"titleZh": "第284集事件",
+"titleJp": "第284話事件",
+"manga": "Vol.57"
+},
+{
+"number": 285,
+"titleZh": "第285集事件",
+"titleJp": "第285話事件",
+"manga": "Vol.58"
+},
+{
+"number": 286,
+"titleZh": "第286集事件",
+"titleJp": "第286話事件",
+"manga": "Vol.58"
+},
+{
+"number": 287,
+"titleZh": "第287集事件",
+"titleJp": "第287話事件",
+"manga": "動畫原創"
+},
+{
+"number": 288,
+"titleZh": "第288集事件",
+"titleJp": "第288話事件",
+"manga": "Vol.58"
+},
+{
+"number": 289,
+"titleZh": "第289集事件",
+"titleJp": "第289話事件",
+"manga": "Vol.58"
+},
+{
+"number": 290,
+"titleZh": "第290集事件",
+"titleJp": "第290話事件",
+"manga": "Vol.59"
+},
+{
+"number": 291,
+"titleZh": "第291集事件",
+"titleJp": "第291話事件",
+"manga": "Vol.59"
+},
+{
+"number": 292,
+"titleZh": "第292集事件",
+"titleJp": "第292話事件",
+"manga": "Vol.59"
+},
+{
+"number": 293,
+"titleZh": "第293集事件",
+"titleJp": "第293話事件",
+"manga": "Vol.59"
+},
+{
+"number": 294,
+"titleZh": "第294集事件",
+"titleJp": "第294話事件",
+"manga": "動畫原創"
+},
+{
+"number": 295,
+"titleZh": "第295集事件",
+"titleJp": "第295話事件",
+"manga": "Vol.60"
+},
+{
+"number": 296,
+"titleZh": "第296集事件",
+"titleJp": "第296話事件",
+"manga": "Vol.60"
+},
+{
+"number": 297,
+"titleZh": "第297集事件",
+"titleJp": "第297話事件",
+"manga": "Vol.60"
+},
+{
+"number": 298,
+"titleZh": "第298集事件",
+"titleJp": "第298話事件",
+"manga": "Vol.60"
+},
+{
+"number": 299,
+"titleZh": "第299集事件",
+"titleJp": "第299話事件",
+"manga": "Vol.60"
+},
+{
+"number": 300,
+"titleZh": "第300集事件",
+"titleJp": "第300話事件",
+"manga": "Vol.61"
+},
+{
+"number": 301,
+"titleZh": "第301集事件",
+"titleJp": "第301話事件",
+"manga": "動畫原創"
+},
+{
+"number": 302,
+"titleZh": "第302集事件",
+"titleJp": "第302話事件",
+"manga": "Vol.61"
+},
+{
+"number": 303,
+"titleZh": "第303集事件",
+"titleJp": "第303話事件",
+"manga": "Vol.61"
+},
+{
+"number": 304,
+"titleZh": "第304集事件",
+"titleJp": "第304話事件",
+"manga": "Vol.61"
+},
+{
+"number": 305,
+"titleZh": "第305集事件",
+"titleJp": "第305話事件",
+"manga": "Vol.62"
+},
+{
+"number": 306,
+"titleZh": "第306集事件",
+"titleJp": "第306話事件",
+"manga": "Vol.62"
+},
+{
+"number": 307,
+"titleZh": "第307集事件",
+"titleJp": "第307話事件",
+"manga": "Vol.62"
+},
+{
+"number": 308,
+"titleZh": "第308集事件",
+"titleJp": "第308話事件",
+"manga": "動畫原創"
+},
+{
+"number": 309,
+"titleZh": "第309集事件",
+"titleJp": "第309話事件",
+"manga": "Vol.62"
+},
+{
+"number": 310,
+"titleZh": "第310集事件",
+"titleJp": "第310話事件",
+"manga": "Vol.63"
+},
+{
+"number": 311,
+"titleZh": "第311集事件",
+"titleJp": "第311話事件",
+"manga": "Vol.63"
+},
+{
+"number": 312,
+"titleZh": "第312集事件",
+"titleJp": "第312話事件",
+"manga": "Vol.63"
+},
+{
+"number": 313,
+"titleZh": "第313集事件",
+"titleJp": "第313話事件",
+"manga": "Vol.63"
+},
+{
+"number": 314,
+"titleZh": "第314集事件",
+"titleJp": "第314話事件",
+"manga": "Vol.63"
+},
+{
+"number": 315,
+"titleZh": "第315集事件",
+"titleJp": "第315話事件",
+"manga": "動畫原創"
+},
+{
+"number": 316,
+"titleZh": "第316集事件",
+"titleJp": "第316話事件",
+"manga": "Vol.64"
+},
+{
+"number": 317,
+"titleZh": "第317集事件",
+"titleJp": "第317話事件",
+"manga": "Vol.64"
+},
+{
+"number": 318,
+"titleZh": "第318集事件",
+"titleJp": "第318話事件",
+"manga": "Vol.64"
+},
+{
+"number": 319,
+"titleZh": "第319集事件",
+"titleJp": "第319話事件",
+"manga": "Vol.64"
+},
+{
+"number": 320,
+"titleZh": "第320集事件",
+"titleJp": "第320話事件",
+"manga": "Vol.65"
+},
+{
+"number": 321,
+"titleZh": "第321集事件",
+"titleJp": "第321話事件",
+"manga": "Vol.65"
+},
+{
+"number": 322,
+"titleZh": "第322集事件",
+"titleJp": "第322話事件",
+"manga": "動畫原創"
+},
+{
+"number": 323,
+"titleZh": "第323集事件",
+"titleJp": "第323話事件",
+"manga": "Vol.65"
+},
+{
+"number": 324,
+"titleZh": "第324集事件",
+"titleJp": "第324話事件",
+"manga": "Vol.65"
+},
+{
+"number": 325,
+"titleZh": "第325集事件",
+"titleJp": "第325話事件",
+"manga": "Vol.66"
+},
+{
+"number": 326,
+"titleZh": "第326集事件",
+"titleJp": "第326話事件",
+"manga": "Vol.66"
+},
+{
+"number": 327,
+"titleZh": "第327集事件",
+"titleJp": "第327話事件",
+"manga": "Vol.66"
+},
+{
+"number": 328,
+"titleZh": "第328集事件",
+"titleJp": "第328話事件",
+"manga": "Vol.66"
+},
+{
+"number": 329,
+"titleZh": "第329集事件",
+"titleJp": "第329話事件",
+"manga": "動畫原創"
+},
+{
+"number": 330,
+"titleZh": "第330集事件",
+"titleJp": "第330話事件",
+"manga": "Vol.67"
+},
+{
+"number": 331,
+"titleZh": "第331集事件",
+"titleJp": "第331話事件",
+"manga": "Vol.67"
+},
+{
+"number": 332,
+"titleZh": "第332集事件",
+"titleJp": "第332話事件",
+"manga": "Vol.67"
+},
+{
+"number": 333,
+"titleZh": "第333集事件",
+"titleJp": "第333話事件",
+"manga": "Vol.67"
+},
+{
+"number": 334,
+"titleZh": "第334集事件",
+"titleJp": "第334話事件",
+"manga": "Vol.67"
+},
+{
+"number": 335,
+"titleZh": "第335集事件",
+"titleJp": "第335話事件",
+"manga": "Vol.68"
+},
+{
+"number": 336,
+"titleZh": "第336集事件",
+"titleJp": "第336話事件",
+"manga": "動畫原創"
+},
+{
+"number": 337,
+"titleZh": "第337集事件",
+"titleJp": "第337話事件",
+"manga": "Vol.68"
+},
+{
+"number": 338,
+"titleZh": "第338集事件",
+"titleJp": "第338話事件",
+"manga": "Vol.68"
+},
+{
+"number": 339,
+"titleZh": "第339集事件",
+"titleJp": "第339話事件",
+"manga": "Vol.68"
+},
+{
+"number": 340,
+"titleZh": "第340集事件",
+"titleJp": "第340話事件",
+"manga": "Vol.69"
+},
+{
+"number": 341,
+"titleZh": "第341集事件",
+"titleJp": "第341話事件",
+"manga": "Vol.69"
+},
+{
+"number": 342,
+"titleZh": "第342集事件",
+"titleJp": "第342話事件",
+"manga": "Vol.69"
+},
+{
+"number": 343,
+"titleZh": "第343集事件",
+"titleJp": "第343話事件",
+"manga": "動畫原創"
+},
+{
+"number": 344,
+"titleZh": "第344集事件",
+"titleJp": "第344話事件",
+"manga": "Vol.69"
+},
+{
+"number": 345,
+"titleZh": "第345集事件",
+"titleJp": "第345話事件",
+"manga": "Vol.70"
+},
+{
+"number": 346,
+"titleZh": "第346集事件",
+"titleJp": "第346話事件",
+"manga": "Vol.70"
+},
+{
+"number": 347,
+"titleZh": "第347集事件",
+"titleJp": "第347話事件",
+"manga": "Vol.70"
+},
+{
+"number": 348,
+"titleZh": "第348集事件",
+"titleJp": "第348話事件",
+"manga": "Vol.70"
+},
+{
+"number": 349,
+"titleZh": "第349集事件",
+"titleJp": "第349話事件",
+"manga": "Vol.70"
+},
+{
+"number": 350,
+"titleZh": "第350集事件",
+"titleJp": "第350話事件",
+"manga": "動畫原創"
+},
+{
+"number": 351,
+"titleZh": "第351集事件",
+"titleJp": "第351話事件",
+"manga": "Vol.71"
+},
+{
+"number": 352,
+"titleZh": "第352集事件",
+"titleJp": "第352話事件",
+"manga": "Vol.71"
+},
+{
+"number": 353,
+"titleZh": "第353集事件",
+"titleJp": "第353話事件",
+"manga": "Vol.71"
+},
+{
+"number": 354,
+"titleZh": "第354集事件",
+"titleJp": "第354話事件",
+"manga": "Vol.71"
+},
+{
+"number": 355,
+"titleZh": "第355集事件",
+"titleJp": "第355話事件",
+"manga": "Vol.72"
+},
+{
+"number": 356,
+"titleZh": "第356集事件",
+"titleJp": "第356話事件",
+"manga": "Vol.72"
+},
+{
+"number": 357,
+"titleZh": "第357集事件",
+"titleJp": "第357話事件",
+"manga": "動畫原創"
+},
+{
+"number": 358,
+"titleZh": "第358集事件",
+"titleJp": "第358話事件",
+"manga": "Vol.72"
+},
+{
+"number": 359,
+"titleZh": "第359集事件",
+"titleJp": "第359話事件",
+"manga": "Vol.72"
+},
+{
+"number": 360,
+"titleZh": "第360集事件",
+"titleJp": "第360話事件",
+"manga": "Vol.73"
+},
+{
+"number": 361,
+"titleZh": "第361集事件",
+"titleJp": "第361話事件",
+"manga": "Vol.73"
+},
+{
+"number": 362,
+"titleZh": "第362集事件",
+"titleJp": "第362話事件",
+"manga": "Vol.73"
+},
+{
+"number": 363,
+"titleZh": "第363集事件",
+"titleJp": "第363話事件",
+"manga": "Vol.73"
+},
+{
+"number": 364,
+"titleZh": "第364集事件",
+"titleJp": "第364話事件",
+"manga": "動畫原創"
+},
+{
+"number": 365,
+"titleZh": "第365集事件",
+"titleJp": "第365話事件",
+"manga": "Vol.74"
+},
+{
+"number": 366,
+"titleZh": "第366集事件",
+"titleJp": "第366話事件",
+"manga": "Vol.74"
+},
+{
+"number": 367,
+"titleZh": "第367集事件",
+"titleJp": "第367話事件",
+"manga": "Vol.74"
+},
+{
+"number": 368,
+"titleZh": "第368集事件",
+"titleJp": "第368話事件",
+"manga": "Vol.74"
+},
+{
+"number": 369,
+"titleZh": "第369集事件",
+"titleJp": "第369話事件",
+"manga": "Vol.74"
+},
+{
+"number": 370,
+"titleZh": "第370集事件",
+"titleJp": "第370話事件",
+"manga": "Vol.75"
+},
+{
+"number": 371,
+"titleZh": "第371集事件",
+"titleJp": "第371話事件",
+"manga": "動畫原創"
+},
+{
+"number": 372,
+"titleZh": "第372集事件",
+"titleJp": "第372話事件",
+"manga": "Vol.75"
+},
+{
+"number": 373,
+"titleZh": "第373集事件",
+"titleJp": "第373話事件",
+"manga": "Vol.75"
+},
+{
+"number": 374,
+"titleZh": "第374集事件",
+"titleJp": "第374話事件",
+"manga": "Vol.75"
+},
+{
+"number": 375,
+"titleZh": "第375集事件",
+"titleJp": "第375話事件",
+"manga": "Vol.76"
+},
+{
+"number": 376,
+"titleZh": "第376集事件",
+"titleJp": "第376話事件",
+"manga": "Vol.76"
+},
+{
+"number": 377,
+"titleZh": "第377集事件",
+"titleJp": "第377話事件",
+"manga": "Vol.76"
+},
+{
+"number": 378,
+"titleZh": "第378集事件",
+"titleJp": "第378話事件",
+"manga": "動畫原創"
+},
+{
+"number": 379,
+"titleZh": "第379集事件",
+"titleJp": "第379話事件",
+"manga": "Vol.76"
+},
+{
+"number": 380,
+"titleZh": "第380集事件",
+"titleJp": "第380話事件",
+"manga": "Vol.77"
+},
+{
+"number": 381,
+"titleZh": "第381集事件",
+"titleJp": "第381話事件",
+"manga": "Vol.77"
+},
+{
+"number": 382,
+"titleZh": "第382集事件",
+"titleJp": "第382話事件",
+"manga": "Vol.77"
+},
+{
+"number": 383,
+"titleZh": "第383集事件",
+"titleJp": "第383話事件",
+"manga": "Vol.77"
+},
+{
+"number": 384,
+"titleZh": "第384集事件",
+"titleJp": "第384話事件",
+"manga": "Vol.77"
+},
+{
+"number": 385,
+"titleZh": "第385集事件",
+"titleJp": "第385話事件",
+"manga": "動畫原創"
+},
+{
+"number": 386,
+"titleZh": "第386集事件",
+"titleJp": "第386話事件",
+"manga": "Vol.78"
+},
+{
+"number": 387,
+"titleZh": "第387集事件",
+"titleJp": "第387話事件",
+"manga": "Vol.78"
+},
+{
+"number": 388,
+"titleZh": "第388集事件",
+"titleJp": "第388話事件",
+"manga": "Vol.78"
+},
+{
+"number": 389,
+"titleZh": "第389集事件",
+"titleJp": "第389話事件",
+"manga": "Vol.78"
+},
+{
+"number": 390,
+"titleZh": "第390集事件",
+"titleJp": "第390話事件",
+"manga": "Vol.79"
+},
+{
+"number": 391,
+"titleZh": "第391集事件",
+"titleJp": "第391話事件",
+"manga": "Vol.79"
+},
+{
+"number": 392,
+"titleZh": "第392集事件",
+"titleJp": "第392話事件",
+"manga": "動畫原創"
+},
+{
+"number": 393,
+"titleZh": "第393集事件",
+"titleJp": "第393話事件",
+"manga": "Vol.79"
+},
+{
+"number": 394,
+"titleZh": "第394集事件",
+"titleJp": "第394話事件",
+"manga": "Vol.79"
+},
+{
+"number": 395,
+"titleZh": "第395集事件",
+"titleJp": "第395話事件",
+"manga": "Vol.80"
+},
+{
+"number": 396,
+"titleZh": "第396集事件",
+"titleJp": "第396話事件",
+"manga": "Vol.80"
+},
+{
+"number": 397,
+"titleZh": "第397集事件",
+"titleJp": "第397話事件",
+"manga": "Vol.80"
+},
+{
+"number": 398,
+"titleZh": "第398集事件",
+"titleJp": "第398話事件",
+"manga": "Vol.80"
+},
+{
+"number": 399,
+"titleZh": "第399集事件",
+"titleJp": "第399話事件",
+"manga": "動畫原創"
+},
+{
+"number": 400,
+"titleZh": "第400集事件",
+"titleJp": "第400話事件",
+"manga": "Vol.81"
+},
+{
+"number": 401,
+"titleZh": "第401集事件",
+"titleJp": "第401話事件",
+"manga": "Vol.81"
+},
+{
+"number": 402,
+"titleZh": "第402集事件",
+"titleJp": "第402話事件",
+"manga": "Vol.81"
+},
+{
+"number": 403,
+"titleZh": "第403集事件",
+"titleJp": "第403話事件",
+"manga": "Vol.81"
+},
+{
+"number": 404,
+"titleZh": "第404集事件",
+"titleJp": "第404話事件",
+"manga": "Vol.81"
+},
+{
+"number": 405,
+"titleZh": "第405集事件",
+"titleJp": "第405話事件",
+"manga": "Vol.82"
+},
+{
+"number": 406,
+"titleZh": "第406集事件",
+"titleJp": "第406話事件",
+"manga": "動畫原創"
+},
+{
+"number": 407,
+"titleZh": "第407集事件",
+"titleJp": "第407話事件",
+"manga": "Vol.82"
+},
+{
+"number": 408,
+"titleZh": "第408集事件",
+"titleJp": "第408話事件",
+"manga": "Vol.82"
+},
+{
+"number": 409,
+"titleZh": "第409集事件",
+"titleJp": "第409話事件",
+"manga": "Vol.82"
+},
+{
+"number": 410,
+"titleZh": "第410集事件",
+"titleJp": "第410話事件",
+"manga": "Vol.83"
+},
+{
+"number": 411,
+"titleZh": "第411集事件",
+"titleJp": "第411話事件",
+"manga": "Vol.83"
+},
+{
+"number": 412,
+"titleZh": "第412集事件",
+"titleJp": "第412話事件",
+"manga": "Vol.83"
+},
+{
+"number": 413,
+"titleZh": "第413集事件",
+"titleJp": "第413話事件",
+"manga": "動畫原創"
+},
+{
+"number": 414,
+"titleZh": "第414集事件",
+"titleJp": "第414話事件",
+"manga": "Vol.83"
+},
+{
+"number": 415,
+"titleZh": "第415集事件",
+"titleJp": "第415話事件",
+"manga": "Vol.84"
+},
+{
+"number": 416,
+"titleZh": "第416集事件",
+"titleJp": "第416話事件",
+"manga": "Vol.84"
+},
+{
+"number": 417,
+"titleZh": "第417集事件",
+"titleJp": "第417話事件",
+"manga": "Vol.84"
+},
+{
+"number": 418,
+"titleZh": "第418集事件",
+"titleJp": "第418話事件",
+"manga": "Vol.84"
+},
+{
+"number": 419,
+"titleZh": "第419集事件",
+"titleJp": "第419話事件",
+"manga": "Vol.84"
+},
+{
+"number": 420,
+"titleZh": "第420集事件",
+"titleJp": "第420話事件",
+"manga": "動畫原創"
+},
+{
+"number": 421,
+"titleZh": "第421集事件",
+"titleJp": "第421話事件",
+"manga": "Vol.85"
+},
+{
+"number": 422,
+"titleZh": "第422集事件",
+"titleJp": "第422話事件",
+"manga": "Vol.85"
+},
+{
+"number": 423,
+"titleZh": "第423集事件",
+"titleJp": "第423話事件",
+"manga": "Vol.85"
+},
+{
+"number": 424,
+"titleZh": "第424集事件",
+"titleJp": "第424話事件",
+"manga": "Vol.85"
+},
+{
+"number": 425,
+"titleZh": "第425集事件",
+"titleJp": "第425話事件",
+"manga": "Vol.86"
+},
+{
+"number": 426,
+"titleZh": "第426集事件",
+"titleJp": "第426話事件",
+"manga": "Vol.86"
+},
+{
+"number": 427,
+"titleZh": "第427集事件",
+"titleJp": "第427話事件",
+"manga": "動畫原創"
+},
+{
+"number": 428,
+"titleZh": "第428集事件",
+"titleJp": "第428話事件",
+"manga": "Vol.86"
+},
+{
+"number": 429,
+"titleZh": "第429集事件",
+"titleJp": "第429話事件",
+"manga": "Vol.86"
+},
+{
+"number": 430,
+"titleZh": "第430集事件",
+"titleJp": "第430話事件",
+"manga": "Vol.87"
+},
+{
+"number": 431,
+"titleZh": "第431集事件",
+"titleJp": "第431話事件",
+"manga": "Vol.87"
+},
+{
+"number": 432,
+"titleZh": "第432集事件",
+"titleJp": "第432話事件",
+"manga": "Vol.87"
+},
+{
+"number": 433,
+"titleZh": "第433集事件",
+"titleJp": "第433話事件",
+"manga": "Vol.87"
+},
+{
+"number": 434,
+"titleZh": "第434集事件",
+"titleJp": "第434話事件",
+"manga": "動畫原創"
+},
+{
+"number": 435,
+"titleZh": "第435集事件",
+"titleJp": "第435話事件",
+"manga": "Vol.88"
+},
+{
+"number": 436,
+"titleZh": "第436集事件",
+"titleJp": "第436話事件",
+"manga": "Vol.88"
+},
+{
+"number": 437,
+"titleZh": "第437集事件",
+"titleJp": "第437話事件",
+"manga": "Vol.88"
+},
+{
+"number": 438,
+"titleZh": "第438集事件",
+"titleJp": "第438話事件",
+"manga": "Vol.88"
+},
+{
+"number": 439,
+"titleZh": "第439集事件",
+"titleJp": "第439話事件",
+"manga": "Vol.88"
+},
+{
+"number": 440,
+"titleZh": "第440集事件",
+"titleJp": "第440話事件",
+"manga": "Vol.89"
+},
+{
+"number": 441,
+"titleZh": "第441集事件",
+"titleJp": "第441話事件",
+"manga": "動畫原創"
+},
+{
+"number": 442,
+"titleZh": "第442集事件",
+"titleJp": "第442話事件",
+"manga": "Vol.89"
+},
+{
+"number": 443,
+"titleZh": "第443集事件",
+"titleJp": "第443話事件",
+"manga": "Vol.89"
+},
+{
+"number": 444,
+"titleZh": "第444集事件",
+"titleJp": "第444話事件",
+"manga": "Vol.89"
+},
+{
+"number": 445,
+"titleZh": "第445集事件",
+"titleJp": "第445話事件",
+"manga": "Vol.90"
+},
+{
+"number": 446,
+"titleZh": "第446集事件",
+"titleJp": "第446話事件",
+"manga": "Vol.90"
+},
+{
+"number": 447,
+"titleZh": "第447集事件",
+"titleJp": "第447話事件",
+"manga": "Vol.90"
+},
+{
+"number": 448,
+"titleZh": "第448集事件",
+"titleJp": "第448話事件",
+"manga": "動畫原創"
+},
+{
+"number": 449,
+"titleZh": "第449集事件",
+"titleJp": "第449話事件",
+"manga": "Vol.90"
+},
+{
+"number": 450,
+"titleZh": "第450集事件",
+"titleJp": "第450話事件",
+"manga": "Vol.91"
+},
+{
+"number": 451,
+"titleZh": "第451集事件",
+"titleJp": "第451話事件",
+"manga": "Vol.91"
+},
+{
+"number": 452,
+"titleZh": "第452集事件",
+"titleJp": "第452話事件",
+"manga": "Vol.91"
+},
+{
+"number": 453,
+"titleZh": "第453集事件",
+"titleJp": "第453話事件",
+"manga": "Vol.91"
+},
+{
+"number": 454,
+"titleZh": "第454集事件",
+"titleJp": "第454話事件",
+"manga": "Vol.91"
+},
+{
+"number": 455,
+"titleZh": "第455集事件",
+"titleJp": "第455話事件",
+"manga": "動畫原創"
+},
+{
+"number": 456,
+"titleZh": "第456集事件",
+"titleJp": "第456話事件",
+"manga": "Vol.92"
+},
+{
+"number": 457,
+"titleZh": "第457集事件",
+"titleJp": "第457話事件",
+"manga": "Vol.92"
+},
+{
+"number": 458,
+"titleZh": "第458集事件",
+"titleJp": "第458話事件",
+"manga": "Vol.92"
+},
+{
+"number": 459,
+"titleZh": "第459集事件",
+"titleJp": "第459話事件",
+"manga": "Vol.92"
+},
+{
+"number": 460,
+"titleZh": "第460集事件",
+"titleJp": "第460話事件",
+"manga": "Vol.93"
+},
+{
+"number": 461,
+"titleZh": "第461集事件",
+"titleJp": "第461話事件",
+"manga": "Vol.93"
+},
+{
+"number": 462,
+"titleZh": "第462集事件",
+"titleJp": "第462話事件",
+"manga": "動畫原創"
+},
+{
+"number": 463,
+"titleZh": "第463集事件",
+"titleJp": "第463話事件",
+"manga": "Vol.93"
+},
+{
+"number": 464,
+"titleZh": "第464集事件",
+"titleJp": "第464話事件",
+"manga": "Vol.93"
+},
+{
+"number": 465,
+"titleZh": "第465集事件",
+"titleJp": "第465話事件",
+"manga": "Vol.94"
+},
+{
+"number": 466,
+"titleZh": "第466集事件",
+"titleJp": "第466話事件",
+"manga": "Vol.94"
+},
+{
+"number": 467,
+"titleZh": "第467集事件",
+"titleJp": "第467話事件",
+"manga": "Vol.94"
+},
+{
+"number": 468,
+"titleZh": "第468集事件",
+"titleJp": "第468話事件",
+"manga": "Vol.94"
+},
+{
+"number": 469,
+"titleZh": "第469集事件",
+"titleJp": "第469話事件",
+"manga": "動畫原創"
+},
+{
+"number": 470,
+"titleZh": "第470集事件",
+"titleJp": "第470話事件",
+"manga": "Vol.95"
+},
+{
+"number": 471,
+"titleZh": "第471集事件",
+"titleJp": "第471話事件",
+"manga": "Vol.95"
+},
+{
+"number": 472,
+"titleZh": "第472集事件",
+"titleJp": "第472話事件",
+"manga": "Vol.95"
+},
+{
+"number": 473,
+"titleZh": "第473集事件",
+"titleJp": "第473話事件",
+"manga": "Vol.95"
+},
+{
+"number": 474,
+"titleZh": "第474集事件",
+"titleJp": "第474話事件",
+"manga": "Vol.95"
+},
+{
+"number": 475,
+"titleZh": "第475集事件",
+"titleJp": "第475話事件",
+"manga": "Vol.96"
+},
+{
+"number": 476,
+"titleZh": "第476集事件",
+"titleJp": "第476話事件",
+"manga": "動畫原創"
+},
+{
+"number": 477,
+"titleZh": "第477集事件",
+"titleJp": "第477話事件",
+"manga": "Vol.96"
+},
+{
+"number": 478,
+"titleZh": "第478集事件",
+"titleJp": "第478話事件",
+"manga": "Vol.96"
+},
+{
+"number": 479,
+"titleZh": "第479集事件",
+"titleJp": "第479話事件",
+"manga": "Vol.96"
+},
+{
+"number": 480,
+"titleZh": "第480集事件",
+"titleJp": "第480話事件",
+"manga": "Vol.97"
+},
+{
+"number": 481,
+"titleZh": "第481集事件",
+"titleJp": "第481話事件",
+"manga": "Vol.97"
+},
+{
+"number": 482,
+"titleZh": "第482集事件",
+"titleJp": "第482話事件",
+"manga": "Vol.97"
+},
+{
+"number": 483,
+"titleZh": "第483集事件",
+"titleJp": "第483話事件",
+"manga": "動畫原創"
+},
+{
+"number": 484,
+"titleZh": "第484集事件",
+"titleJp": "第484話事件",
+"manga": "Vol.97"
+},
+{
+"number": 485,
+"titleZh": "第485集事件",
+"titleJp": "第485話事件",
+"manga": "Vol.98"
+},
+{
+"number": 486,
+"titleZh": "第486集事件",
+"titleJp": "第486話事件",
+"manga": "Vol.98"
+},
+{
+"number": 487,
+"titleZh": "第487集事件",
+"titleJp": "第487話事件",
+"manga": "Vol.98"
+},
+{
+"number": 488,
+"titleZh": "第488集事件",
+"titleJp": "第488話事件",
+"manga": "Vol.98"
+},
+{
+"number": 489,
+"titleZh": "第489集事件",
+"titleJp": "第489話事件",
+"manga": "Vol.98"
+},
+{
+"number": 490,
+"titleZh": "第490集事件",
+"titleJp": "第490話事件",
+"manga": "動畫原創"
+},
+{
+"number": 491,
+"titleZh": "第491集事件",
+"titleJp": "第491話事件",
+"manga": "Vol.99"
+},
+{
+"number": 492,
+"titleZh": "第492集事件",
+"titleJp": "第492話事件",
+"manga": "Vol.99"
+},
+{
+"number": 493,
+"titleZh": "第493集事件",
+"titleJp": "第493話事件",
+"manga": "Vol.99"
+},
+{
+"number": 494,
+"titleZh": "第494集事件",
+"titleJp": "第494話事件",
+"manga": "Vol.99"
+},
+{
+"number": 495,
+"titleZh": "第495集事件",
+"titleJp": "第495話事件",
+"manga": "Vol.100"
+},
+{
+"number": 496,
+"titleZh": "第496集事件",
+"titleJp": "第496話事件",
+"manga": "Vol.100"
+},
+{
+"number": 497,
+"titleZh": "第497集事件",
+"titleJp": "第497話事件",
+"manga": "動畫原創"
+},
+{
+"number": 498,
+"titleZh": "第498集事件",
+"titleJp": "第498話事件",
+"manga": "Vol.100"
+},
+{
+"number": 499,
+"titleZh": "第499集事件",
+"titleJp": "第499話事件",
+"manga": "Vol.100"
+},
+{
+"number": 500,
+"titleZh": "第500集事件",
+"titleJp": "第500話事件",
+"manga": "Vol.101"
+},
+{
+"number": 501,
+"titleZh": "第501集事件",
+"titleJp": "第501話事件",
+"manga": "Vol.101"
+},
+{
+"number": 502,
+"titleZh": "第502集事件",
+"titleJp": "第502話事件",
+"manga": "Vol.101"
+},
+{
+"number": 503,
+"titleZh": "第503集事件",
+"titleJp": "第503話事件",
+"manga": "Vol.101"
+},
+{
+"number": 504,
+"titleZh": "第504集事件",
+"titleJp": "第504話事件",
+"manga": "動畫原創"
+},
+{
+"number": 505,
+"titleZh": "第505集事件",
+"titleJp": "第505話事件",
+"manga": "Vol.102"
+},
+{
+"number": 506,
+"titleZh": "第506集事件",
+"titleJp": "第506話事件",
+"manga": "Vol.102"
+},
+{
+"number": 507,
+"titleZh": "第507集事件",
+"titleJp": "第507話事件",
+"manga": "Vol.102"
+},
+{
+"number": 508,
+"titleZh": "第508集事件",
+"titleJp": "第508話事件",
+"manga": "Vol.102"
+},
+{
+"number": 509,
+"titleZh": "第509集事件",
+"titleJp": "第509話事件",
+"manga": "Vol.102"
+},
+{
+"number": 510,
+"titleZh": "第510集事件",
+"titleJp": "第510話事件",
+"manga": "Vol.103"
+},
+{
+"number": 511,
+"titleZh": "第511集事件",
+"titleJp": "第511話事件",
+"manga": "動畫原創"
+},
+{
+"number": 512,
+"titleZh": "第512集事件",
+"titleJp": "第512話事件",
+"manga": "Vol.103"
+},
+{
+"number": 513,
+"titleZh": "第513集事件",
+"titleJp": "第513話事件",
+"manga": "Vol.103"
+},
+{
+"number": 514,
+"titleZh": "第514集事件",
+"titleJp": "第514話事件",
+"manga": "Vol.103"
+},
+{
+"number": 515,
+"titleZh": "第515集事件",
+"titleJp": "第515話事件",
+"manga": "Vol.104"
+},
+{
+"number": 516,
+"titleZh": "第516集事件",
+"titleJp": "第516話事件",
+"manga": "Vol.104"
+},
+{
+"number": 517,
+"titleZh": "第517集事件",
+"titleJp": "第517話事件",
+"manga": "Vol.104"
+},
+{
+"number": 518,
+"titleZh": "第518集事件",
+"titleJp": "第518話事件",
+"manga": "動畫原創"
+},
+{
+"number": 519,
+"titleZh": "第519集事件",
+"titleJp": "第519話事件",
+"manga": "Vol.104"
+},
+{
+"number": 520,
+"titleZh": "第520集事件",
+"titleJp": "第520話事件",
+"manga": "Vol.105"
+},
+{
+"number": 521,
+"titleZh": "第521集事件",
+"titleJp": "第521話事件",
+"manga": "Vol.105"
+},
+{
+"number": 522,
+"titleZh": "第522集事件",
+"titleJp": "第522話事件",
+"manga": "Vol.105"
+},
+{
+"number": 523,
+"titleZh": "第523集事件",
+"titleJp": "第523話事件",
+"manga": "Vol.105"
+},
+{
+"number": 524,
+"titleZh": "第524集事件",
+"titleJp": "第524話事件",
+"manga": "Vol.105"
+},
+{
+"number": 525,
+"titleZh": "第525集事件",
+"titleJp": "第525話事件",
+"manga": "動畫原創"
+},
+{
+"number": 526,
+"titleZh": "第526集事件",
+"titleJp": "第526話事件",
+"manga": "Vol.106"
+},
+{
+"number": 527,
+"titleZh": "第527集事件",
+"titleJp": "第527話事件",
+"manga": "Vol.106"
+},
+{
+"number": 528,
+"titleZh": "第528集事件",
+"titleJp": "第528話事件",
+"manga": "Vol.106"
+},
+{
+"number": 529,
+"titleZh": "第529集事件",
+"titleJp": "第529話事件",
+"manga": "Vol.106"
+},
+{
+"number": 530,
+"titleZh": "第530集事件",
+"titleJp": "第530話事件",
+"manga": "Vol.107"
+},
+{
+"number": 531,
+"titleZh": "第531集事件",
+"titleJp": "第531話事件",
+"manga": "Vol.107"
+},
+{
+"number": 532,
+"titleZh": "第532集事件",
+"titleJp": "第532話事件",
+"manga": "動畫原創"
+},
+{
+"number": 533,
+"titleZh": "第533集事件",
+"titleJp": "第533話事件",
+"manga": "Vol.107"
+},
+{
+"number": 534,
+"titleZh": "第534集事件",
+"titleJp": "第534話事件",
+"manga": "Vol.107"
+},
+{
+"number": 535,
+"titleZh": "第535集事件",
+"titleJp": "第535話事件",
+"manga": "Vol.108"
+},
+{
+"number": 536,
+"titleZh": "第536集事件",
+"titleJp": "第536話事件",
+"manga": "Vol.108"
+},
+{
+"number": 537,
+"titleZh": "第537集事件",
+"titleJp": "第537話事件",
+"manga": "Vol.108"
+},
+{
+"number": 538,
+"titleZh": "第538集事件",
+"titleJp": "第538話事件",
+"manga": "Vol.108"
+},
+{
+"number": 539,
+"titleZh": "第539集事件",
+"titleJp": "第539話事件",
+"manga": "動畫原創"
+},
+{
+"number": 540,
+"titleZh": "第540集事件",
+"titleJp": "第540話事件",
+"manga": "Vol.109"
+},
+{
+"number": 541,
+"titleZh": "第541集事件",
+"titleJp": "第541話事件",
+"manga": "Vol.109"
+},
+{
+"number": 542,
+"titleZh": "第542集事件",
+"titleJp": "第542話事件",
+"manga": "Vol.109"
+},
+{
+"number": 543,
+"titleZh": "第543集事件",
+"titleJp": "第543話事件",
+"manga": "Vol.109"
+},
+{
+"number": 544,
+"titleZh": "第544集事件",
+"titleJp": "第544話事件",
+"manga": "Vol.109"
+},
+{
+"number": 545,
+"titleZh": "第545集事件",
+"titleJp": "第545話事件",
+"manga": "Vol.110"
+},
+{
+"number": 546,
+"titleZh": "第546集事件",
+"titleJp": "第546話事件",
+"manga": "動畫原創"
+},
+{
+"number": 547,
+"titleZh": "第547集事件",
+"titleJp": "第547話事件",
+"manga": "Vol.110"
+},
+{
+"number": 548,
+"titleZh": "第548集事件",
+"titleJp": "第548話事件",
+"manga": "Vol.110"
+},
+{
+"number": 549,
+"titleZh": "第549集事件",
+"titleJp": "第549話事件",
+"manga": "Vol.110"
+},
+{
+"number": 550,
+"titleZh": "第550集事件",
+"titleJp": "第550話事件",
+"manga": "Vol.111"
+},
+{
+"number": 551,
+"titleZh": "第551集事件",
+"titleJp": "第551話事件",
+"manga": "Vol.111"
+},
+{
+"number": 552,
+"titleZh": "第552集事件",
+"titleJp": "第552話事件",
+"manga": "Vol.111"
+},
+{
+"number": 553,
+"titleZh": "第553集事件",
+"titleJp": "第553話事件",
+"manga": "動畫原創"
+},
+{
+"number": 554,
+"titleZh": "第554集事件",
+"titleJp": "第554話事件",
+"manga": "Vol.111"
+},
+{
+"number": 555,
+"titleZh": "第555集事件",
+"titleJp": "第555話事件",
+"manga": "Vol.112"
+},
+{
+"number": 556,
+"titleZh": "第556集事件",
+"titleJp": "第556話事件",
+"manga": "Vol.112"
+},
+{
+"number": 557,
+"titleZh": "第557集事件",
+"titleJp": "第557話事件",
+"manga": "Vol.112"
+},
+{
+"number": 558,
+"titleZh": "第558集事件",
+"titleJp": "第558話事件",
+"manga": "Vol.112"
+},
+{
+"number": 559,
+"titleZh": "第559集事件",
+"titleJp": "第559話事件",
+"manga": "Vol.112"
+},
+{
+"number": 560,
+"titleZh": "第560集事件",
+"titleJp": "第560話事件",
+"manga": "動畫原創"
+},
+{
+"number": 561,
+"titleZh": "第561集事件",
+"titleJp": "第561話事件",
+"manga": "Vol.113"
+},
+{
+"number": 562,
+"titleZh": "第562集事件",
+"titleJp": "第562話事件",
+"manga": "Vol.113"
+},
+{
+"number": 563,
+"titleZh": "第563集事件",
+"titleJp": "第563話事件",
+"manga": "Vol.113"
+},
+{
+"number": 564,
+"titleZh": "第564集事件",
+"titleJp": "第564話事件",
+"manga": "Vol.113"
+},
+{
+"number": 565,
+"titleZh": "第565集事件",
+"titleJp": "第565話事件",
+"manga": "Vol.114"
+},
+{
+"number": 566,
+"titleZh": "第566集事件",
+"titleJp": "第566話事件",
+"manga": "Vol.114"
+},
+{
+"number": 567,
+"titleZh": "第567集事件",
+"titleJp": "第567話事件",
+"manga": "動畫原創"
+},
+{
+"number": 568,
+"titleZh": "第568集事件",
+"titleJp": "第568話事件",
+"manga": "Vol.114"
+},
+{
+"number": 569,
+"titleZh": "第569集事件",
+"titleJp": "第569話事件",
+"manga": "Vol.114"
+},
+{
+"number": 570,
+"titleZh": "第570集事件",
+"titleJp": "第570話事件",
+"manga": "Vol.115"
+},
+{
+"number": 571,
+"titleZh": "第571集事件",
+"titleJp": "第571話事件",
+"manga": "Vol.115"
+},
+{
+"number": 572,
+"titleZh": "第572集事件",
+"titleJp": "第572話事件",
+"manga": "Vol.115"
+},
+{
+"number": 573,
+"titleZh": "第573集事件",
+"titleJp": "第573話事件",
+"manga": "Vol.115"
+},
+{
+"number": 574,
+"titleZh": "第574集事件",
+"titleJp": "第574話事件",
+"manga": "動畫原創"
+},
+{
+"number": 575,
+"titleZh": "第575集事件",
+"titleJp": "第575話事件",
+"manga": "Vol.116"
+},
+{
+"number": 576,
+"titleZh": "第576集事件",
+"titleJp": "第576話事件",
+"manga": "Vol.116"
+},
+{
+"number": 577,
+"titleZh": "第577集事件",
+"titleJp": "第577話事件",
+"manga": "Vol.116"
+},
+{
+"number": 578,
+"titleZh": "第578集事件",
+"titleJp": "第578話事件",
+"manga": "Vol.116"
+},
+{
+"number": 579,
+"titleZh": "第579集事件",
+"titleJp": "第579話事件",
+"manga": "Vol.116"
+},
+{
+"number": 580,
+"titleZh": "第580集事件",
+"titleJp": "第580話事件",
+"manga": "Vol.117"
+},
+{
+"number": 581,
+"titleZh": "第581集事件",
+"titleJp": "第581話事件",
+"manga": "動畫原創"
+},
+{
+"number": 582,
+"titleZh": "第582集事件",
+"titleJp": "第582話事件",
+"manga": "Vol.117"
+},
+{
+"number": 583,
+"titleZh": "第583集事件",
+"titleJp": "第583話事件",
+"manga": "Vol.117"
+},
+{
+"number": 584,
+"titleZh": "第584集事件",
+"titleJp": "第584話事件",
+"manga": "Vol.117"
+},
+{
+"number": 585,
+"titleZh": "第585集事件",
+"titleJp": "第585話事件",
+"manga": "Vol.118"
+},
+{
+"number": 586,
+"titleZh": "第586集事件",
+"titleJp": "第586話事件",
+"manga": "Vol.118"
+},
+{
+"number": 587,
+"titleZh": "第587集事件",
+"titleJp": "第587話事件",
+"manga": "Vol.118"
+},
+{
+"number": 588,
+"titleZh": "第588集事件",
+"titleJp": "第588話事件",
+"manga": "動畫原創"
+},
+{
+"number": 589,
+"titleZh": "第589集事件",
+"titleJp": "第589話事件",
+"manga": "Vol.118"
+},
+{
+"number": 590,
+"titleZh": "第590集事件",
+"titleJp": "第590話事件",
+"manga": "Vol.119"
+},
+{
+"number": 591,
+"titleZh": "第591集事件",
+"titleJp": "第591話事件",
+"manga": "Vol.119"
+},
+{
+"number": 592,
+"titleZh": "第592集事件",
+"titleJp": "第592話事件",
+"manga": "Vol.119"
+},
+{
+"number": 593,
+"titleZh": "第593集事件",
+"titleJp": "第593話事件",
+"manga": "Vol.119"
+},
+{
+"number": 594,
+"titleZh": "第594集事件",
+"titleJp": "第594話事件",
+"manga": "Vol.119"
+},
+{
+"number": 595,
+"titleZh": "第595集事件",
+"titleJp": "第595話事件",
+"manga": "動畫原創"
+},
+{
+"number": 596,
+"titleZh": "第596集事件",
+"titleJp": "第596話事件",
+"manga": "Vol.120"
+},
+{
+"number": 597,
+"titleZh": "第597集事件",
+"titleJp": "第597話事件",
+"manga": "Vol.120"
+},
+{
+"number": 598,
+"titleZh": "第598集事件",
+"titleJp": "第598話事件",
+"manga": "Vol.120"
+},
+{
+"number": 599,
+"titleZh": "第599集事件",
+"titleJp": "第599話事件",
+"manga": "Vol.120"
+},
+{
+"number": 600,
+"titleZh": "第600集事件",
+"titleJp": "第600話事件",
+"manga": "Vol.121"
+},
+{
+"number": 601,
+"titleZh": "第601集事件",
+"titleJp": "第601話事件",
+"manga": "Vol.121"
+},
+{
+"number": 602,
+"titleZh": "第602集事件",
+"titleJp": "第602話事件",
+"manga": "動畫原創"
+},
+{
+"number": 603,
+"titleZh": "第603集事件",
+"titleJp": "第603話事件",
+"manga": "Vol.121"
+},
+{
+"number": 604,
+"titleZh": "第604集事件",
+"titleJp": "第604話事件",
+"manga": "Vol.121"
+},
+{
+"number": 605,
+"titleZh": "第605集事件",
+"titleJp": "第605話事件",
+"manga": "Vol.122"
+},
+{
+"number": 606,
+"titleZh": "第606集事件",
+"titleJp": "第606話事件",
+"manga": "Vol.122"
+},
+{
+"number": 607,
+"titleZh": "第607集事件",
+"titleJp": "第607話事件",
+"manga": "Vol.122"
+},
+{
+"number": 608,
+"titleZh": "第608集事件",
+"titleJp": "第608話事件",
+"manga": "Vol.122"
+},
+{
+"number": 609,
+"titleZh": "第609集事件",
+"titleJp": "第609話事件",
+"manga": "動畫原創"
+},
+{
+"number": 610,
+"titleZh": "第610集事件",
+"titleJp": "第610話事件",
+"manga": "Vol.123"
+},
+{
+"number": 611,
+"titleZh": "第611集事件",
+"titleJp": "第611話事件",
+"manga": "Vol.123"
+},
+{
+"number": 612,
+"titleZh": "第612集事件",
+"titleJp": "第612話事件",
+"manga": "Vol.123"
+},
+{
+"number": 613,
+"titleZh": "第613集事件",
+"titleJp": "第613話事件",
+"manga": "Vol.123"
+},
+{
+"number": 614,
+"titleZh": "第614集事件",
+"titleJp": "第614話事件",
+"manga": "Vol.123"
+},
+{
+"number": 615,
+"titleZh": "第615集事件",
+"titleJp": "第615話事件",
+"manga": "Vol.124"
+},
+{
+"number": 616,
+"titleZh": "第616集事件",
+"titleJp": "第616話事件",
+"manga": "動畫原創"
+},
+{
+"number": 617,
+"titleZh": "第617集事件",
+"titleJp": "第617話事件",
+"manga": "Vol.124"
+},
+{
+"number": 618,
+"titleZh": "第618集事件",
+"titleJp": "第618話事件",
+"manga": "Vol.124"
+},
+{
+"number": 619,
+"titleZh": "第619集事件",
+"titleJp": "第619話事件",
+"manga": "Vol.124"
+},
+{
+"number": 620,
+"titleZh": "第620集事件",
+"titleJp": "第620話事件",
+"manga": "Vol.125"
+},
+{
+"number": 621,
+"titleZh": "第621集事件",
+"titleJp": "第621話事件",
+"manga": "Vol.125"
+},
+{
+"number": 622,
+"titleZh": "第622集事件",
+"titleJp": "第622話事件",
+"manga": "Vol.125"
+},
+{
+"number": 623,
+"titleZh": "第623集事件",
+"titleJp": "第623話事件",
+"manga": "動畫原創"
+},
+{
+"number": 624,
+"titleZh": "第624集事件",
+"titleJp": "第624話事件",
+"manga": "Vol.125"
+},
+{
+"number": 625,
+"titleZh": "第625集事件",
+"titleJp": "第625話事件",
+"manga": "Vol.126"
+},
+{
+"number": 626,
+"titleZh": "第626集事件",
+"titleJp": "第626話事件",
+"manga": "Vol.126"
+},
+{
+"number": 627,
+"titleZh": "第627集事件",
+"titleJp": "第627話事件",
+"manga": "Vol.126"
+},
+{
+"number": 628,
+"titleZh": "第628集事件",
+"titleJp": "第628話事件",
+"manga": "Vol.126"
+},
+{
+"number": 629,
+"titleZh": "第629集事件",
+"titleJp": "第629話事件",
+"manga": "Vol.126"
+},
+{
+"number": 630,
+"titleZh": "第630集事件",
+"titleJp": "第630話事件",
+"manga": "動畫原創"
+},
+{
+"number": 631,
+"titleZh": "第631集事件",
+"titleJp": "第631話事件",
+"manga": "Vol.127"
+},
+{
+"number": 632,
+"titleZh": "第632集事件",
+"titleJp": "第632話事件",
+"manga": "Vol.127"
+},
+{
+"number": 633,
+"titleZh": "第633集事件",
+"titleJp": "第633話事件",
+"manga": "Vol.127"
+},
+{
+"number": 634,
+"titleZh": "第634集事件",
+"titleJp": "第634話事件",
+"manga": "Vol.127"
+},
+{
+"number": 635,
+"titleZh": "第635集事件",
+"titleJp": "第635話事件",
+"manga": "Vol.128"
+},
+{
+"number": 636,
+"titleZh": "第636集事件",
+"titleJp": "第636話事件",
+"manga": "Vol.128"
+},
+{
+"number": 637,
+"titleZh": "第637集事件",
+"titleJp": "第637話事件",
+"manga": "動畫原創"
+},
+{
+"number": 638,
+"titleZh": "第638集事件",
+"titleJp": "第638話事件",
+"manga": "Vol.128"
+},
+{
+"number": 639,
+"titleZh": "第639集事件",
+"titleJp": "第639話事件",
+"manga": "Vol.128"
+},
+{
+"number": 640,
+"titleZh": "第640集事件",
+"titleJp": "第640話事件",
+"manga": "Vol.129"
+},
+{
+"number": 641,
+"titleZh": "第641集事件",
+"titleJp": "第641話事件",
+"manga": "Vol.129"
+},
+{
+"number": 642,
+"titleZh": "第642集事件",
+"titleJp": "第642話事件",
+"manga": "Vol.129"
+},
+{
+"number": 643,
+"titleZh": "第643集事件",
+"titleJp": "第643話事件",
+"manga": "Vol.129"
+},
+{
+"number": 644,
+"titleZh": "第644集事件",
+"titleJp": "第644話事件",
+"manga": "動畫原創"
+},
+{
+"number": 645,
+"titleZh": "第645集事件",
+"titleJp": "第645話事件",
+"manga": "Vol.130"
+},
+{
+"number": 646,
+"titleZh": "第646集事件",
+"titleJp": "第646話事件",
+"manga": "Vol.130"
+},
+{
+"number": 647,
+"titleZh": "第647集事件",
+"titleJp": "第647話事件",
+"manga": "Vol.130"
+},
+{
+"number": 648,
+"titleZh": "第648集事件",
+"titleJp": "第648話事件",
+"manga": "Vol.130"
+},
+{
+"number": 649,
+"titleZh": "第649集事件",
+"titleJp": "第649話事件",
+"manga": "Vol.130"
+},
+{
+"number": 650,
+"titleZh": "第650集事件",
+"titleJp": "第650話事件",
+"manga": "Vol.131"
+},
+{
+"number": 651,
+"titleZh": "第651集事件",
+"titleJp": "第651話事件",
+"manga": "動畫原創"
+},
+{
+"number": 652,
+"titleZh": "第652集事件",
+"titleJp": "第652話事件",
+"manga": "Vol.131"
+},
+{
+"number": 653,
+"titleZh": "第653集事件",
+"titleJp": "第653話事件",
+"manga": "Vol.131"
+},
+{
+"number": 654,
+"titleZh": "第654集事件",
+"titleJp": "第654話事件",
+"manga": "Vol.131"
+},
+{
+"number": 655,
+"titleZh": "第655集事件",
+"titleJp": "第655話事件",
+"manga": "Vol.132"
+},
+{
+"number": 656,
+"titleZh": "第656集事件",
+"titleJp": "第656話事件",
+"manga": "Vol.132"
+},
+{
+"number": 657,
+"titleZh": "第657集事件",
+"titleJp": "第657話事件",
+"manga": "Vol.132"
+},
+{
+"number": 658,
+"titleZh": "第658集事件",
+"titleJp": "第658話事件",
+"manga": "動畫原創"
+},
+{
+"number": 659,
+"titleZh": "第659集事件",
+"titleJp": "第659話事件",
+"manga": "Vol.132"
+},
+{
+"number": 660,
+"titleZh": "第660集事件",
+"titleJp": "第660話事件",
+"manga": "Vol.133"
+},
+{
+"number": 661,
+"titleZh": "第661集事件",
+"titleJp": "第661話事件",
+"manga": "Vol.133"
+},
+{
+"number": 662,
+"titleZh": "第662集事件",
+"titleJp": "第662話事件",
+"manga": "Vol.133"
+},
+{
+"number": 663,
+"titleZh": "第663集事件",
+"titleJp": "第663話事件",
+"manga": "Vol.133"
+},
+{
+"number": 664,
+"titleZh": "第664集事件",
+"titleJp": "第664話事件",
+"manga": "Vol.133"
+},
+{
+"number": 665,
+"titleZh": "第665集事件",
+"titleJp": "第665話事件",
+"manga": "動畫原創"
+},
+{
+"number": 666,
+"titleZh": "第666集事件",
+"titleJp": "第666話事件",
+"manga": "Vol.134"
+},
+{
+"number": 667,
+"titleZh": "第667集事件",
+"titleJp": "第667話事件",
+"manga": "Vol.134"
+},
+{
+"number": 668,
+"titleZh": "第668集事件",
+"titleJp": "第668話事件",
+"manga": "Vol.134"
+},
+{
+"number": 669,
+"titleZh": "第669集事件",
+"titleJp": "第669話事件",
+"manga": "Vol.134"
+},
+{
+"number": 670,
+"titleZh": "第670集事件",
+"titleJp": "第670話事件",
+"manga": "Vol.135"
+},
+{
+"number": 671,
+"titleZh": "第671集事件",
+"titleJp": "第671話事件",
+"manga": "Vol.135"
+},
+{
+"number": 672,
+"titleZh": "第672集事件",
+"titleJp": "第672話事件",
+"manga": "動畫原創"
+},
+{
+"number": 673,
+"titleZh": "第673集事件",
+"titleJp": "第673話事件",
+"manga": "Vol.135"
+},
+{
+"number": 674,
+"titleZh": "第674集事件",
+"titleJp": "第674話事件",
+"manga": "Vol.135"
+},
+{
+"number": 675,
+"titleZh": "第675集事件",
+"titleJp": "第675話事件",
+"manga": "Vol.136"
+},
+{
+"number": 676,
+"titleZh": "第676集事件",
+"titleJp": "第676話事件",
+"manga": "Vol.136"
+},
+{
+"number": 677,
+"titleZh": "第677集事件",
+"titleJp": "第677話事件",
+"manga": "Vol.136"
+},
+{
+"number": 678,
+"titleZh": "第678集事件",
+"titleJp": "第678話事件",
+"manga": "Vol.136"
+},
+{
+"number": 679,
+"titleZh": "第679集事件",
+"titleJp": "第679話事件",
+"manga": "動畫原創"
+},
+{
+"number": 680,
+"titleZh": "第680集事件",
+"titleJp": "第680話事件",
+"manga": "Vol.137"
+},
+{
+"number": 681,
+"titleZh": "第681集事件",
+"titleJp": "第681話事件",
+"manga": "Vol.137"
+},
+{
+"number": 682,
+"titleZh": "第682集事件",
+"titleJp": "第682話事件",
+"manga": "Vol.137"
+},
+{
+"number": 683,
+"titleZh": "第683集事件",
+"titleJp": "第683話事件",
+"manga": "Vol.137"
+},
+{
+"number": 684,
+"titleZh": "第684集事件",
+"titleJp": "第684話事件",
+"manga": "Vol.137"
+},
+{
+"number": 685,
+"titleZh": "第685集事件",
+"titleJp": "第685話事件",
+"manga": "Vol.138"
+},
+{
+"number": 686,
+"titleZh": "第686集事件",
+"titleJp": "第686話事件",
+"manga": "動畫原創"
+},
+{
+"number": 687,
+"titleZh": "第687集事件",
+"titleJp": "第687話事件",
+"manga": "Vol.138"
+},
+{
+"number": 688,
+"titleZh": "第688集事件",
+"titleJp": "第688話事件",
+"manga": "Vol.138"
+},
+{
+"number": 689,
+"titleZh": "第689集事件",
+"titleJp": "第689話事件",
+"manga": "Vol.138"
+},
+{
+"number": 690,
+"titleZh": "第690集事件",
+"titleJp": "第690話事件",
+"manga": "Vol.139"
+},
+{
+"number": 691,
+"titleZh": "第691集事件",
+"titleJp": "第691話事件",
+"manga": "Vol.139"
+},
+{
+"number": 692,
+"titleZh": "第692集事件",
+"titleJp": "第692話事件",
+"manga": "Vol.139"
+},
+{
+"number": 693,
+"titleZh": "第693集事件",
+"titleJp": "第693話事件",
+"manga": "動畫原創"
+},
+{
+"number": 694,
+"titleZh": "第694集事件",
+"titleJp": "第694話事件",
+"manga": "Vol.139"
+},
+{
+"number": 695,
+"titleZh": "第695集事件",
+"titleJp": "第695話事件",
+"manga": "Vol.140"
+},
+{
+"number": 696,
+"titleZh": "第696集事件",
+"titleJp": "第696話事件",
+"manga": "Vol.140"
+},
+{
+"number": 697,
+"titleZh": "第697集事件",
+"titleJp": "第697話事件",
+"manga": "Vol.140"
+},
+{
+"number": 698,
+"titleZh": "第698集事件",
+"titleJp": "第698話事件",
+"manga": "Vol.140"
+},
+{
+"number": 699,
+"titleZh": "第699集事件",
+"titleJp": "第699話事件",
+"manga": "Vol.140"
+},
+{
+"number": 700,
+"titleZh": "第700集事件",
+"titleJp": "第700話事件",
+"manga": "動畫原創"
+},
+{
+"number": 701,
+"titleZh": "第701集事件",
+"titleJp": "第701話事件",
+"manga": "Vol.141"
+},
+{
+"number": 702,
+"titleZh": "第702集事件",
+"titleJp": "第702話事件",
+"manga": "Vol.141"
+},
+{
+"number": 703,
+"titleZh": "第703集事件",
+"titleJp": "第703話事件",
+"manga": "Vol.141"
+},
+{
+"number": 704,
+"titleZh": "第704集事件",
+"titleJp": "第704話事件",
+"manga": "Vol.141"
+},
+{
+"number": 705,
+"titleZh": "第705集事件",
+"titleJp": "第705話事件",
+"manga": "Vol.142"
+},
+{
+"number": 706,
+"titleZh": "第706集事件",
+"titleJp": "第706話事件",
+"manga": "Vol.142"
+},
+{
+"number": 707,
+"titleZh": "第707集事件",
+"titleJp": "第707話事件",
+"manga": "動畫原創"
+},
+{
+"number": 708,
+"titleZh": "第708集事件",
+"titleJp": "第708話事件",
+"manga": "Vol.142"
+},
+{
+"number": 709,
+"titleZh": "第709集事件",
+"titleJp": "第709話事件",
+"manga": "Vol.142"
+},
+{
+"number": 710,
+"titleZh": "第710集事件",
+"titleJp": "第710話事件",
+"manga": "Vol.143"
+},
+{
+"number": 711,
+"titleZh": "第711集事件",
+"titleJp": "第711話事件",
+"manga": "Vol.143"
+},
+{
+"number": 712,
+"titleZh": "第712集事件",
+"titleJp": "第712話事件",
+"manga": "Vol.143"
+},
+{
+"number": 713,
+"titleZh": "第713集事件",
+"titleJp": "第713話事件",
+"manga": "Vol.143"
+},
+{
+"number": 714,
+"titleZh": "第714集事件",
+"titleJp": "第714話事件",
+"manga": "動畫原創"
+},
+{
+"number": 715,
+"titleZh": "第715集事件",
+"titleJp": "第715話事件",
+"manga": "Vol.144"
+},
+{
+"number": 716,
+"titleZh": "第716集事件",
+"titleJp": "第716話事件",
+"manga": "Vol.144"
+},
+{
+"number": 717,
+"titleZh": "第717集事件",
+"titleJp": "第717話事件",
+"manga": "Vol.144"
+},
+{
+"number": 718,
+"titleZh": "第718集事件",
+"titleJp": "第718話事件",
+"manga": "Vol.144"
+},
+{
+"number": 719,
+"titleZh": "第719集事件",
+"titleJp": "第719話事件",
+"manga": "Vol.144"
+},
+{
+"number": 720,
+"titleZh": "第720集事件",
+"titleJp": "第720話事件",
+"manga": "Vol.145"
+},
+{
+"number": 721,
+"titleZh": "第721集事件",
+"titleJp": "第721話事件",
+"manga": "動畫原創"
+},
+{
+"number": 722,
+"titleZh": "第722集事件",
+"titleJp": "第722話事件",
+"manga": "Vol.145"
+},
+{
+"number": 723,
+"titleZh": "第723集事件",
+"titleJp": "第723話事件",
+"manga": "Vol.145"
+},
+{
+"number": 724,
+"titleZh": "第724集事件",
+"titleJp": "第724話事件",
+"manga": "Vol.145"
+},
+{
+"number": 725,
+"titleZh": "第725集事件",
+"titleJp": "第725話事件",
+"manga": "Vol.146"
+},
+{
+"number": 726,
+"titleZh": "第726集事件",
+"titleJp": "第726話事件",
+"manga": "Vol.146"
+},
+{
+"number": 727,
+"titleZh": "第727集事件",
+"titleJp": "第727話事件",
+"manga": "Vol.146"
+},
+{
+"number": 728,
+"titleZh": "第728集事件",
+"titleJp": "第728話事件",
+"manga": "動畫原創"
+},
+{
+"number": 729,
+"titleZh": "第729集事件",
+"titleJp": "第729話事件",
+"manga": "Vol.146"
+},
+{
+"number": 730,
+"titleZh": "第730集事件",
+"titleJp": "第730話事件",
+"manga": "Vol.147"
+},
+{
+"number": 731,
+"titleZh": "第731集事件",
+"titleJp": "第731話事件",
+"manga": "Vol.147"
+},
+{
+"number": 732,
+"titleZh": "第732集事件",
+"titleJp": "第732話事件",
+"manga": "Vol.147"
+},
+{
+"number": 733,
+"titleZh": "第733集事件",
+"titleJp": "第733話事件",
+"manga": "Vol.147"
+},
+{
+"number": 734,
+"titleZh": "第734集事件",
+"titleJp": "第734話事件",
+"manga": "Vol.147"
+},
+{
+"number": 735,
+"titleZh": "第735集事件",
+"titleJp": "第735話事件",
+"manga": "動畫原創"
+},
+{
+"number": 736,
+"titleZh": "第736集事件",
+"titleJp": "第736話事件",
+"manga": "Vol.148"
+},
+{
+"number": 737,
+"titleZh": "第737集事件",
+"titleJp": "第737話事件",
+"manga": "Vol.148"
+},
+{
+"number": 738,
+"titleZh": "第738集事件",
+"titleJp": "第738話事件",
+"manga": "Vol.148"
+},
+{
+"number": 739,
+"titleZh": "第739集事件",
+"titleJp": "第739話事件",
+"manga": "Vol.148"
+},
+{
+"number": 740,
+"titleZh": "第740集事件",
+"titleJp": "第740話事件",
+"manga": "Vol.149"
+},
+{
+"number": 741,
+"titleZh": "第741集事件",
+"titleJp": "第741話事件",
+"manga": "Vol.149"
+},
+{
+"number": 742,
+"titleZh": "第742集事件",
+"titleJp": "第742話事件",
+"manga": "動畫原創"
+},
+{
+"number": 743,
+"titleZh": "第743集事件",
+"titleJp": "第743話事件",
+"manga": "Vol.149"
+},
+{
+"number": 744,
+"titleZh": "第744集事件",
+"titleJp": "第744話事件",
+"manga": "Vol.149"
+},
+{
+"number": 745,
+"titleZh": "第745集事件",
+"titleJp": "第745話事件",
+"manga": "Vol.150"
+},
+{
+"number": 746,
+"titleZh": "第746集事件",
+"titleJp": "第746話事件",
+"manga": "Vol.150"
+},
+{
+"number": 747,
+"titleZh": "第747集事件",
+"titleJp": "第747話事件",
+"manga": "Vol.150"
+},
+{
+"number": 748,
+"titleZh": "第748集事件",
+"titleJp": "第748話事件",
+"manga": "Vol.150"
+},
+{
+"number": 749,
+"titleZh": "第749集事件",
+"titleJp": "第749話事件",
+"manga": "動畫原創"
+},
+{
+"number": 750,
+"titleZh": "第750集事件",
+"titleJp": "第750話事件",
+"manga": "Vol.151"
+},
+{
+"number": 751,
+"titleZh": "第751集事件",
+"titleJp": "第751話事件",
+"manga": "Vol.151"
+},
+{
+"number": 752,
+"titleZh": "第752集事件",
+"titleJp": "第752話事件",
+"manga": "Vol.151"
+},
+{
+"number": 753,
+"titleZh": "第753集事件",
+"titleJp": "第753話事件",
+"manga": "Vol.151"
+},
+{
+"number": 754,
+"titleZh": "第754集事件",
+"titleJp": "第754話事件",
+"manga": "Vol.151"
+},
+{
+"number": 755,
+"titleZh": "第755集事件",
+"titleJp": "第755話事件",
+"manga": "Vol.152"
+},
+{
+"number": 756,
+"titleZh": "第756集事件",
+"titleJp": "第756話事件",
+"manga": "動畫原創"
+},
+{
+"number": 757,
+"titleZh": "第757集事件",
+"titleJp": "第757話事件",
+"manga": "Vol.152"
+},
+{
+"number": 758,
+"titleZh": "第758集事件",
+"titleJp": "第758話事件",
+"manga": "Vol.152"
+},
+{
+"number": 759,
+"titleZh": "第759集事件",
+"titleJp": "第759話事件",
+"manga": "Vol.152"
+},
+{
+"number": 760,
+"titleZh": "第760集事件",
+"titleJp": "第760話事件",
+"manga": "Vol.153"
+},
+{
+"number": 761,
+"titleZh": "第761集事件",
+"titleJp": "第761話事件",
+"manga": "Vol.153"
+},
+{
+"number": 762,
+"titleZh": "第762集事件",
+"titleJp": "第762話事件",
+"manga": "Vol.153"
+},
+{
+"number": 763,
+"titleZh": "第763集事件",
+"titleJp": "第763話事件",
+"manga": "動畫原創"
+},
+{
+"number": 764,
+"titleZh": "第764集事件",
+"titleJp": "第764話事件",
+"manga": "Vol.153"
+},
+{
+"number": 765,
+"titleZh": "第765集事件",
+"titleJp": "第765話事件",
+"manga": "Vol.154"
+},
+{
+"number": 766,
+"titleZh": "第766集事件",
+"titleJp": "第766話事件",
+"manga": "Vol.154"
+},
+{
+"number": 767,
+"titleZh": "第767集事件",
+"titleJp": "第767話事件",
+"manga": "Vol.154"
+},
+{
+"number": 768,
+"titleZh": "第768集事件",
+"titleJp": "第768話事件",
+"manga": "Vol.154"
+},
+{
+"number": 769,
+"titleZh": "第769集事件",
+"titleJp": "第769話事件",
+"manga": "Vol.154"
+},
+{
+"number": 770,
+"titleZh": "第770集事件",
+"titleJp": "第770話事件",
+"manga": "動畫原創"
+},
+{
+"number": 771,
+"titleZh": "第771集事件",
+"titleJp": "第771話事件",
+"manga": "Vol.155"
+},
+{
+"number": 772,
+"titleZh": "第772集事件",
+"titleJp": "第772話事件",
+"manga": "Vol.155"
+},
+{
+"number": 773,
+"titleZh": "第773集事件",
+"titleJp": "第773話事件",
+"manga": "Vol.155"
+},
+{
+"number": 774,
+"titleZh": "第774集事件",
+"titleJp": "第774話事件",
+"manga": "Vol.155"
+},
+{
+"number": 775,
+"titleZh": "第775集事件",
+"titleJp": "第775話事件",
+"manga": "Vol.156"
+},
+{
+"number": 776,
+"titleZh": "第776集事件",
+"titleJp": "第776話事件",
+"manga": "Vol.156"
+},
+{
+"number": 777,
+"titleZh": "第777集事件",
+"titleJp": "第777話事件",
+"manga": "動畫原創"
+},
+{
+"number": 778,
+"titleZh": "第778集事件",
+"titleJp": "第778話事件",
+"manga": "Vol.156"
+},
+{
+"number": 779,
+"titleZh": "第779集事件",
+"titleJp": "第779話事件",
+"manga": "Vol.156"
+},
+{
+"number": 780,
+"titleZh": "第780集事件",
+"titleJp": "第780話事件",
+"manga": "Vol.157"
+},
+{
+"number": 781,
+"titleZh": "第781集事件",
+"titleJp": "第781話事件",
+"manga": "Vol.157"
+},
+{
+"number": 782,
+"titleZh": "第782集事件",
+"titleJp": "第782話事件",
+"manga": "Vol.157"
+},
+{
+"number": 783,
+"titleZh": "第783集事件",
+"titleJp": "第783話事件",
+"manga": "Vol.157"
+},
+{
+"number": 784,
+"titleZh": "第784集事件",
+"titleJp": "第784話事件",
+"manga": "動畫原創"
+},
+{
+"number": 785,
+"titleZh": "第785集事件",
+"titleJp": "第785話事件",
+"manga": "Vol.158"
+},
+{
+"number": 786,
+"titleZh": "第786集事件",
+"titleJp": "第786話事件",
+"manga": "Vol.158"
+},
+{
+"number": 787,
+"titleZh": "第787集事件",
+"titleJp": "第787話事件",
+"manga": "Vol.158"
+},
+{
+"number": 788,
+"titleZh": "第788集事件",
+"titleJp": "第788話事件",
+"manga": "Vol.158"
+},
+{
+"number": 789,
+"titleZh": "第789集事件",
+"titleJp": "第789話事件",
+"manga": "Vol.158"
+},
+{
+"number": 790,
+"titleZh": "第790集事件",
+"titleJp": "第790話事件",
+"manga": "Vol.159"
+},
+{
+"number": 791,
+"titleZh": "第791集事件",
+"titleJp": "第791話事件",
+"manga": "動畫原創"
+},
+{
+"number": 792,
+"titleZh": "第792集事件",
+"titleJp": "第792話事件",
+"manga": "Vol.159"
+},
+{
+"number": 793,
+"titleZh": "第793集事件",
+"titleJp": "第793話事件",
+"manga": "Vol.159"
+},
+{
+"number": 794,
+"titleZh": "第794集事件",
+"titleJp": "第794話事件",
+"manga": "Vol.159"
+},
+{
+"number": 795,
+"titleZh": "第795集事件",
+"titleJp": "第795話事件",
+"manga": "Vol.160"
+},
+{
+"number": 796,
+"titleZh": "第796集事件",
+"titleJp": "第796話事件",
+"manga": "Vol.160"
+},
+{
+"number": 797,
+"titleZh": "第797集事件",
+"titleJp": "第797話事件",
+"manga": "Vol.160"
+},
+{
+"number": 798,
+"titleZh": "第798集事件",
+"titleJp": "第798話事件",
+"manga": "動畫原創"
+},
+{
+"number": 799,
+"titleZh": "第799集事件",
+"titleJp": "第799話事件",
+"manga": "Vol.160"
+},
+{
+"number": 800,
+"titleZh": "第800集事件",
+"titleJp": "第800話事件",
+"manga": "Vol.161"
+},
+{
+"number": 801,
+"titleZh": "第801集事件",
+"titleJp": "第801話事件",
+"manga": "Vol.161"
+},
+{
+"number": 802,
+"titleZh": "第802集事件",
+"titleJp": "第802話事件",
+"manga": "Vol.161"
+},
+{
+"number": 803,
+"titleZh": "第803集事件",
+"titleJp": "第803話事件",
+"manga": "Vol.161"
+},
+{
+"number": 804,
+"titleZh": "第804集事件",
+"titleJp": "第804話事件",
+"manga": "Vol.161"
+},
+{
+"number": 805,
+"titleZh": "第805集事件",
+"titleJp": "第805話事件",
+"manga": "動畫原創"
+},
+{
+"number": 806,
+"titleZh": "第806集事件",
+"titleJp": "第806話事件",
+"manga": "Vol.162"
+},
+{
+"number": 807,
+"titleZh": "第807集事件",
+"titleJp": "第807話事件",
+"manga": "Vol.162"
+},
+{
+"number": 808,
+"titleZh": "第808集事件",
+"titleJp": "第808話事件",
+"manga": "Vol.162"
+},
+{
+"number": 809,
+"titleZh": "第809集事件",
+"titleJp": "第809話事件",
+"manga": "Vol.162"
+},
+{
+"number": 810,
+"titleZh": "第810集事件",
+"titleJp": "第810話事件",
+"manga": "Vol.163"
+},
+{
+"number": 811,
+"titleZh": "第811集事件",
+"titleJp": "第811話事件",
+"manga": "Vol.163"
+},
+{
+"number": 812,
+"titleZh": "第812集事件",
+"titleJp": "第812話事件",
+"manga": "動畫原創"
+},
+{
+"number": 813,
+"titleZh": "第813集事件",
+"titleJp": "第813話事件",
+"manga": "Vol.163"
+},
+{
+"number": 814,
+"titleZh": "第814集事件",
+"titleJp": "第814話事件",
+"manga": "Vol.163"
+},
+{
+"number": 815,
+"titleZh": "第815集事件",
+"titleJp": "第815話事件",
+"manga": "Vol.164"
+},
+{
+"number": 816,
+"titleZh": "第816集事件",
+"titleJp": "第816話事件",
+"manga": "Vol.164"
+},
+{
+"number": 817,
+"titleZh": "第817集事件",
+"titleJp": "第817話事件",
+"manga": "Vol.164"
+},
+{
+"number": 818,
+"titleZh": "第818集事件",
+"titleJp": "第818話事件",
+"manga": "Vol.164"
+},
+{
+"number": 819,
+"titleZh": "第819集事件",
+"titleJp": "第819話事件",
+"manga": "動畫原創"
+},
+{
+"number": 820,
+"titleZh": "第820集事件",
+"titleJp": "第820話事件",
+"manga": "Vol.165"
+},
+{
+"number": 821,
+"titleZh": "第821集事件",
+"titleJp": "第821話事件",
+"manga": "Vol.165"
+},
+{
+"number": 822,
+"titleZh": "第822集事件",
+"titleJp": "第822話事件",
+"manga": "Vol.165"
+},
+{
+"number": 823,
+"titleZh": "第823集事件",
+"titleJp": "第823話事件",
+"manga": "Vol.165"
+},
+{
+"number": 824,
+"titleZh": "第824集事件",
+"titleJp": "第824話事件",
+"manga": "Vol.165"
+},
+{
+"number": 825,
+"titleZh": "第825集事件",
+"titleJp": "第825話事件",
+"manga": "Vol.166"
+},
+{
+"number": 826,
+"titleZh": "第826集事件",
+"titleJp": "第826話事件",
+"manga": "動畫原創"
+},
+{
+"number": 827,
+"titleZh": "第827集事件",
+"titleJp": "第827話事件",
+"manga": "Vol.166"
+},
+{
+"number": 828,
+"titleZh": "第828集事件",
+"titleJp": "第828話事件",
+"manga": "Vol.166"
+},
+{
+"number": 829,
+"titleZh": "第829集事件",
+"titleJp": "第829話事件",
+"manga": "Vol.166"
+},
+{
+"number": 830,
+"titleZh": "第830集事件",
+"titleJp": "第830話事件",
+"manga": "Vol.167"
+},
+{
+"number": 831,
+"titleZh": "第831集事件",
+"titleJp": "第831話事件",
+"manga": "Vol.167"
+},
+{
+"number": 832,
+"titleZh": "第832集事件",
+"titleJp": "第832話事件",
+"manga": "Vol.167"
+},
+{
+"number": 833,
+"titleZh": "第833集事件",
+"titleJp": "第833話事件",
+"manga": "動畫原創"
+},
+{
+"number": 834,
+"titleZh": "第834集事件",
+"titleJp": "第834話事件",
+"manga": "Vol.167"
+},
+{
+"number": 835,
+"titleZh": "第835集事件",
+"titleJp": "第835話事件",
+"manga": "Vol.168"
+},
+{
+"number": 836,
+"titleZh": "第836集事件",
+"titleJp": "第836話事件",
+"manga": "Vol.168"
+},
+{
+"number": 837,
+"titleZh": "第837集事件",
+"titleJp": "第837話事件",
+"manga": "Vol.168"
+},
+{
+"number": 838,
+"titleZh": "第838集事件",
+"titleJp": "第838話事件",
+"manga": "Vol.168"
+},
+{
+"number": 839,
+"titleZh": "第839集事件",
+"titleJp": "第839話事件",
+"manga": "Vol.168"
+},
+{
+"number": 840,
+"titleZh": "第840集事件",
+"titleJp": "第840話事件",
+"manga": "動畫原創"
+},
+{
+"number": 841,
+"titleZh": "第841集事件",
+"titleJp": "第841話事件",
+"manga": "Vol.169"
+},
+{
+"number": 842,
+"titleZh": "第842集事件",
+"titleJp": "第842話事件",
+"manga": "Vol.169"
+},
+{
+"number": 843,
+"titleZh": "第843集事件",
+"titleJp": "第843話事件",
+"manga": "Vol.169"
+},
+{
+"number": 844,
+"titleZh": "第844集事件",
+"titleJp": "第844話事件",
+"manga": "Vol.169"
+},
+{
+"number": 845,
+"titleZh": "第845集事件",
+"titleJp": "第845話事件",
+"manga": "Vol.170"
+},
+{
+"number": 846,
+"titleZh": "第846集事件",
+"titleJp": "第846話事件",
+"manga": "Vol.170"
+},
+{
+"number": 847,
+"titleZh": "第847集事件",
+"titleJp": "第847話事件",
+"manga": "動畫原創"
+},
+{
+"number": 848,
+"titleZh": "第848集事件",
+"titleJp": "第848話事件",
+"manga": "Vol.170"
+},
+{
+"number": 849,
+"titleZh": "第849集事件",
+"titleJp": "第849話事件",
+"manga": "Vol.170"
+},
+{
+"number": 850,
+"titleZh": "第850集事件",
+"titleJp": "第850話事件",
+"manga": "Vol.171"
+},
+{
+"number": 851,
+"titleZh": "第851集事件",
+"titleJp": "第851話事件",
+"manga": "Vol.171"
+},
+{
+"number": 852,
+"titleZh": "第852集事件",
+"titleJp": "第852話事件",
+"manga": "Vol.171"
+},
+{
+"number": 853,
+"titleZh": "第853集事件",
+"titleJp": "第853話事件",
+"manga": "Vol.171"
+},
+{
+"number": 854,
+"titleZh": "第854集事件",
+"titleJp": "第854話事件",
+"manga": "動畫原創"
+},
+{
+"number": 855,
+"titleZh": "第855集事件",
+"titleJp": "第855話事件",
+"manga": "Vol.172"
+},
+{
+"number": 856,
+"titleZh": "第856集事件",
+"titleJp": "第856話事件",
+"manga": "Vol.172"
+},
+{
+"number": 857,
+"titleZh": "第857集事件",
+"titleJp": "第857話事件",
+"manga": "Vol.172"
+},
+{
+"number": 858,
+"titleZh": "第858集事件",
+"titleJp": "第858話事件",
+"manga": "Vol.172"
+},
+{
+"number": 859,
+"titleZh": "第859集事件",
+"titleJp": "第859話事件",
+"manga": "Vol.172"
+},
+{
+"number": 860,
+"titleZh": "第860集事件",
+"titleJp": "第860話事件",
+"manga": "Vol.173"
+},
+{
+"number": 861,
+"titleZh": "第861集事件",
+"titleJp": "第861話事件",
+"manga": "動畫原創"
+},
+{
+"number": 862,
+"titleZh": "第862集事件",
+"titleJp": "第862話事件",
+"manga": "Vol.173"
+},
+{
+"number": 863,
+"titleZh": "第863集事件",
+"titleJp": "第863話事件",
+"manga": "Vol.173"
+},
+{
+"number": 864,
+"titleZh": "第864集事件",
+"titleJp": "第864話事件",
+"manga": "Vol.173"
+},
+{
+"number": 865,
+"titleZh": "第865集事件",
+"titleJp": "第865話事件",
+"manga": "Vol.174"
+},
+{
+"number": 866,
+"titleZh": "第866集事件",
+"titleJp": "第866話事件",
+"manga": "Vol.174"
+},
+{
+"number": 867,
+"titleZh": "第867集事件",
+"titleJp": "第867話事件",
+"manga": "Vol.174"
+},
+{
+"number": 868,
+"titleZh": "第868集事件",
+"titleJp": "第868話事件",
+"manga": "動畫原創"
+},
+{
+"number": 869,
+"titleZh": "第869集事件",
+"titleJp": "第869話事件",
+"manga": "Vol.174"
+},
+{
+"number": 870,
+"titleZh": "第870集事件",
+"titleJp": "第870話事件",
+"manga": "Vol.175"
+},
+{
+"number": 871,
+"titleZh": "第871集事件",
+"titleJp": "第871話事件",
+"manga": "Vol.175"
+},
+{
+"number": 872,
+"titleZh": "第872集事件",
+"titleJp": "第872話事件",
+"manga": "Vol.175"
+},
+{
+"number": 873,
+"titleZh": "第873集事件",
+"titleJp": "第873話事件",
+"manga": "Vol.175"
+},
+{
+"number": 874,
+"titleZh": "第874集事件",
+"titleJp": "第874話事件",
+"manga": "Vol.175"
+},
+{
+"number": 875,
+"titleZh": "第875集事件",
+"titleJp": "第875話事件",
+"manga": "動畫原創"
+},
+{
+"number": 876,
+"titleZh": "第876集事件",
+"titleJp": "第876話事件",
+"manga": "Vol.176"
+},
+{
+"number": 877,
+"titleZh": "第877集事件",
+"titleJp": "第877話事件",
+"manga": "Vol.176"
+},
+{
+"number": 878,
+"titleZh": "第878集事件",
+"titleJp": "第878話事件",
+"manga": "Vol.176"
+},
+{
+"number": 879,
+"titleZh": "第879集事件",
+"titleJp": "第879話事件",
+"manga": "Vol.176"
+},
+{
+"number": 880,
+"titleZh": "第880集事件",
+"titleJp": "第880話事件",
+"manga": "Vol.177"
+},
+{
+"number": 881,
+"titleZh": "第881集事件",
+"titleJp": "第881話事件",
+"manga": "Vol.177"
+},
+{
+"number": 882,
+"titleZh": "第882集事件",
+"titleJp": "第882話事件",
+"manga": "動畫原創"
+},
+{
+"number": 883,
+"titleZh": "第883集事件",
+"titleJp": "第883話事件",
+"manga": "Vol.177"
+},
+{
+"number": 884,
+"titleZh": "第884集事件",
+"titleJp": "第884話事件",
+"manga": "Vol.177"
+},
+{
+"number": 885,
+"titleZh": "第885集事件",
+"titleJp": "第885話事件",
+"manga": "Vol.178"
+},
+{
+"number": 886,
+"titleZh": "第886集事件",
+"titleJp": "第886話事件",
+"manga": "Vol.178"
+},
+{
+"number": 887,
+"titleZh": "第887集事件",
+"titleJp": "第887話事件",
+"manga": "Vol.178"
+},
+{
+"number": 888,
+"titleZh": "第888集事件",
+"titleJp": "第888話事件",
+"manga": "Vol.178"
+},
+{
+"number": 889,
+"titleZh": "第889集事件",
+"titleJp": "第889話事件",
+"manga": "動畫原創"
+},
+{
+"number": 890,
+"titleZh": "第890集事件",
+"titleJp": "第890話事件",
+"manga": "Vol.179"
+},
+{
+"number": 891,
+"titleZh": "第891集事件",
+"titleJp": "第891話事件",
+"manga": "Vol.179"
+},
+{
+"number": 892,
+"titleZh": "第892集事件",
+"titleJp": "第892話事件",
+"manga": "Vol.179"
+},
+{
+"number": 893,
+"titleZh": "第893集事件",
+"titleJp": "第893話事件",
+"manga": "Vol.179"
+},
+{
+"number": 894,
+"titleZh": "第894集事件",
+"titleJp": "第894話事件",
+"manga": "Vol.179"
+},
+{
+"number": 895,
+"titleZh": "第895集事件",
+"titleJp": "第895話事件",
+"manga": "Vol.180"
+},
+{
+"number": 896,
+"titleZh": "第896集事件",
+"titleJp": "第896話事件",
+"manga": "動畫原創"
+},
+{
+"number": 897,
+"titleZh": "第897集事件",
+"titleJp": "第897話事件",
+"manga": "Vol.180"
+},
+{
+"number": 898,
+"titleZh": "第898集事件",
+"titleJp": "第898話事件",
+"manga": "Vol.180"
+},
+{
+"number": 899,
+"titleZh": "第899集事件",
+"titleJp": "第899話事件",
+"manga": "Vol.180"
+},
+{
+"number": 900,
+"titleZh": "第900集事件",
+"titleJp": "第900話事件",
+"manga": "Vol.181"
+},
+{
+"number": 901,
+"titleZh": "第901集事件",
+"titleJp": "第901話事件",
+"manga": "Vol.181"
+},
+{
+"number": 902,
+"titleZh": "第902集事件",
+"titleJp": "第902話事件",
+"manga": "Vol.181"
+},
+{
+"number": 903,
+"titleZh": "第903集事件",
+"titleJp": "第903話事件",
+"manga": "動畫原創"
+},
+{
+"number": 904,
+"titleZh": "第904集事件",
+"titleJp": "第904話事件",
+"manga": "Vol.181"
+},
+{
+"number": 905,
+"titleZh": "第905集事件",
+"titleJp": "第905話事件",
+"manga": "Vol.182"
+},
+{
+"number": 906,
+"titleZh": "第906集事件",
+"titleJp": "第906話事件",
+"manga": "Vol.182"
+},
+{
+"number": 907,
+"titleZh": "第907集事件",
+"titleJp": "第907話事件",
+"manga": "Vol.182"
+},
+{
+"number": 908,
+"titleZh": "第908集事件",
+"titleJp": "第908話事件",
+"manga": "Vol.182"
+},
+{
+"number": 909,
+"titleZh": "第909集事件",
+"titleJp": "第909話事件",
+"manga": "Vol.182"
+},
+{
+"number": 910,
+"titleZh": "第910集事件",
+"titleJp": "第910話事件",
+"manga": "動畫原創"
+},
+{
+"number": 911,
+"titleZh": "第911集事件",
+"titleJp": "第911話事件",
+"manga": "Vol.183"
+},
+{
+"number": 912,
+"titleZh": "第912集事件",
+"titleJp": "第912話事件",
+"manga": "Vol.183"
+},
+{
+"number": 913,
+"titleZh": "第913集事件",
+"titleJp": "第913話事件",
+"manga": "Vol.183"
+},
+{
+"number": 914,
+"titleZh": "第914集事件",
+"titleJp": "第914話事件",
+"manga": "Vol.183"
+},
+{
+"number": 915,
+"titleZh": "第915集事件",
+"titleJp": "第915話事件",
+"manga": "Vol.184"
+},
+{
+"number": 916,
+"titleZh": "第916集事件",
+"titleJp": "第916話事件",
+"manga": "Vol.184"
+},
+{
+"number": 917,
+"titleZh": "第917集事件",
+"titleJp": "第917話事件",
+"manga": "動畫原創"
+},
+{
+"number": 918,
+"titleZh": "第918集事件",
+"titleJp": "第918話事件",
+"manga": "Vol.184"
+},
+{
+"number": 919,
+"titleZh": "第919集事件",
+"titleJp": "第919話事件",
+"manga": "Vol.184"
+},
+{
+"number": 920,
+"titleZh": "第920集事件",
+"titleJp": "第920話事件",
+"manga": "Vol.185"
+},
+{
+"number": 921,
+"titleZh": "第921集事件",
+"titleJp": "第921話事件",
+"manga": "Vol.185"
+},
+{
+"number": 922,
+"titleZh": "第922集事件",
+"titleJp": "第922話事件",
+"manga": "Vol.185"
+},
+{
+"number": 923,
+"titleZh": "第923集事件",
+"titleJp": "第923話事件",
+"manga": "Vol.185"
+},
+{
+"number": 924,
+"titleZh": "第924集事件",
+"titleJp": "第924話事件",
+"manga": "動畫原創"
+},
+{
+"number": 925,
+"titleZh": "第925集事件",
+"titleJp": "第925話事件",
+"manga": "Vol.186"
+},
+{
+"number": 926,
+"titleZh": "第926集事件",
+"titleJp": "第926話事件",
+"manga": "Vol.186"
+},
+{
+"number": 927,
+"titleZh": "第927集事件",
+"titleJp": "第927話事件",
+"manga": "Vol.186"
+},
+{
+"number": 928,
+"titleZh": "第928集事件",
+"titleJp": "第928話事件",
+"manga": "Vol.186"
+},
+{
+"number": 929,
+"titleZh": "第929集事件",
+"titleJp": "第929話事件",
+"manga": "Vol.186"
+},
+{
+"number": 930,
+"titleZh": "第930集事件",
+"titleJp": "第930話事件",
+"manga": "Vol.187"
+},
+{
+"number": 931,
+"titleZh": "第931集事件",
+"titleJp": "第931話事件",
+"manga": "動畫原創"
+},
+{
+"number": 932,
+"titleZh": "第932集事件",
+"titleJp": "第932話事件",
+"manga": "Vol.187"
+},
+{
+"number": 933,
+"titleZh": "第933集事件",
+"titleJp": "第933話事件",
+"manga": "Vol.187"
+},
+{
+"number": 934,
+"titleZh": "第934集事件",
+"titleJp": "第934話事件",
+"manga": "Vol.187"
+},
+{
+"number": 935,
+"titleZh": "第935集事件",
+"titleJp": "第935話事件",
+"manga": "Vol.188"
+},
+{
+"number": 936,
+"titleZh": "第936集事件",
+"titleJp": "第936話事件",
+"manga": "Vol.188"
+},
+{
+"number": 937,
+"titleZh": "第937集事件",
+"titleJp": "第937話事件",
+"manga": "Vol.188"
+},
+{
+"number": 938,
+"titleZh": "第938集事件",
+"titleJp": "第938話事件",
+"manga": "動畫原創"
+},
+{
+"number": 939,
+"titleZh": "第939集事件",
+"titleJp": "第939話事件",
+"manga": "Vol.188"
+},
+{
+"number": 940,
+"titleZh": "第940集事件",
+"titleJp": "第940話事件",
+"manga": "Vol.189"
+},
+{
+"number": 941,
+"titleZh": "第941集事件",
+"titleJp": "第941話事件",
+"manga": "Vol.189"
+},
+{
+"number": 942,
+"titleZh": "第942集事件",
+"titleJp": "第942話事件",
+"manga": "Vol.189"
+},
+{
+"number": 943,
+"titleZh": "第943集事件",
+"titleJp": "第943話事件",
+"manga": "Vol.189"
+},
+{
+"number": 944,
+"titleZh": "第944集事件",
+"titleJp": "第944話事件",
+"manga": "Vol.189"
+},
+{
+"number": 945,
+"titleZh": "第945集事件",
+"titleJp": "第945話事件",
+"manga": "動畫原創"
+},
+{
+"number": 946,
+"titleZh": "第946集事件",
+"titleJp": "第946話事件",
+"manga": "Vol.190"
+},
+{
+"number": 947,
+"titleZh": "第947集事件",
+"titleJp": "第947話事件",
+"manga": "Vol.190"
+},
+{
+"number": 948,
+"titleZh": "第948集事件",
+"titleJp": "第948話事件",
+"manga": "Vol.190"
+},
+{
+"number": 949,
+"titleZh": "第949集事件",
+"titleJp": "第949話事件",
+"manga": "Vol.190"
+},
+{
+"number": 950,
+"titleZh": "第950集事件",
+"titleJp": "第950話事件",
+"manga": "Vol.191"
+},
+{
+"number": 951,
+"titleZh": "第951集事件",
+"titleJp": "第951話事件",
+"manga": "Vol.191"
+},
+{
+"number": 952,
+"titleZh": "第952集事件",
+"titleJp": "第952話事件",
+"manga": "動畫原創"
+},
+{
+"number": 953,
+"titleZh": "第953集事件",
+"titleJp": "第953話事件",
+"manga": "Vol.191"
+},
+{
+"number": 954,
+"titleZh": "第954集事件",
+"titleJp": "第954話事件",
+"manga": "Vol.191"
+},
+{
+"number": 955,
+"titleZh": "第955集事件",
+"titleJp": "第955話事件",
+"manga": "Vol.192"
+},
+{
+"number": 956,
+"titleZh": "第956集事件",
+"titleJp": "第956話事件",
+"manga": "Vol.192"
+},
+{
+"number": 957,
+"titleZh": "第957集事件",
+"titleJp": "第957話事件",
+"manga": "Vol.192"
+},
+{
+"number": 958,
+"titleZh": "第958集事件",
+"titleJp": "第958話事件",
+"manga": "Vol.192"
+},
+{
+"number": 959,
+"titleZh": "第959集事件",
+"titleJp": "第959話事件",
+"manga": "動畫原創"
+},
+{
+"number": 960,
+"titleZh": "第960集事件",
+"titleJp": "第960話事件",
+"manga": "Vol.193"
+},
+{
+"number": 961,
+"titleZh": "第961集事件",
+"titleJp": "第961話事件",
+"manga": "Vol.193"
+},
+{
+"number": 962,
+"titleZh": "第962集事件",
+"titleJp": "第962話事件",
+"manga": "Vol.193"
+},
+{
+"number": 963,
+"titleZh": "第963集事件",
+"titleJp": "第963話事件",
+"manga": "Vol.193"
+},
+{
+"number": 964,
+"titleZh": "第964集事件",
+"titleJp": "第964話事件",
+"manga": "Vol.193"
+},
+{
+"number": 965,
+"titleZh": "第965集事件",
+"titleJp": "第965話事件",
+"manga": "Vol.194"
+},
+{
+"number": 966,
+"titleZh": "第966集事件",
+"titleJp": "第966話事件",
+"manga": "動畫原創"
+},
+{
+"number": 967,
+"titleZh": "第967集事件",
+"titleJp": "第967話事件",
+"manga": "Vol.194"
+},
+{
+"number": 968,
+"titleZh": "第968集事件",
+"titleJp": "第968話事件",
+"manga": "Vol.194"
+},
+{
+"number": 969,
+"titleZh": "第969集事件",
+"titleJp": "第969話事件",
+"manga": "Vol.194"
+},
+{
+"number": 970,
+"titleZh": "第970集事件",
+"titleJp": "第970話事件",
+"manga": "Vol.195"
+},
+{
+"number": 971,
+"titleZh": "第971集事件",
+"titleJp": "第971話事件",
+"manga": "Vol.195"
+},
+{
+"number": 972,
+"titleZh": "第972集事件",
+"titleJp": "第972話事件",
+"manga": "Vol.195"
+},
+{
+"number": 973,
+"titleZh": "第973集事件",
+"titleJp": "第973話事件",
+"manga": "動畫原創"
+},
+{
+"number": 974,
+"titleZh": "第974集事件",
+"titleJp": "第974話事件",
+"manga": "Vol.195"
+},
+{
+"number": 975,
+"titleZh": "第975集事件",
+"titleJp": "第975話事件",
+"manga": "Vol.196"
+},
+{
+"number": 976,
+"titleZh": "第976集事件",
+"titleJp": "第976話事件",
+"manga": "Vol.196"
+},
+{
+"number": 977,
+"titleZh": "第977集事件",
+"titleJp": "第977話事件",
+"manga": "Vol.196"
+},
+{
+"number": 978,
+"titleZh": "第978集事件",
+"titleJp": "第978話事件",
+"manga": "Vol.196"
+},
+{
+"number": 979,
+"titleZh": "第979集事件",
+"titleJp": "第979話事件",
+"manga": "Vol.196"
+},
+{
+"number": 980,
+"titleZh": "第980集事件",
+"titleJp": "第980話事件",
+"manga": "動畫原創"
+},
+{
+"number": 981,
+"titleZh": "第981集事件",
+"titleJp": "第981話事件",
+"manga": "Vol.197"
+},
+{
+"number": 982,
+"titleZh": "第982集事件",
+"titleJp": "第982話事件",
+"manga": "Vol.197"
+},
+{
+"number": 983,
+"titleZh": "第983集事件",
+"titleJp": "第983話事件",
+"manga": "Vol.197"
+},
+{
+"number": 984,
+"titleZh": "第984集事件",
+"titleJp": "第984話事件",
+"manga": "Vol.197"
+},
+{
+"number": 985,
+"titleZh": "第985集事件",
+"titleJp": "第985話事件",
+"manga": "Vol.198"
+},
+{
+"number": 986,
+"titleZh": "第986集事件",
+"titleJp": "第986話事件",
+"manga": "Vol.198"
+},
+{
+"number": 987,
+"titleZh": "第987集事件",
+"titleJp": "第987話事件",
+"manga": "動畫原創"
+},
+{
+"number": 988,
+"titleZh": "第988集事件",
+"titleJp": "第988話事件",
+"manga": "Vol.198"
+},
+{
+"number": 989,
+"titleZh": "第989集事件",
+"titleJp": "第989話事件",
+"manga": "Vol.198"
+},
+{
+"number": 990,
+"titleZh": "第990集事件",
+"titleJp": "第990話事件",
+"manga": "Vol.199"
+},
+{
+"number": 991,
+"titleZh": "第991集事件",
+"titleJp": "第991話事件",
+"manga": "Vol.199"
+},
+{
+"number": 992,
+"titleZh": "第992集事件",
+"titleJp": "第992話事件",
+"manga": "Vol.199"
+},
+{
+"number": 993,
+"titleZh": "第993集事件",
+"titleJp": "第993話事件",
+"manga": "Vol.199"
+},
+{
+"number": 994,
+"titleZh": "第994集事件",
+"titleJp": "第994話事件",
+"manga": "動畫原創"
+},
+{
+"number": 995,
+"titleZh": "第995集事件",
+"titleJp": "第995話事件",
+"manga": "Vol.200"
+},
+{
+"number": 996,
+"titleZh": "第996集事件",
+"titleJp": "第996話事件",
+"manga": "Vol.200"
+},
+{
+"number": 997,
+"titleZh": "第997集事件",
+"titleJp": "第997話事件",
+"manga": "Vol.200"
+},
+{
+"number": 998,
+"titleZh": "第998集事件",
+"titleJp": "第998話事件",
+"manga": "Vol.200"
+},
+{
+"number": 999,
+"titleZh": "第999集事件",
+"titleJp": "第999話事件",
+"manga": "Vol.200"
+},
+{
+"number": 1000,
+"titleZh": "第1000集事件",
+"titleJp": "第1000話事件",
+"manga": "Vol.201"
+},
+{
+"number": 1001,
+"titleZh": "第1001集事件",
+"titleJp": "第1001話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1002,
+"titleZh": "第1002集事件",
+"titleJp": "第1002話事件",
+"manga": "Vol.201"
+},
+{
+"number": 1003,
+"titleZh": "第1003集事件",
+"titleJp": "第1003話事件",
+"manga": "Vol.201"
+},
+{
+"number": 1004,
+"titleZh": "第1004集事件",
+"titleJp": "第1004話事件",
+"manga": "Vol.201"
+},
+{
+"number": 1005,
+"titleZh": "第1005集事件",
+"titleJp": "第1005話事件",
+"manga": "Vol.202"
+},
+{
+"number": 1006,
+"titleZh": "第1006集事件",
+"titleJp": "第1006話事件",
+"manga": "Vol.202"
+},
+{
+"number": 1007,
+"titleZh": "第1007集事件",
+"titleJp": "第1007話事件",
+"manga": "Vol.202"
+},
+{
+"number": 1008,
+"titleZh": "第1008集事件",
+"titleJp": "第1008話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1009,
+"titleZh": "第1009集事件",
+"titleJp": "第1009話事件",
+"manga": "Vol.202"
+},
+{
+"number": 1010,
+"titleZh": "第1010集事件",
+"titleJp": "第1010話事件",
+"manga": "Vol.203"
+},
+{
+"number": 1011,
+"titleZh": "第1011集事件",
+"titleJp": "第1011話事件",
+"manga": "Vol.203"
+},
+{
+"number": 1012,
+"titleZh": "第1012集事件",
+"titleJp": "第1012話事件",
+"manga": "Vol.203"
+},
+{
+"number": 1013,
+"titleZh": "第1013集事件",
+"titleJp": "第1013話事件",
+"manga": "Vol.203"
+},
+{
+"number": 1014,
+"titleZh": "第1014集事件",
+"titleJp": "第1014話事件",
+"manga": "Vol.203"
+},
+{
+"number": 1015,
+"titleZh": "第1015集事件",
+"titleJp": "第1015話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1016,
+"titleZh": "第1016集事件",
+"titleJp": "第1016話事件",
+"manga": "Vol.204"
+},
+{
+"number": 1017,
+"titleZh": "第1017集事件",
+"titleJp": "第1017話事件",
+"manga": "Vol.204"
+},
+{
+"number": 1018,
+"titleZh": "第1018集事件",
+"titleJp": "第1018話事件",
+"manga": "Vol.204"
+},
+{
+"number": 1019,
+"titleZh": "第1019集事件",
+"titleJp": "第1019話事件",
+"manga": "Vol.204"
+},
+{
+"number": 1020,
+"titleZh": "第1020集事件",
+"titleJp": "第1020話事件",
+"manga": "Vol.205"
+},
+{
+"number": 1021,
+"titleZh": "第1021集事件",
+"titleJp": "第1021話事件",
+"manga": "Vol.205"
+},
+{
+"number": 1022,
+"titleZh": "第1022集事件",
+"titleJp": "第1022話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1023,
+"titleZh": "第1023集事件",
+"titleJp": "第1023話事件",
+"manga": "Vol.205"
+},
+{
+"number": 1024,
+"titleZh": "第1024集事件",
+"titleJp": "第1024話事件",
+"manga": "Vol.205"
+},
+{
+"number": 1025,
+"titleZh": "第1025集事件",
+"titleJp": "第1025話事件",
+"manga": "Vol.206"
+},
+{
+"number": 1026,
+"titleZh": "第1026集事件",
+"titleJp": "第1026話事件",
+"manga": "Vol.206"
+},
+{
+"number": 1027,
+"titleZh": "第1027集事件",
+"titleJp": "第1027話事件",
+"manga": "Vol.206"
+},
+{
+"number": 1028,
+"titleZh": "第1028集事件",
+"titleJp": "第1028話事件",
+"manga": "Vol.206"
+},
+{
+"number": 1029,
+"titleZh": "第1029集事件",
+"titleJp": "第1029話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1030,
+"titleZh": "第1030集事件",
+"titleJp": "第1030話事件",
+"manga": "Vol.207"
+},
+{
+"number": 1031,
+"titleZh": "第1031集事件",
+"titleJp": "第1031話事件",
+"manga": "Vol.207"
+},
+{
+"number": 1032,
+"titleZh": "第1032集事件",
+"titleJp": "第1032話事件",
+"manga": "Vol.207"
+},
+{
+"number": 1033,
+"titleZh": "第1033集事件",
+"titleJp": "第1033話事件",
+"manga": "Vol.207"
+},
+{
+"number": 1034,
+"titleZh": "第1034集事件",
+"titleJp": "第1034話事件",
+"manga": "Vol.207"
+},
+{
+"number": 1035,
+"titleZh": "第1035集事件",
+"titleJp": "第1035話事件",
+"manga": "Vol.208"
+},
+{
+"number": 1036,
+"titleZh": "第1036集事件",
+"titleJp": "第1036話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1037,
+"titleZh": "第1037集事件",
+"titleJp": "第1037話事件",
+"manga": "Vol.208"
+},
+{
+"number": 1038,
+"titleZh": "第1038集事件",
+"titleJp": "第1038話事件",
+"manga": "Vol.208"
+},
+{
+"number": 1039,
+"titleZh": "第1039集事件",
+"titleJp": "第1039話事件",
+"manga": "Vol.208"
+},
+{
+"number": 1040,
+"titleZh": "第1040集事件",
+"titleJp": "第1040話事件",
+"manga": "Vol.209"
+},
+{
+"number": 1041,
+"titleZh": "第1041集事件",
+"titleJp": "第1041話事件",
+"manga": "Vol.209"
+},
+{
+"number": 1042,
+"titleZh": "第1042集事件",
+"titleJp": "第1042話事件",
+"manga": "Vol.209"
+},
+{
+"number": 1043,
+"titleZh": "第1043集事件",
+"titleJp": "第1043話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1044,
+"titleZh": "第1044集事件",
+"titleJp": "第1044話事件",
+"manga": "Vol.209"
+},
+{
+"number": 1045,
+"titleZh": "第1045集事件",
+"titleJp": "第1045話事件",
+"manga": "Vol.210"
+},
+{
+"number": 1046,
+"titleZh": "第1046集事件",
+"titleJp": "第1046話事件",
+"manga": "Vol.210"
+},
+{
+"number": 1047,
+"titleZh": "第1047集事件",
+"titleJp": "第1047話事件",
+"manga": "Vol.210"
+},
+{
+"number": 1048,
+"titleZh": "第1048集事件",
+"titleJp": "第1048話事件",
+"manga": "Vol.210"
+},
+{
+"number": 1049,
+"titleZh": "第1049集事件",
+"titleJp": "第1049話事件",
+"manga": "Vol.210"
+},
+{
+"number": 1050,
+"titleZh": "第1050集事件",
+"titleJp": "第1050話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1051,
+"titleZh": "第1051集事件",
+"titleJp": "第1051話事件",
+"manga": "Vol.211"
+},
+{
+"number": 1052,
+"titleZh": "第1052集事件",
+"titleJp": "第1052話事件",
+"manga": "Vol.211"
+},
+{
+"number": 1053,
+"titleZh": "第1053集事件",
+"titleJp": "第1053話事件",
+"manga": "Vol.211"
+},
+{
+"number": 1054,
+"titleZh": "第1054集事件",
+"titleJp": "第1054話事件",
+"manga": "Vol.211"
+},
+{
+"number": 1055,
+"titleZh": "第1055集事件",
+"titleJp": "第1055話事件",
+"manga": "Vol.212"
+},
+{
+"number": 1056,
+"titleZh": "第1056集事件",
+"titleJp": "第1056話事件",
+"manga": "Vol.212"
+},
+{
+"number": 1057,
+"titleZh": "第1057集事件",
+"titleJp": "第1057話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1058,
+"titleZh": "第1058集事件",
+"titleJp": "第1058話事件",
+"manga": "Vol.212"
+},
+{
+"number": 1059,
+"titleZh": "第1059集事件",
+"titleJp": "第1059話事件",
+"manga": "Vol.212"
+},
+{
+"number": 1060,
+"titleZh": "第1060集事件",
+"titleJp": "第1060話事件",
+"manga": "Vol.213"
+},
+{
+"number": 1061,
+"titleZh": "第1061集事件",
+"titleJp": "第1061話事件",
+"manga": "Vol.213"
+},
+{
+"number": 1062,
+"titleZh": "第1062集事件",
+"titleJp": "第1062話事件",
+"manga": "Vol.213"
+},
+{
+"number": 1063,
+"titleZh": "第1063集事件",
+"titleJp": "第1063話事件",
+"manga": "Vol.213"
+},
+{
+"number": 1064,
+"titleZh": "第1064集事件",
+"titleJp": "第1064話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1065,
+"titleZh": "第1065集事件",
+"titleJp": "第1065話事件",
+"manga": "Vol.214"
+},
+{
+"number": 1066,
+"titleZh": "第1066集事件",
+"titleJp": "第1066話事件",
+"manga": "Vol.214"
+},
+{
+"number": 1067,
+"titleZh": "第1067集事件",
+"titleJp": "第1067話事件",
+"manga": "Vol.214"
+},
+{
+"number": 1068,
+"titleZh": "第1068集事件",
+"titleJp": "第1068話事件",
+"manga": "Vol.214"
+},
+{
+"number": 1069,
+"titleZh": "第1069集事件",
+"titleJp": "第1069話事件",
+"manga": "Vol.214"
+},
+{
+"number": 1070,
+"titleZh": "第1070集事件",
+"titleJp": "第1070話事件",
+"manga": "Vol.215"
+},
+{
+"number": 1071,
+"titleZh": "第1071集事件",
+"titleJp": "第1071話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1072,
+"titleZh": "第1072集事件",
+"titleJp": "第1072話事件",
+"manga": "Vol.215"
+},
+{
+"number": 1073,
+"titleZh": "第1073集事件",
+"titleJp": "第1073話事件",
+"manga": "Vol.215"
+},
+{
+"number": 1074,
+"titleZh": "第1074集事件",
+"titleJp": "第1074話事件",
+"manga": "Vol.215"
+},
+{
+"number": 1075,
+"titleZh": "第1075集事件",
+"titleJp": "第1075話事件",
+"manga": "Vol.216"
+},
+{
+"number": 1076,
+"titleZh": "第1076集事件",
+"titleJp": "第1076話事件",
+"manga": "Vol.216"
+},
+{
+"number": 1077,
+"titleZh": "第1077集事件",
+"titleJp": "第1077話事件",
+"manga": "Vol.216"
+},
+{
+"number": 1078,
+"titleZh": "第1078集事件",
+"titleJp": "第1078話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1079,
+"titleZh": "第1079集事件",
+"titleJp": "第1079話事件",
+"manga": "Vol.216"
+},
+{
+"number": 1080,
+"titleZh": "第1080集事件",
+"titleJp": "第1080話事件",
+"manga": "Vol.217"
+},
+{
+"number": 1081,
+"titleZh": "第1081集事件",
+"titleJp": "第1081話事件",
+"manga": "Vol.217"
+},
+{
+"number": 1082,
+"titleZh": "第1082集事件",
+"titleJp": "第1082話事件",
+"manga": "Vol.217"
+},
+{
+"number": 1083,
+"titleZh": "第1083集事件",
+"titleJp": "第1083話事件",
+"manga": "Vol.217"
+},
+{
+"number": 1084,
+"titleZh": "第1084集事件",
+"titleJp": "第1084話事件",
+"manga": "Vol.217"
+},
+{
+"number": 1085,
+"titleZh": "第1085集事件",
+"titleJp": "第1085話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1086,
+"titleZh": "第1086集事件",
+"titleJp": "第1086話事件",
+"manga": "Vol.218"
+},
+{
+"number": 1087,
+"titleZh": "第1087集事件",
+"titleJp": "第1087話事件",
+"manga": "Vol.218"
+},
+{
+"number": 1088,
+"titleZh": "第1088集事件",
+"titleJp": "第1088話事件",
+"manga": "Vol.218"
+},
+{
+"number": 1089,
+"titleZh": "第1089集事件",
+"titleJp": "第1089話事件",
+"manga": "Vol.218"
+},
+{
+"number": 1090,
+"titleZh": "第1090集事件",
+"titleJp": "第1090話事件",
+"manga": "Vol.219"
+},
+{
+"number": 1091,
+"titleZh": "第1091集事件",
+"titleJp": "第1091話事件",
+"manga": "Vol.219"
+},
+{
+"number": 1092,
+"titleZh": "第1092集事件",
+"titleJp": "第1092話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1093,
+"titleZh": "第1093集事件",
+"titleJp": "第1093話事件",
+"manga": "Vol.219"
+},
+{
+"number": 1094,
+"titleZh": "第1094集事件",
+"titleJp": "第1094話事件",
+"manga": "Vol.219"
+},
+{
+"number": 1095,
+"titleZh": "第1095集事件",
+"titleJp": "第1095話事件",
+"manga": "Vol.220"
+},
+{
+"number": 1096,
+"titleZh": "第1096集事件",
+"titleJp": "第1096話事件",
+"manga": "Vol.220"
+},
+{
+"number": 1097,
+"titleZh": "第1097集事件",
+"titleJp": "第1097話事件",
+"manga": "Vol.220"
+},
+{
+"number": 1098,
+"titleZh": "第1098集事件",
+"titleJp": "第1098話事件",
+"manga": "Vol.220"
+},
+{
+"number": 1099,
+"titleZh": "第1099集事件",
+"titleJp": "第1099話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1100,
+"titleZh": "第1100集事件",
+"titleJp": "第1100話事件",
+"manga": "Vol.221"
+},
+{
+"number": 1101,
+"titleZh": "第1101集事件",
+"titleJp": "第1101話事件",
+"manga": "Vol.221"
+},
+{
+"number": 1102,
+"titleZh": "第1102集事件",
+"titleJp": "第1102話事件",
+"manga": "Vol.221"
+},
+{
+"number": 1103,
+"titleZh": "第1103集事件",
+"titleJp": "第1103話事件",
+"manga": "Vol.221"
+},
+{
+"number": 1104,
+"titleZh": "第1104集事件",
+"titleJp": "第1104話事件",
+"manga": "Vol.221"
+},
+{
+"number": 1105,
+"titleZh": "第1105集事件",
+"titleJp": "第1105話事件",
+"manga": "Vol.222"
+},
+{
+"number": 1106,
+"titleZh": "第1106集事件",
+"titleJp": "第1106話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1107,
+"titleZh": "第1107集事件",
+"titleJp": "第1107話事件",
+"manga": "Vol.222"
+},
+{
+"number": 1108,
+"titleZh": "第1108集事件",
+"titleJp": "第1108話事件",
+"manga": "Vol.222"
+},
+{
+"number": 1109,
+"titleZh": "第1109集事件",
+"titleJp": "第1109話事件",
+"manga": "Vol.222"
+},
+{
+"number": 1110,
+"titleZh": "第1110集事件",
+"titleJp": "第1110話事件",
+"manga": "Vol.223"
+},
+{
+"number": 1111,
+"titleZh": "第1111集事件",
+"titleJp": "第1111話事件",
+"manga": "Vol.223"
+},
+{
+"number": 1112,
+"titleZh": "第1112集事件",
+"titleJp": "第1112話事件",
+"manga": "Vol.223"
+},
+{
+"number": 1113,
+"titleZh": "第1113集事件",
+"titleJp": "第1113話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1114,
+"titleZh": "第1114集事件",
+"titleJp": "第1114話事件",
+"manga": "Vol.223"
+},
+{
+"number": 1115,
+"titleZh": "第1115集事件",
+"titleJp": "第1115話事件",
+"manga": "Vol.224"
+},
+{
+"number": 1116,
+"titleZh": "第1116集事件",
+"titleJp": "第1116話事件",
+"manga": "Vol.224"
+},
+{
+"number": 1117,
+"titleZh": "第1117集事件",
+"titleJp": "第1117話事件",
+"manga": "Vol.224"
+},
+{
+"number": 1118,
+"titleZh": "第1118集事件",
+"titleJp": "第1118話事件",
+"manga": "Vol.224"
+},
+{
+"number": 1119,
+"titleZh": "第1119集事件",
+"titleJp": "第1119話事件",
+"manga": "Vol.224"
+},
+{
+"number": 1120,
+"titleZh": "第1120集事件",
+"titleJp": "第1120話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1121,
+"titleZh": "第1121集事件",
+"titleJp": "第1121話事件",
+"manga": "Vol.225"
+},
+{
+"number": 1122,
+"titleZh": "第1122集事件",
+"titleJp": "第1122話事件",
+"manga": "Vol.225"
+},
+{
+"number": 1123,
+"titleZh": "第1123集事件",
+"titleJp": "第1123話事件",
+"manga": "Vol.225"
+},
+{
+"number": 1124,
+"titleZh": "第1124集事件",
+"titleJp": "第1124話事件",
+"manga": "Vol.225"
+},
+{
+"number": 1125,
+"titleZh": "第1125集事件",
+"titleJp": "第1125話事件",
+"manga": "Vol.226"
+},
+{
+"number": 1126,
+"titleZh": "第1126集事件",
+"titleJp": "第1126話事件",
+"manga": "Vol.226"
+},
+{
+"number": 1127,
+"titleZh": "第1127集事件",
+"titleJp": "第1127話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1128,
+"titleZh": "第1128集事件",
+"titleJp": "第1128話事件",
+"manga": "Vol.226"
+},
+{
+"number": 1129,
+"titleZh": "第1129集事件",
+"titleJp": "第1129話事件",
+"manga": "Vol.226"
+},
+{
+"number": 1130,
+"titleZh": "第1130集事件",
+"titleJp": "第1130話事件",
+"manga": "Vol.227"
+},
+{
+"number": 1131,
+"titleZh": "第1131集事件",
+"titleJp": "第1131話事件",
+"manga": "Vol.227"
+},
+{
+"number": 1132,
+"titleZh": "第1132集事件",
+"titleJp": "第1132話事件",
+"manga": "Vol.227"
+},
+{
+"number": 1133,
+"titleZh": "第1133集事件",
+"titleJp": "第1133話事件",
+"manga": "Vol.227"
+},
+{
+"number": 1134,
+"titleZh": "第1134集事件",
+"titleJp": "第1134話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1135,
+"titleZh": "第1135集事件",
+"titleJp": "第1135話事件",
+"manga": "Vol.228"
+},
+{
+"number": 1136,
+"titleZh": "第1136集事件",
+"titleJp": "第1136話事件",
+"manga": "Vol.228"
+},
+{
+"number": 1137,
+"titleZh": "第1137集事件",
+"titleJp": "第1137話事件",
+"manga": "Vol.228"
+},
+{
+"number": 1138,
+"titleZh": "第1138集事件",
+"titleJp": "第1138話事件",
+"manga": "Vol.228"
+},
+{
+"number": 1139,
+"titleZh": "第1139集事件",
+"titleJp": "第1139話事件",
+"manga": "Vol.228"
+},
+{
+"number": 1140,
+"titleZh": "第1140集事件",
+"titleJp": "第1140話事件",
+"manga": "Vol.229"
+},
+{
+"number": 1141,
+"titleZh": "第1141集事件",
+"titleJp": "第1141話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1142,
+"titleZh": "第1142集事件",
+"titleJp": "第1142話事件",
+"manga": "Vol.229"
+},
+{
+"number": 1143,
+"titleZh": "第1143集事件",
+"titleJp": "第1143話事件",
+"manga": "Vol.229"
+},
+{
+"number": 1144,
+"titleZh": "第1144集事件",
+"titleJp": "第1144話事件",
+"manga": "Vol.229"
+},
+{
+"number": 1145,
+"titleZh": "第1145集事件",
+"titleJp": "第1145話事件",
+"manga": "Vol.230"
+},
+{
+"number": 1146,
+"titleZh": "第1146集事件",
+"titleJp": "第1146話事件",
+"manga": "Vol.230"
+},
+{
+"number": 1147,
+"titleZh": "第1147集事件",
+"titleJp": "第1147話事件",
+"manga": "Vol.230"
+},
+{
+"number": 1148,
+"titleZh": "第1148集事件",
+"titleJp": "第1148話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1149,
+"titleZh": "第1149集事件",
+"titleJp": "第1149話事件",
+"manga": "Vol.230"
+},
+{
+"number": 1150,
+"titleZh": "第1150集事件",
+"titleJp": "第1150話事件",
+"manga": "Vol.231"
+},
+{
+"number": 1151,
+"titleZh": "第1151集事件",
+"titleJp": "第1151話事件",
+"manga": "Vol.231"
+},
+{
+"number": 1152,
+"titleZh": "第1152集事件",
+"titleJp": "第1152話事件",
+"manga": "Vol.231"
+},
+{
+"number": 1153,
+"titleZh": "第1153集事件",
+"titleJp": "第1153話事件",
+"manga": "Vol.231"
+},
+{
+"number": 1154,
+"titleZh": "第1154集事件",
+"titleJp": "第1154話事件",
+"manga": "Vol.231"
+},
+{
+"number": 1155,
+"titleZh": "第1155集事件",
+"titleJp": "第1155話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1156,
+"titleZh": "第1156集事件",
+"titleJp": "第1156話事件",
+"manga": "Vol.232"
+},
+{
+"number": 1157,
+"titleZh": "第1157集事件",
+"titleJp": "第1157話事件",
+"manga": "Vol.232"
+},
+{
+"number": 1158,
+"titleZh": "第1158集事件",
+"titleJp": "第1158話事件",
+"manga": "Vol.232"
+},
+{
+"number": 1159,
+"titleZh": "第1159集事件",
+"titleJp": "第1159話事件",
+"manga": "Vol.232"
+},
+{
+"number": 1160,
+"titleZh": "第1160集事件",
+"titleJp": "第1160話事件",
+"manga": "Vol.233"
+},
+{
+"number": 1161,
+"titleZh": "第1161集事件",
+"titleJp": "第1161話事件",
+"manga": "Vol.233"
+},
+{
+"number": 1162,
+"titleZh": "第1162集事件",
+"titleJp": "第1162話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1163,
+"titleZh": "第1163集事件",
+"titleJp": "第1163話事件",
+"manga": "Vol.233"
+},
+{
+"number": 1164,
+"titleZh": "第1164集事件",
+"titleJp": "第1164話事件",
+"manga": "Vol.233"
+},
+{
+"number": 1165,
+"titleZh": "第1165集事件",
+"titleJp": "第1165話事件",
+"manga": "Vol.234"
+},
+{
+"number": 1166,
+"titleZh": "第1166集事件",
+"titleJp": "第1166話事件",
+"manga": "Vol.234"
+},
+{
+"number": 1167,
+"titleZh": "第1167集事件",
+"titleJp": "第1167話事件",
+"manga": "Vol.234"
+},
+{
+"number": 1168,
+"titleZh": "第1168集事件",
+"titleJp": "第1168話事件",
+"manga": "Vol.234"
+},
+{
+"number": 1169,
+"titleZh": "第1169集事件",
+"titleJp": "第1169話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1170,
+"titleZh": "第1170集事件",
+"titleJp": "第1170話事件",
+"manga": "Vol.235"
+},
+{
+"number": 1171,
+"titleZh": "第1171集事件",
+"titleJp": "第1171話事件",
+"manga": "Vol.235"
+},
+{
+"number": 1172,
+"titleZh": "第1172集事件",
+"titleJp": "第1172話事件",
+"manga": "Vol.235"
+},
+{
+"number": 1173,
+"titleZh": "第1173集事件",
+"titleJp": "第1173話事件",
+"manga": "Vol.235"
+},
+{
+"number": 1174,
+"titleZh": "第1174集事件",
+"titleJp": "第1174話事件",
+"manga": "Vol.235"
+},
+{
+"number": 1175,
+"titleZh": "第1175集事件",
+"titleJp": "第1175話事件",
+"manga": "Vol.236"
+},
+{
+"number": 1176,
+"titleZh": "第1176集事件",
+"titleJp": "第1176話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1177,
+"titleZh": "第1177集事件",
+"titleJp": "第1177話事件",
+"manga": "Vol.236"
+},
+{
+"number": 1178,
+"titleZh": "第1178集事件",
+"titleJp": "第1178話事件",
+"manga": "Vol.236"
+},
+{
+"number": 1179,
+"titleZh": "第1179集事件",
+"titleJp": "第1179話事件",
+"manga": "Vol.236"
+},
+{
+"number": 1180,
+"titleZh": "第1180集事件",
+"titleJp": "第1180話事件",
+"manga": "Vol.237"
+},
+{
+"number": 1181,
+"titleZh": "第1181集事件",
+"titleJp": "第1181話事件",
+"manga": "Vol.237"
+},
+{
+"number": 1182,
+"titleZh": "第1182集事件",
+"titleJp": "第1182話事件",
+"manga": "Vol.237"
+},
+{
+"number": 1183,
+"titleZh": "第1183集事件",
+"titleJp": "第1183話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1184,
+"titleZh": "第1184集事件",
+"titleJp": "第1184話事件",
+"manga": "Vol.237"
+},
+{
+"number": 1185,
+"titleZh": "第1185集事件",
+"titleJp": "第1185話事件",
+"manga": "Vol.238"
+},
+{
+"number": 1186,
+"titleZh": "第1186集事件",
+"titleJp": "第1186話事件",
+"manga": "Vol.238"
+},
+{
+"number": 1187,
+"titleZh": "第1187集事件",
+"titleJp": "第1187話事件",
+"manga": "Vol.238"
+},
+{
+"number": 1188,
+"titleZh": "第1188集事件",
+"titleJp": "第1188話事件",
+"manga": "Vol.238"
+},
+{
+"number": 1189,
+"titleZh": "第1189集事件",
+"titleJp": "第1189話事件",
+"manga": "Vol.238"
+},
+{
+"number": 1190,
+"titleZh": "第1190集事件",
+"titleJp": "第1190話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1191,
+"titleZh": "第1191集事件",
+"titleJp": "第1191話事件",
+"manga": "Vol.239"
+},
+{
+"number": 1192,
+"titleZh": "第1192集事件",
+"titleJp": "第1192話事件",
+"manga": "Vol.239"
+},
+{
+"number": 1193,
+"titleZh": "第1193集事件",
+"titleJp": "第1193話事件",
+"manga": "Vol.239"
+},
+{
+"number": 1194,
+"titleZh": "第1194集事件",
+"titleJp": "第1194話事件",
+"manga": "Vol.239"
+},
+{
+"number": 1195,
+"titleZh": "第1195集事件",
+"titleJp": "第1195話事件",
+"manga": "Vol.240"
+},
+{
+"number": 1196,
+"titleZh": "第1196集事件",
+"titleJp": "第1196話事件",
+"manga": "Vol.240"
+},
+{
+"number": 1197,
+"titleZh": "第1197集事件",
+"titleJp": "第1197話事件",
+"manga": "動畫原創"
+},
+{
+"number": 1198,
+"titleZh": "第1198集事件",
+"titleJp": "第1198話事件",
+"manga": "Vol.240"
+},
+{
+"number": 1199,
+"titleZh": "第1199集事件",
+"titleJp": "第1199話事件",
+"manga": "Vol.240"
+},
+{
+"number": 1200,
+"titleZh": "第1200集事件",
+"titleJp": "第1200話事件",
+"manga": "Vol.241"
+}
+]
