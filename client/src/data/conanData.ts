@@ -55,6 +55,8 @@ export const animeEpisodes: AnimeEpisode[] = rawData
 
 // 需要拆分的特別篇（1小時或以上）
 const specialEpisodesToSplit: Record<number, { start: number; count: number }> = {
+  11: { start: 11, count: 2 },    // 1小時特別篇（鋼琴奏鳴曲）
+  52: { start: 53, count: 2 },    // 1小時特別篇（霧天狗傳說）
   61: { start: 63, count: 1 },    // 1小時特別篇（上集）
   62: { start: 64, count: 1 },    // 1小時特別篇（下集）
   109: { start: 114, count: 2 },  // 1小時特別篇

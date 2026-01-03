@@ -4,6 +4,7 @@ import { useAnimeSearch } from '@/hooks/useSearch';
 import { animeEpisodes, overseasEpisodes } from '@/data/conanData';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Search } from 'lucide-react';
+import { formatCompositeEpisode } from '@/lib/episodeParser';
 
 interface AnimeListProps {
   version?: 'official' | 'overseas';
@@ -56,15 +57,8 @@ export default function AnimeList({ version = 'official' }: AnimeListProps) {
               <div className="flex items-start justify-between gap-4">
                 <div className="flex-1">
                   <div className="font-semibold text-sm">
-                    {version === 'overseas' && ep.episode_digits && ep.episode.toString().length > ep.episode_digits
-                      ? (() => {
-                          const episodeStr = ep.episode.toString();
-                          const parts = [];
-                          for (let i = 0; i < episodeStr.length; i += ep.episode_digits) {
-                            parts.push(episodeStr.substring(i, i + ep.episode_digits));
-                          }
-                          return `第 ${parts.join('、')} 集`;
-                        })()
+                    {version === 'overseas'
+                      ? formatCompositeEpisode(ep.episode.toString())
                       : `第 ${ep.episode} 集`}
                   </div>
                   <div className="text-sm text-foreground mt-1">
