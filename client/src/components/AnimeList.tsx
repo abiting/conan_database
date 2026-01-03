@@ -57,7 +57,10 @@ export default function AnimeList({ version = 'official' }: AnimeListProps) {
               <div className="flex items-start justify-between gap-4">
                 <div className="flex-1">
                   <div className="font-semibold text-sm">
-                    {`第 ${formatCompositeEpisode(ep.episode.toString()).replace(/^第 /, '').replace(/ 集$/, '')} 集`}
+                    {version === 'official'
+                      ? `第 ${ep.episode} 集`
+                      : `第 ${formatCompositeEpisode(ep.overseas_ep?.toString() || ep.episode.toString()).replace(/^第 /, '').replace(/ 集$/, '')} 集`
+                    }
                   </div>
                   <div className="text-sm text-foreground mt-1">
                     {ep.title_zh}
