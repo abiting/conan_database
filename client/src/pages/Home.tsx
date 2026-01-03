@@ -8,7 +8,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function Home() {
   const { isSimplified } = useLanguage();
-  const [activeTab, setActiveTab] = useState('anime');
+  const [activeTab, setActiveTab] = useState('official');
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900">
@@ -42,20 +42,20 @@ export default function Home() {
           <CardContent className="pt-6">
             <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
               <TabsList className="grid w-full grid-cols-2">
-                <TabsTrigger value="anime">
-                  {isSimplified ? '动画' : '動畫'}
+                <TabsTrigger value="official">
+                  {isSimplified ? '官方版动画' : '官方版動畫'}
                 </TabsTrigger>
-                <TabsTrigger value="manga">
-                  {isSimplified ? '漫画' : '漫畫'}
+                <TabsTrigger value="overseas">
+                  {isSimplified ? '海外版动画' : '海外版動畫'}
                 </TabsTrigger>
               </TabsList>
 
-              <TabsContent value="anime" className="mt-6">
-                <AnimeList />
+              <TabsContent value="official" className="mt-6">
+                <AnimeList version="official" />
               </TabsContent>
 
-              <TabsContent value="manga" className="mt-6">
-                <MangaList />
+              <TabsContent value="overseas" className="mt-6">
+                <AnimeList version="overseas" />
               </TabsContent>
             </Tabs>
           </CardContent>

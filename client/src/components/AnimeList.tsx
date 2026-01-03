@@ -1,13 +1,19 @@
 import { Input } from '@/components/ui/input';
 import { useAnimeSearch } from '@/hooks/useSearch';
-import { animeEpisodes, animeEpisodesZhCN } from '@/data/conanData';
+import { animeEpisodes, animeEpisodesZhCN, overseasEpisodes, overseasEpisodesZhCN } from '@/data/conanData';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Search } from 'lucide-react';
 
-export default function AnimeList() {
+interface AnimeListProps {
+  version?: 'official' | 'overseas';
+}
+
+export default function AnimeList({ version = 'official' }: AnimeListProps) {
   const { isSimplified } = useLanguage();
-  const episodes = isSimplified ? animeEpisodesZhCN : animeEpisodes;
-  const { searchTerm, setSearchTerm, filteredEpisodes } = useAnimeSearch(episodes);
+  const episodesData = version === 'official' 
+    ? (isSimplified ? animeEpisodesZhCN : animeEpisodes)
+    : (isSimplified ? overseasEpisodesZhCN : overseasEpisodes);
+  const { searchTerm, setSearchTerm, filteredEpisodes } = useAnimeSearch(episodesData);
 
   return (
     <div className="space-y-4">
@@ -47,6 +53,11 @@ export default function AnimeList() {
                   <div className="text-xs text-muted-foreground mt-1">
                     {ep.title}
                   </div>
+                  {ep.manga && (
+                    <div className="text-xs text-muted-foreground mt-2">
+                      {isSimplified ? "对应漫画" : "對應漫畫"}：{ep.manga}
+                    </div>
+                  )}
                 </div>
                 <div className="text-xs text-muted-foreground whitespace-nowrap">
                   {ep.year}

@@ -24,6 +24,7 @@ export interface MangaVolume {
 
 // 從 JSON 檔案匯入官方版集數資料
 import officialEpisodesData from './conan_episodes_official.json';
+import overseasEpisodesData from './conan_episodes_overseas.json';
 import episodesData from './conan_episodes.json';
 
 // 合併官方版和完整資料
@@ -33,10 +34,21 @@ const mergedEpisodes = episodesData.map((ep: any) => {
     ...ep,
     titleZh: official?.titleZh || ep.titleZh,
     titleJp: official?.titleJp || ep.titleJp,
+    manga: official?.manga || ep.manga,
   };
 });
 
 export const animeEpisodes: Episode[] = mergedEpisodes.map((ep: any, index: number) => ({
+  id: index + 1,
+  number: ep.number,
+  title: ep.titleJp || `第 ${ep.number} 集`,
+  titleZh: ep.titleZh,
+  titleJp: ep.titleJp,
+  manga: ep.manga,
+  year: Math.floor((ep.number - 1) / 52) + 1996,
+}));
+
+export const overseasEpisodes: Episode[] = overseasEpisodesData.map((ep: any, index: number) => ({
   id: index + 1,
   number: ep.number,
   title: ep.titleJp || `第 ${ep.number} 集`,
@@ -93,6 +105,13 @@ export const animeEpisodesSimplified = animeEpisodes.map(ep => ({
   titleZh: convertToSimplified(ep.titleZh)
 }));
 
+// 為海外版動畫集數添加簡體中文版本
+export const overseasEpisodesSimplified = overseasEpisodes.map(ep => ({
+  ...ep,
+  titleZh: convertToSimplified(ep.titleZh)
+}));
+
 // 向後相容的匯出名稱
 export const animeEpisodesZhCN = animeEpisodesSimplified;
+export const overseasEpisodesZhCN = overseasEpisodesSimplified;
 export const mangaVolumesZhCN = mangaVolumesSimplified;
