@@ -63,11 +63,14 @@ const specialEpisodesToSplit: Record<number, { start: number; count: number }> =
   156: { start: 165, count: 2 },  // 1小時特別篇
   185: { start: 199, count: 2 },  // 1小時特別篇
   204: { start: 218, count: 2 },  // 1小時特別篇
+  129: { start: 136, count: 4 },  // 2小時特別篇（黑暗組織女子）
   131: { start: 138, count: 4 },  // 2小時特別篇
   176: { start: 187, count: 4 },  // 2小時特別篇
+  219: { start: 235, count: 4 },  // 2小時特別篇（名偵探齊聚）
   227: { start: 243, count: 4 },  // 2小時特別篇
   300: { start: 319, count: 4 },  // 2小時特別篇
   314: { start: 336, count: 4 },  // 2小時特別篇
+  345: { start: 371, count: 5 },  // 2.5小時特別篇（黑暗組織對決）
 };
 
 // 海外版集數資料（拆分特別篇）
