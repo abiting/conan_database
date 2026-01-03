@@ -76,11 +76,9 @@ export default function Home() {
           </CardContent>
         </Card>
 
-        {/* Footer Info */}
-        <div className="mt-8 text-center text-sm text-muted-foreground">
-          <p>
-            {isSimplified ? '数据仅供参考，请以官方发布为准' : '資料僅供參考，請以官方發佈為準'}
-          </p>
+        {/* Footer Image */}
+        <div className="mt-8 flex justify-center">
+          <img src="/images/haibara_ai_icon.png" alt="Haibara Ai" className="h-40 w-40" />
         </div>
       </main>
     </div>
