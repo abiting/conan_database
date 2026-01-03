@@ -29,7 +29,7 @@ export default function AnimeList({ version = 'official' }: AnimeListProps) {
 
       <div className="text-sm text-muted-foreground">
         {version === 'overseas' 
-          ? `共 1244 集` 
+          ? `共 1249 集` 
           : `共 ${filteredEpisodes.length} 集`}
       </div>
 
