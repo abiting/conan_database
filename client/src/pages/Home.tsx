@@ -32,13 +32,13 @@ export default function Home() {
       </div>
 
       {/* Main Content */}
-      <main className="container py-8">
+      <main className="container py-8 pb-32">
         <Card className="border-0 shadow-lg">
-          <CardHeader className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 border-b">
-            <CardTitle>
+          <CardHeader className="bg-gradient-to-r from-blue-500 to-indigo-500 dark:from-blue-600 dark:to-indigo-600 border-b">
+            <CardTitle className="text-white">
               {isSimplified ? '集数查询' : '集數查詢'}
             </CardTitle>
-            <CardDescription>
+            <CardDescription className="text-blue-100">
               {isSimplified ? '支持动画集数、标题等关键词查询' : '支援動畫集數、標題等關鍵詞查詢'}
             </CardDescription>
           </CardHeader>
@@ -76,10 +76,7 @@ export default function Home() {
           </CardContent>
         </Card>
 
-        {/* Footer Image */}
-        <div className="mt-8 flex justify-center">
-          <img src="/images/haibara_ai_icon.png" alt="Haibara Ai" className="h-40 w-40" />
-        </div>
+
       </main>
     </div>
   );
