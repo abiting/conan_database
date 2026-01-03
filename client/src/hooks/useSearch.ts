@@ -34,7 +34,7 @@ export function useMangaSearch(volumes: MangaVolume[]) {
     const term = searchTerm.toLowerCase();
     return volumes.filter(vol => {
       const volumeStr = vol.volume.toString();
-      const titleMatch = vol.title.toLowerCase().includes(term);
+      const titleMatch = vol.title?.toLowerCase().includes(term) ?? false;
       const titleZhMatch = vol.titleZh.toLowerCase().includes(term);
       const volumeMatch = volumeStr.includes(term);
       const chaptersMatch = vol.chapters.includes(term);

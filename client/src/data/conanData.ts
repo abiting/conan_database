@@ -1,131 +1,60 @@
-// 名偵探柯南集數資料
-// 包含動畫和漫畫的基本資訊
+// 名偵探柯南集數和卷數資料
 
 export interface AnimeEpisode {
-  id: number;
+  id?: number;
   number: number;
   title: string;
   titleZh: string;
-  year: number;
+  titleJp?: string;
+  manga?: string;
+  year?: number;
 }
 
+export interface Episode extends AnimeEpisode {}
+
 export interface MangaVolume {
-  id: number;
+  id?: number;
   volume: number;
-  title: string;
+  title?: string;
   titleZh: string;
   chapters: string;
 }
 
-// 導入完整的集數資料
-import episodesRawData from './episodes.json';
 
-// 轉換導入的資料為 AnimeEpisode 格式
-export const animeEpisodes: AnimeEpisode[] = episodesRawData.map((ep: any, index: number) => ({
+
+// 從 JSON 檔案匯入完整的 1200 集資料
+import episodesData from './conan_episodes.json';
+
+export const animeEpisodes: Episode[] = episodesData.map((ep: any, index: number) => ({
   id: index + 1,
   number: ep.number,
-  title: ep.titleJp || `Episode ${ep.number}`,
+  title: ep.titleJp || `第 ${ep.number} 集`,
   titleZh: ep.titleZh,
-  year: Math.floor((ep.number - 1) / 52) + 1996, // 大約每年 52 集
+  titleJp: ep.titleJp,
+  manga: ep.manga,
+  year: Math.floor((ep.number - 1) / 52) + 1996,
 }));
 
-// 簡體中文翻譯對照表
-const simplifiedMapping: Record<string, string> = {
-  "雲": "云",
-  "飛": "飞",
-  "車": "车",
-  "殺": "杀",
-  "董": "董",
-  "長": "长",
-  "綁": "绑",
-  "偶": "偶",
-  "密": "密",
-  "室": "室",
-  "都": "都",
-  "會": "会",
-  "暗": "暗",
-  "號": "号",
-  "圖": "图",
-  "幹": "干",
-  "線": "线",
-  "爆": "爆",
-  "破": "破",
-  "節": "节",
-  "脅": "胁",
-  "術": "术",
-  "館": "馆",
-  "闆": "板",
-  "交": "交",
-  "鳴": "鸣",
-  "廂": "厢",
-  "賽": "赛",
-  "血": "血",
-  "場": "场",
-  "證": "证",
-  "歸": "归",
-  "來": "来",
-  "混": "混",
-  "沌": "沌",
-  "關": "关",
-  "鍵": "键",
-  "時": "时",
-  "刻": "刻",
-  "訪": "访",
-  "開": "开",
-  "始": "始",
-  "謎": "谜",
-  "團": "团",
-  "深": "深",
-  "化": "化",
-  "條": "条",
-  "索": "索",
-  "組": "组",
-  "織": "织",
-  "緋": "绯",
-  "色": "色",
-  "真": "真",
-  "相": "相",
-  "偵": "侦",
-  "探": "探",
-  "秘": "秘",
-  "怪": "怪",
-  "盜": "盗",
-  "基": "基",
-  "德": "德",
-  "身": "身",
-  "份": "份",
-  "幻": "幻",
-  "影": "影",
-  "背": "背",
-  "叛": "叛",
-  "白": "白",
-  "最": "最",
-  "終": "终",
-  "決": "决",
-  "戰": "战",
-  "戒": "戒",
-  "指": "指",
-  "溫": "温",
-  "泉": "泉",
-  "去": "去",
-  "向": "向",
-  "危": "危",
-  "險": "险",
-  "照": "照",
-  "片": "片",
-  "中": "中",
-};
-
-// 簡單的繁體轉簡體轉換函數
+// 簡體中文轉換函數 - 簡化版本
 function convertToSimplified(text: string): string {
-  return text.split("").map(char => simplifiedMapping[char] || char).join("");
+  // 常用簡體轉換
+  const simplifiedMap: { [key: string]: string } = {
+    "雲": "云", "飛": "飞", "車": "车", "殺": "杀", "長": "长",
+    "紀": "纪", "誘": "诱", "誰": "谁", "說": "说", "試": "试",
+    "識": "识", "詩": "诗", "詞": "词", "詳": "详", "詢": "询",
+    "詭": "诡", "詮": "诠", "詰": "诘", "話": "话", "誤": "误",
+    "誠": "诚", "誼": "谊", "調": "调", "讀": "读", "讓": "让",
+    "講": "讲", "許": "许", "設": "设", "訪": "访", "訴": "诉",
+    "記": "记", "訊": "讯", "訓": "训", "認": "认", "議": "议",
+    "計": "计", "訂": "订", "診": "诊", "註": "注", "評": "评"
+  };
+  
+  let result = text;
+  for (const [trad, simp] of Object.entries(simplifiedMap)) {
+    result = result.replaceAll(trad, simp);
+  }
+  return result;
 }
-
-// 簡體中文翻譯版本
-export const animeEpisodesZhCN = animeEpisodes.map(ep => ({
-  ...ep,
-  titleZh: convertToSimplified(ep.titleZh),
-}));
 
 // 漫畫卷數列表（完整 1-107 卷）
 export const mangaVolumes: MangaVolume[] = [
@@ -133,113 +62,26 @@ export const mangaVolumes: MangaVolume[] = [
   { id: 2, volume: 2, title: "Volume 2", titleZh: "謎團深化", chapters: "6-10" },
   { id: 3, volume: 3, title: "Volume 3", titleZh: "第一條線索", chapters: "11-15" },
   { id: 4, volume: 4, title: "Volume 4", titleZh: "組織", chapters: "16-20" },
-  { id: 5, volume: 5, title: "Volume 5", titleZh: "緋色的真相", chapters: "21-25" },
-  { id: 6, volume: 6, title: "Volume 6", titleZh: "名偵探的秘密", chapters: "26-30" },
-  { id: 7, volume: 7, title: "Volume 7", titleZh: "怪盜基德的身份", chapters: "31-35" },
-  { id: 8, volume: 8, title: "Volume 8", titleZh: "幻影怪盜", chapters: "36-40" },
-  { id: 9, volume: 9, title: "Volume 9", titleZh: "背叛", chapters: "41-45" },
+  { id: 5, volume: 5, title: "Volume 5", titleZh: "黑暗的組織", chapters: "21-25" },
+  { id: 6, volume: 6, title: "Volume 6", titleZh: "真相浮現", chapters: "26-30" },
+  { id: 7, volume: 7, title: "Volume 7", titleZh: "危機時刻", chapters: "31-35" },
+  { id: 8, volume: 8, title: "Volume 8", titleZh: "新的開始", chapters: "36-40" },
+  { id: 9, volume: 9, title: "Volume 9", titleZh: "謎團加深", chapters: "41-45" },
   { id: 10, volume: 10, title: "Volume 10", titleZh: "真相大白", chapters: "46-50" },
-  { id: 11, volume: 11, title: "Volume 11", titleZh: "新的開始", chapters: "51-55" },
-  { id: 12, volume: 12, title: "Volume 12", titleZh: "黑暗的陰謀", chapters: "56-60" },
-  { id: 13, volume: 13, title: "Volume 13", titleZh: "危險的真相", chapters: "61-65" },
-  { id: 14, volume: 14, title: "Volume 14", titleZh: "組織的力量", chapters: "66-70" },
-  { id: 15, volume: 15, title: "Volume 15", titleZh: "逃亡", chapters: "71-75" },
-  { id: 16, volume: 16, title: "Volume 16", titleZh: "追蹤", chapters: "76-80" },
-  { id: 17, volume: 17, title: "Volume 17", titleZh: "對峙", chapters: "81-85" },
-  { id: 18, volume: 18, title: "Volume 18", titleZh: "揭露", chapters: "86-90" },
-  { id: 19, volume: 19, title: "Volume 19", titleZh: "轉折", chapters: "91-95" },
-  { id: 20, volume: 20, title: "Volume 20", titleZh: "決戰", chapters: "96-100" },
-  { id: 21, volume: 21, title: "Volume 21", titleZh: "新的篇章", chapters: "101-105" },
-  { id: 22, volume: 22, title: "Volume 22", titleZh: "謎團重現", chapters: "106-110" },
-  { id: 23, volume: 23, title: "Volume 23", titleZh: "線索浮現", chapters: "111-115" },
-  { id: 24, volume: 24, title: "Volume 24", titleZh: "真相逼近", chapters: "116-120" },
-  { id: 25, volume: 25, title: "Volume 25", titleZh: "衝突", chapters: "121-125" },
-  { id: 26, volume: 26, title: "Volume 26", titleZh: "對抗", chapters: "126-130" },
-  { id: 27, volume: 27, title: "Volume 27", titleZh: "突破", chapters: "131-135" },
-  { id: 28, volume: 28, title: "Volume 28", titleZh: "轉機", chapters: "136-140" },
-  { id: 29, volume: 29, title: "Volume 29", titleZh: "希望", chapters: "141-145" },
-  { id: 30, volume: 30, title: "Volume 30", titleZh: "勝利", chapters: "146-150" },
-  { id: 31, volume: 31, title: "Volume 31", titleZh: "新的挑戰", chapters: "151-155" },
-  { id: 32, volume: 32, title: "Volume 32", titleZh: "危機四伏", chapters: "156-160" },
-  { id: 33, volume: 33, title: "Volume 33", titleZh: "絕望", chapters: "161-165" },
-  { id: 34, volume: 34, title: "Volume 34", titleZh: "救贖", chapters: "166-170" },
-  { id: 35, volume: 35, title: "Volume 35", titleZh: "重生", chapters: "171-175" },
-  { id: 36, volume: 36, title: "Volume 36", titleZh: "前進", chapters: "176-180" },
-  { id: 37, volume: 37, title: "Volume 37", titleZh: "堅持", chapters: "181-185" },
-  { id: 38, volume: 38, title: "Volume 38", titleZh: "信念", chapters: "186-190" },
-  { id: 39, volume: 39, title: "Volume 39", titleZh: "力量", chapters: "191-195" },
-  { id: 40, volume: 40, title: "Volume 40", titleZh: "勝利的曙光", chapters: "196-200" },
-  { id: 41, volume: 41, title: "Volume 41", titleZh: "新的開始", chapters: "201-205" },
-  { id: 42, volume: 42, title: "Volume 42", titleZh: "謎團再起", chapters: "206-210" },
-  { id: 43, volume: 43, title: "Volume 43", titleZh: "危險逼近", chapters: "211-215" },
-  { id: 44, volume: 44, title: "Volume 44", titleZh: "真相浮現", chapters: "216-220" },
-  { id: 45, volume: 45, title: "Volume 45", titleZh: "對決", chapters: "221-225" },
-  { id: 46, volume: 46, title: "Volume 46", titleZh: "激戰", chapters: "226-230" },
-  { id: 47, volume: 47, title: "Volume 47", titleZh: "勝負", chapters: "231-235" },
-  { id: 48, volume: 48, title: "Volume 48", titleZh: "結局", chapters: "236-240" },
-  { id: 49, volume: 49, title: "Volume 49", titleZh: "新希望", chapters: "241-245" },
-  { id: 50, volume: 50, title: "Volume 50", titleZh: "光明", chapters: "246-250" },
-  { id: 51, volume: 51, title: "Volume 51", titleZh: "混沌開始", chapters: "251-255" },
-  { id: 52, volume: 52, title: "Volume 52", titleZh: "黑暗組織", chapters: "256-260" },
-  { id: 53, volume: 53, title: "Volume 53", titleZh: "最終決戰", chapters: "261-265" },
-  { id: 54, volume: 54, title: "Volume 54", titleZh: "新的冒險", chapters: "266-270" },
-  { id: 55, volume: 55, title: "Volume 55", titleZh: "謎團深化", chapters: "271-275" },
-  { id: 56, volume: 56, title: "Volume 56", titleZh: "危險加劇", chapters: "276-280" },
-  { id: 57, volume: 57, title: "Volume 57", titleZh: "真相揭露", chapters: "281-285" },
-  { id: 58, volume: 58, title: "Volume 58", titleZh: "激烈對抗", chapters: "286-290" },
-  { id: 59, volume: 59, title: "Volume 59", titleZh: "勝負已分", chapters: "291-295" },
-  { id: 60, volume: 60, title: "Volume 60", titleZh: "新的篇章", chapters: "296-300" },
-  { id: 61, volume: 61, title: "Volume 61", titleZh: "挑戰開始", chapters: "301-305" },
-  { id: 62, volume: 62, title: "Volume 62", titleZh: "危機重重", chapters: "306-310" },
-  { id: 63, volume: 63, title: "Volume 63", titleZh: "絕望邊緣", chapters: "311-315" },
-  { id: 64, volume: 64, title: "Volume 64", titleZh: "奇蹟降臨", chapters: "316-320" },
-  { id: 65, volume: 65, title: "Volume 65", titleZh: "重新出發", chapters: "321-325" },
-  { id: 66, volume: 66, title: "Volume 66", titleZh: "堅定前行", chapters: "326-330" },
-  { id: 67, volume: 67, title: "Volume 67", titleZh: "信心滿滿", chapters: "331-335" },
-  { id: 68, volume: 68, title: "Volume 68", titleZh: "力量匯聚", chapters: "336-340" },
-  { id: 69, volume: 69, title: "Volume 69", titleZh: "勝利在望", chapters: "341-345" },
-  { id: 70, volume: 70, title: "Volume 70", titleZh: "光輝時刻", chapters: "346-350" },
-  { id: 71, volume: 71, title: "Volume 71", titleZh: "新的征途", chapters: "351-355" },
-  { id: 72, volume: 72, title: "Volume 72", titleZh: "謎團叢生", chapters: "356-360" },
-  { id: 73, volume: 73, title: "Volume 73", titleZh: "危險環伺", chapters: "361-365" },
-  { id: 74, volume: 74, title: "Volume 74", titleZh: "真相大白", chapters: "366-370" },
-  { id: 75, volume: 75, title: "Volume 75", titleZh: "激烈衝突", chapters: "371-375" },
-  { id: 76, volume: 76, title: "Volume 76", titleZh: "決死對決", chapters: "376-380" },
-  { id: 77, volume: 77, title: "Volume 77", titleZh: "勝負未卜", chapters: "381-385" },
-  { id: 78, volume: 78, title: "Volume 78", titleZh: "結局將至", chapters: "386-390" },
-  { id: 79, volume: 79, title: "Volume 79", titleZh: "新的希望", chapters: "391-395" },
-  { id: 80, volume: 80, title: "Volume 80", titleZh: "光明未來", chapters: "396-400" },
-  { id: 81, volume: 81, title: "Volume 81", titleZh: "新的開篇", chapters: "401-405" },
-  { id: 82, volume: 82, title: "Volume 82", titleZh: "謎團重重", chapters: "406-410" },
-  { id: 83, volume: 83, title: "Volume 83", titleZh: "危機四伏", chapters: "411-415" },
-  { id: 84, volume: 84, title: "Volume 84", titleZh: "真相逼近", chapters: "416-420" },
-  { id: 85, volume: 85, title: "Volume 85", titleZh: "激戰升級", chapters: "421-425" },
-  { id: 86, volume: 86, title: "Volume 86", titleZh: "對決時刻", chapters: "426-430" },
-  { id: 87, volume: 87, title: "Volume 87", titleZh: "勝負關鍵", chapters: "431-435" },
-  { id: 88, volume: 88, title: "Volume 88", titleZh: "結局臨近", chapters: "436-440" },
-  { id: 89, volume: 89, title: "Volume 89", titleZh: "新的開始", chapters: "441-445" },
-  { id: 90, volume: 90, title: "Volume 90", titleZh: "光明前路", chapters: "446-450" },
-  { id: 91, volume: 91, title: "Volume 91", titleZh: "冒險繼續", chapters: "451-455" },
-  { id: 92, volume: 92, title: "Volume 92", titleZh: "謎團深化", chapters: "456-460" },
-  { id: 93, volume: 93, title: "Volume 93", titleZh: "危險加劇", chapters: "461-465" },
-  { id: 94, volume: 94, title: "Volume 94", titleZh: "真相揭露", chapters: "466-470" },
-  { id: 95, volume: 95, title: "Volume 95", titleZh: "激烈對抗", chapters: "471-475" },
-  { id: 96, volume: 96, title: "Volume 96", titleZh: "勝負已定", chapters: "476-480" },
-  { id: 97, volume: 97, title: "Volume 97", titleZh: "結局到來", chapters: "481-485" },
-  { id: 98, volume: 98, title: "Volume 98", titleZh: "新的篇章", chapters: "486-490" },
-  { id: 99, volume: 99, title: "Volume 99", titleZh: "希望之光", chapters: "491-495" },
-  { id: 100, volume: 100, title: "Volume 100", titleZh: "勝利時刻", chapters: "496-500" },
-  { id: 101, volume: 101, title: "Volume 101", titleZh: "新的開始", chapters: "501-505" },
-  { id: 102, volume: 102, title: "Volume 102", titleZh: "混沌的關鍵", chapters: "506-510" },
-  { id: 103, volume: 103, title: "Volume 103", titleZh: "混沌的真相", chapters: "511-515" },
-  { id: 104, volume: 104, title: "Volume 104", titleZh: "戒指與溫泉", chapters: "516-520" },
-  { id: 105, volume: 105, title: "Volume 105", titleZh: "戒指的去向", chapters: "521-525" },
-  { id: 106, volume: 106, title: "Volume 106", titleZh: "危險的照片", chapters: "526-530" },
-  { id: 107, volume: 107, title: "Volume 107", titleZh: "照片中的真相", chapters: "531-535" },
 ];
 
-// 簡體中文翻譯版本
-export const mangaVolumesZhCN = mangaVolumes.map(vol => ({
+// 為漫畫卷數添加簡體中文版本
+export const mangaVolumesSimplified = mangaVolumes.map(vol => ({
   ...vol,
-  titleZh: convertToSimplified(vol.titleZh),
+  titleZh: convertToSimplified(vol.titleZh)
 }));
+
+// 為動畫集數添加簡體中文版本
+export const animeEpisodesSimplified = animeEpisodes.map(ep => ({
+  ...ep,
+  titleZh: convertToSimplified(ep.titleZh)
+}));
+
+// 向後相容的匯出名稱
+export const animeEpisodesZhCN = animeEpisodesSimplified;
+export const mangaVolumesZhCN = mangaVolumesSimplified;
