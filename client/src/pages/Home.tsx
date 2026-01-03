@@ -10,9 +10,9 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState<'official' | 'overseas'>('official');
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900">
+    <div className="min-h-screen bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950">
       {/* Header */}
-      <header className="border-b bg-white dark:bg-slate-950 sticky top-0 z-50 hidden">
+      <header className="border-b bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 sticky top-0 z-50 hidden">
         <div className="container py-4 flex items-center justify-between">
           <div>
             <h1 className="text-2xl font-bold text-foreground">
@@ -27,15 +27,15 @@ export default function Home() {
       </header>
 
       {/* Language Switcher - Positioned for iframe */}
-      <div className="sticky top-0 z-50 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 border-b p-2 flex justify-end">
+      <div className="sticky top-0 z-50 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 p-2 flex justify-end">
         <LanguageSwitcher />
       </div>
 
       {/* Main Content */}
-      <main className="w-full bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950">
+      <main className="w-full bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 border-t-0">
         <div className="container py-8 pb-32">
         <Card className="border-0 shadow-lg">
-          <CardHeader className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 border-b">
+          <CardHeader className="bg-white dark:bg-slate-950 border-b">
             <CardTitle>
               {isSimplified ? '集数查询' : '集數查詢'}
             </CardTitle>
