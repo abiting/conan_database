@@ -6,13 +6,6 @@ export default function LanguageSwitcher() {
 
   return (
     <div className="flex gap-2">
-      <Button
-        variant={language === 'zh-TW' ? 'default' : 'outline'}
-        size="sm"
-        onClick={() => setLanguage('zh-TW')}
-      >
-        繁體中文
-      </Button>
     </div>
   );
 }
