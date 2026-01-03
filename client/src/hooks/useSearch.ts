@@ -11,9 +11,9 @@ export function useAnimeSearch(episodes: AnimeEpisode[]) {
 
     const term = searchTerm.toLowerCase();
     return episodes.filter(ep => {
-      const numberStr = ep.number.toString();
-      const titleMatch = ep.title.toLowerCase().includes(term);
-      const titleZhMatch = ep.titleZh.toLowerCase().includes(term);
+      const numberStr = ep.episode?.toString() || '';
+      const titleMatch = (ep.title_ja || '').toLowerCase().includes(term);
+      const titleZhMatch = (ep.title_zh || '').toLowerCase().includes(term);
       const numberMatch = numberStr.includes(term);
       
       return titleMatch || titleZhMatch || numberMatch;

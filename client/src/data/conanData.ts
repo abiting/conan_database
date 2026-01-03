@@ -2,12 +2,12 @@
 
 export interface AnimeEpisode {
   id?: number;
-  number: number;
-  title: string;
-  titleZh: string;
-  titleJp?: string;
+  episode?: number;
+  title_ja?: string;
+  title_zh?: string;
   manga?: string;
   year?: number;
+  overseas_ep?: number;
 }
 
 export interface Episode extends AnimeEpisode {}
@@ -20,45 +20,10 @@ export interface MangaVolume {
   chapters: string;
 }
 
-
-
-// 從 JSON 檔案匯入官方版集數資料
-import officialEpisodesData from './conan_episodes_official.json';
-import overseasEpisodesData from './conan_episodes_overseas.json';
+// 從 JSON 檔案匯入完整集數資料
 import episodesData from './conan_episodes.json';
 
-// 合併官方版和完整資料
-const mergedEpisodes = episodesData.map((ep: any) => {
-  const official = officialEpisodesData.find((o: any) => o.number === ep.number);
-  return {
-    ...ep,
-    titleZh: official?.titleZh || ep.titleZh,
-    titleJp: official?.titleJp || ep.titleJp,
-    manga: official?.manga || ep.manga,
-  };
-});
-
-export const animeEpisodes: Episode[] = mergedEpisodes.map((ep: any, index: number) => ({
-  id: index + 1,
-  number: ep.number,
-  title: ep.titleJp || `第 ${ep.number} 集`,
-  titleZh: ep.titleZh,
-  titleJp: ep.titleJp,
-  manga: ep.manga,
-  year: Math.floor((ep.number - 1) / 52) + 1996,
-}));
-
-export const overseasEpisodes: Episode[] = overseasEpisodesData.map((ep: any, index: number) => ({
-  id: index + 1,
-  number: ep.number,
-  title: ep.titleJp || `第 ${ep.number} 集`,
-  titleZh: ep.titleZh,
-  titleJp: ep.titleJp,
-  manga: ep.manga,
-  year: Math.floor((ep.number - 1) / 52) + 1996,
-}));
-
-// 簡體中文轉換函數 - 簡化版本
+// 簡體中文轉換函數
 function convertToSimplified(text: string): string {
   // 常用簡體轉換
   const simplifiedMap: { [key: string]: string } = {
@@ -69,7 +34,13 @@ function convertToSimplified(text: string): string {
     "誠": "诚", "誼": "谊", "調": "调", "讀": "读", "讓": "让",
     "講": "讲", "許": "许", "設": "设", "訪": "访", "訴": "诉",
     "記": "记", "訊": "讯", "訓": "训", "認": "认", "議": "议",
-    "計": "计", "訂": "订", "診": "诊", "註": "注", "評": "评"
+    "計": "计", "訂": "订", "診": "诊", "註": "注", "評": "评",
+    "對": "对", "應": "应", "漫": "漫", "卷": "卷",
+    "數": "数", "標": "标", "題": "题", "中": "中",
+    "文": "文", "譯": "译", "名": "名", "日": "日", "本": "本",
+    "動": "动", "原": "原", "創": "创", "無": "无",
+    "版": "版", "海": "海", "外": "外", "官": "官",
+    "方": "方", "篇": "篇", "第": "第",
   };
   
   let result = text;
@@ -78,6 +49,42 @@ function convertToSimplified(text: string): string {
   }
   return result;
 }
+
+// 處理官方版集數資料
+export const animeEpisodes: Episode[] = episodesData.map((ep: any, index: number) => ({
+  id: index + 1,
+  episode: ep.episode,
+  title_ja: ep.title_ja,
+  title_zh: ep.title_zh,
+  manga: ep.manga || '無',
+  year: ep.year,
+  overseas_ep: ep.overseas_ep,
+}));
+
+// 海外版集數資料（從官方版資料中提取有 overseas_ep 的集數）
+export const overseasEpisodes: Episode[] = animeEpisodes
+  .filter(ep => ep.overseas_ep)
+  .map((ep, index) => ({
+    ...ep,
+    id: index + 1,
+    episode: ep.overseas_ep,
+  }));
+
+// 為動畫集數添加簡體中文版本
+export const animeEpisodesSimplified = animeEpisodes.map(ep => ({
+  ...ep,
+  title_zh: ep.title_zh ? convertToSimplified(ep.title_zh) : '',
+}));
+
+// 為海外版動畫集數添加簡體中文版本
+export const overseasEpisodesSimplified = overseasEpisodes.map(ep => ({
+  ...ep,
+  title_zh: ep.title_zh ? convertToSimplified(ep.title_zh) : '',
+}));
+
+// 向後相容的匯出名稱
+export const animeEpisodesZhCN = animeEpisodesSimplified;
+export const overseasEpisodesZhCN = overseasEpisodesSimplified;
 
 // 漫畫卷數列表（完整 1-107 卷）
 export const mangaVolumes: MangaVolume[] = [
@@ -99,19 +106,4 @@ export const mangaVolumesSimplified = mangaVolumes.map(vol => ({
   titleZh: convertToSimplified(vol.titleZh)
 }));
 
-// 為動畫集數添加簡體中文版本
-export const animeEpisodesSimplified = animeEpisodes.map(ep => ({
-  ...ep,
-  titleZh: convertToSimplified(ep.titleZh)
-}));
-
-// 為海外版動畫集數添加簡體中文版本
-export const overseasEpisodesSimplified = overseasEpisodes.map(ep => ({
-  ...ep,
-  titleZh: convertToSimplified(ep.titleZh)
-}));
-
-// 向後相容的匯出名稱
-export const animeEpisodesZhCN = animeEpisodesSimplified;
-export const overseasEpisodesZhCN = overseasEpisodesSimplified;
 export const mangaVolumesZhCN = mangaVolumesSimplified;

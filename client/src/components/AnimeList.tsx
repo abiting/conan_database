@@ -45,13 +45,13 @@ export default function AnimeList({ version = 'official' }: AnimeListProps) {
               <div className="flex items-start justify-between gap-4">
                 <div className="flex-1">
                   <div className="font-semibold text-sm">
-                    {isSimplified ? `第 ${ep.number} 集` : `第 ${ep.number} 集`}
+                    {isSimplified ? `第 ${ep.episode} 集` : `第 ${ep.episode} 集`}
                   </div>
                   <div className="text-sm text-foreground mt-1">
-                    {ep.titleZh}
+                    {ep.title_zh}
                   </div>
                   <div className="text-xs text-muted-foreground mt-1">
-                    {ep.title}
+                    {ep.title_ja}
                   </div>
                   {ep.manga && (
                     <div className="text-xs text-muted-foreground mt-2">
