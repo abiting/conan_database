@@ -1,3 +1,4 @@
+import { useMemo, useEffect } from 'react';
 import { Input } from '@/components/ui/input';
 import { useAnimeSearch } from '@/hooks/useSearch';
 import { animeEpisodes, overseasEpisodes } from '@/data/conanData';
@@ -10,10 +11,18 @@ interface AnimeListProps {
 
 export default function AnimeList({ version = 'official' }: AnimeListProps) {
   const { isSimplified } = useLanguage();
-  const episodesData = version === 'official' 
+  const episodesData = useMemo(() => version === 'official' 
     ? animeEpisodes
-    : overseasEpisodes;
-  const { searchTerm, setSearchTerm, filteredEpisodes } = useAnimeSearch(episodesData);
+    : overseasEpisodes, [version]);
+  const { searchTerm, setSearchTerm: updateSearchTerm, filteredEpisodes } = useAnimeSearch(episodesData);
+  
+  // 使用穩定的 setter 引用
+  const setSearchTerm = updateSearchTerm;
+
+  // 當版本改變時，重置搜尋狀態
+  useEffect(() => {
+    setSearchTerm('');
+  }, [version]);
 
   return (
     <div className="space-y-4">
@@ -27,11 +36,11 @@ export default function AnimeList({ version = 'official' }: AnimeListProps) {
         />
       </div>
 
-      <div className="text-sm text-muted-foreground">
-        {version === 'overseas' 
-          ? `共 1249 集` 
-          : `共 ${filteredEpisodes.length} 集`}
-      </div>
+      {version === 'official' && (
+        <div className="text-sm text-muted-foreground">
+          共 {episodesData.length} 集
+        </div>
+      )}
 
       <div className="space-y-2 max-h-[600px] overflow-y-auto">
         {filteredEpisodes.length === 0 ? (

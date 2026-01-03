@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import AnimeList from '@/components/AnimeList';
 import MangaList from '@/components/MangaList';
@@ -8,7 +7,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function Home() {
   const { isSimplified } = useLanguage();
-  const [activeTab, setActiveTab] = useState('official');
+  const [activeTab, setActiveTab] = useState<'official' | 'overseas'>('official');
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900">
@@ -45,24 +44,35 @@ export default function Home() {
           </CardHeader>
 
           <CardContent className="pt-6">
-            <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-              <TabsList className="grid w-full grid-cols-2">
-                <TabsTrigger value="official">
-                  {isSimplified ? '官方版动画' : '官方版動畫'}
-                </TabsTrigger>
-                <TabsTrigger value="overseas">
-                  {isSimplified ? '海外版动画' : '海外版動畫'}
-                </TabsTrigger>
-              </TabsList>
+            {/* Custom Tab Navigation */}
+            <div className="flex gap-2 mb-6 border-b">
+              <button
+                onClick={() => setActiveTab('official')}
+                className={`px-4 py-2 font-medium transition-colors ${
+                  activeTab === 'official'
+                    ? 'text-blue-600 border-b-2 border-blue-600 dark:text-blue-400 dark:border-blue-400'
+                    : 'text-muted-foreground hover:text-foreground'
+                }`}
+              >
+                {isSimplified ? '官方版动画' : '官方版動畫'}
+              </button>
+              <button
+                onClick={() => setActiveTab('overseas')}
+                className={`px-4 py-2 font-medium transition-colors ${
+                  activeTab === 'overseas'
+                    ? 'text-blue-600 border-b-2 border-blue-600 dark:text-blue-400 dark:border-blue-400'
+                    : 'text-muted-foreground hover:text-foreground'
+                }`}
+              >
+                {isSimplified ? '海外版动画' : '海外版動畫'}
+              </button>
+            </div>
 
-              <TabsContent value="official" className="mt-6">
-                <AnimeList version="official" />
-              </TabsContent>
-
-              <TabsContent value="overseas" className="mt-6">
-                <AnimeList version="overseas" />
-              </TabsContent>
-            </Tabs>
+            {/* Tab Content */}
+            <div className="mt-6">
+              {activeTab === 'official' && <AnimeList key="official" version="official" />}
+              {activeTab === 'overseas' && <AnimeList key="overseas" version="overseas" />}
+            </div>
           </CardContent>
         </Card>
 

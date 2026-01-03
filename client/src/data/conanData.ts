@@ -90,22 +90,25 @@ function convertToSimplified(text: string): string {
 // 處理官方版集數資料
 export const animeEpisodes: Episode[] = episodesData.map((ep: any, index: number) => ({
   id: index + 1,
-  episode: ep.episode,
+  episode: parseInt(ep.episode, 10),
   title_ja: ep.title_ja,
   title_zh: ep.title_zh,
   manga: ep.manga || '無',
-  year: ep.year,
-  overseas_ep: ep.overseas_ep,
+  year: parseInt(ep.year, 10),
+  overseas_ep: ep.overseas_ep ? parseInt(ep.overseas_ep, 10) : undefined,
 }));
 
-// 海外版集數資料（從官方版資料中提取有 overseas_ep 的集數）
+// 海外版集數資料（使用 overseas_ep 作為集數號）
 export const overseasEpisodes: Episode[] = animeEpisodes
-  .filter(ep => ep.overseas_ep)
+  .filter(ep => ep.overseas_ep && ep.overseas_ep > 0)
   .map((ep, index) => ({
     ...ep,
     id: index + 1,
-    episode: ep.overseas_ep,
-  }));
+    episode: ep.overseas_ep,  // 使用海外版集數（1-1244）
+  })) as Episode[];
+
+// 驗證海外版集數數量
+const overseasCount = overseasEpisodes.length;
 
 // 為動畫集數添加簡體中文版本
 export const animeEpisodesSimplified = animeEpisodes.map(ep => ({
