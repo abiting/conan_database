@@ -33,7 +33,7 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="w-full bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 border-t-0">
-        <div className="container py-8 pb-32">
+        <div className="container py-8 pb-8 md:pb-32">
         <Card className="border-0 shadow-lg">
           <CardHeader className="bg-white dark:bg-slate-950 border-b">
             <CardTitle>
