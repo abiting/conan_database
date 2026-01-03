@@ -22,10 +22,21 @@ export interface MangaVolume {
 
 
 
-// 從 JSON 檔案匯入完整的 1200 集資料
+// 從 JSON 檔案匯入官方版集數資料
+import officialEpisodesData from './conan_episodes_official.json';
 import episodesData from './conan_episodes.json';
 
-export const animeEpisodes: Episode[] = episodesData.map((ep: any, index: number) => ({
+// 合併官方版和完整資料
+const mergedEpisodes = episodesData.map((ep: any) => {
+  const official = officialEpisodesData.find((o: any) => o.number === ep.number);
+  return {
+    ...ep,
+    titleZh: official?.titleZh || ep.titleZh,
+    titleJp: official?.titleJp || ep.titleJp,
+  };
+});
+
+export const animeEpisodes: Episode[] = mergedEpisodes.map((ep: any, index: number) => ({
   id: index + 1,
   number: ep.number,
   title: ep.titleJp || `第 ${ep.number} 集`,
