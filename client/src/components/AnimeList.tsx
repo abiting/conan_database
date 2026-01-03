@@ -28,7 +28,7 @@ export default function AnimeList({ version = 'official' }: AnimeListProps) {
       </div>
 
       <div className="text-sm text-muted-foreground">
-        {isSimplified ? `共 ${filteredEpisodes.length} 集` : `共 ${filteredEpisodes.length} 集`}
+        {`共 ${filteredEpisodes.length} 集`}
       </div>
 
       <div className="space-y-2 max-h-[600px] overflow-y-auto">
@@ -45,7 +45,7 @@ export default function AnimeList({ version = 'official' }: AnimeListProps) {
               <div className="flex items-start justify-between gap-4">
                 <div className="flex-1">
                   <div className="font-semibold text-sm">
-                    {isSimplified ? `第 ${ep.episode} 集` : `第 ${ep.episode} 集`}
+                    {`第 ${ep.episode} 集`}
                   </div>
                   <div className="text-sm text-foreground mt-1">
                     {ep.title_zh}

@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900">
       {/* Header */}
-      <header className="border-b bg-white dark:bg-slate-950 sticky top-0 z-50">
+      <header className="border-b bg-white dark:bg-slate-950 sticky top-0 z-50 hidden">
         <div className="container py-4 flex items-center justify-between">
           <div>
             <h1 className="text-2xl font-bold text-foreground">
@@ -27,6 +27,11 @@ export default function Home() {
         </div>
       </header>
 
+      {/* Language Switcher - Positioned for iframe */}
+      <div className="sticky top-0 z-50 bg-white dark:bg-slate-950 border-b p-2 flex justify-end">
+        <LanguageSwitcher />
+      </div>
+
       {/* Main Content */}
       <main className="container py-8">
         <Card className="border-0 shadow-lg">
@@ -35,7 +40,7 @@ export default function Home() {
               {isSimplified ? '集数查询' : '集數查詢'}
             </CardTitle>
             <CardDescription>
-              {isSimplified ? '搜索动画集数或漫画卷数，支持按集数、卷数、标题等关键词查询' : '搜尋動畫集數或漫畫卷數，支援按集數、卷數、標題等關鍵詞查詢'}
+              {isSimplified ? '支持动画集数、标题等关键词查询' : '支援動畫集數、標題等關鍵詞查詢'}
             </CardDescription>
           </CardHeader>
 

@@ -1,5 +1,3 @@
-// 名偵探柯南集數和卷數資料
-
 export interface AnimeEpisode {
   id?: number;
   episode?: number;
@@ -23,10 +21,10 @@ export interface MangaVolume {
 // 從 JSON 檔案匯入完整集數資料
 import episodesData from './conan_episodes.json';
 
-// 簡體中文轉換函數
+// 簡體中文轉換函數 - 完整映射表（無重複鍵）
 function convertToSimplified(text: string): string {
-  // 常用簡體轉換
   const simplifiedMap: { [key: string]: string } = {
+    // 常用簡體轉換
     "雲": "云", "飛": "飞", "車": "车", "殺": "杀", "長": "长",
     "紀": "纪", "誘": "诱", "誰": "谁", "說": "说", "試": "试",
     "識": "识", "詩": "诗", "詞": "词", "詳": "详", "詢": "询",
@@ -41,6 +39,45 @@ function convertToSimplified(text: string): string {
     "動": "动", "原": "原", "創": "创", "無": "无",
     "版": "版", "海": "海", "外": "外", "官": "官",
     "方": "方", "篇": "篇", "第": "第",
+    // 擴展詞彙
+    "與": "与", "為": "为", "還": "还", "來": "来", "去": "去",
+    "個": "个", "們": "们", "從": "从", "這": "这", "那": "那",
+    "裡": "里", "點": "点", "種": "种", "樣": "样",
+    "經": "经", "過": "过", "現": "现", "實": "实", "情": "情",
+    "況": "况", "問": "问", "答": "答", "案": "案",
+    "時": "时", "間": "间", "地": "地", "線": "线",
+    "面": "面", "體": "体", "系": "系", "統": "统", "學": "学",
+    "習": "习", "教": "教", "育": "育", "生": "生",
+    "老": "老", "師": "师", "家": "家", "族": "族", "親": "亲",
+    "戚": "戚", "朋": "朋", "友": "友", "愛": "爱",
+    "婚": "婚", "姻": "姻", "夫": "夫", "妻": "妻", "兒": "儿",
+    "女": "女", "兄": "兄", "弟": "弟", "姐": "姐", "妹": "妹",
+    "爺": "爷", "奶": "奶", "叔": "叔",
+    "嬸": "婶", "伯": "伯", "母": "母", "舅": "舅", "姨": "姨",
+    "堂": "堂", "表": "表", "遠": "远", "近": "近",
+    // 特殊術語
+    "偵": "侦", "探": "探", "謎": "谜", "團": "团", "組": "组", "織": "织",
+    "黑": "黑", "暗": "暗", "勢": "势", "力": "力", "犯": "犯",
+    "罪": "罪", "嫌": "嫌", "疑": "疑", "人": "人", "證": "证",
+    "據": "据", "索": "索", "真": "真", "相": "相",
+    "大": "大", "白": "白", "解": "解",
+    // 地點相關
+    "街": "街", "道": "道", "路": "路", "巷": "巷", "弄": "弄",
+    "樓": "楼", "棟": "栋", "房": "房", "屋": "屋", "室": "室",
+    "廳": "厅", "廚": "厨", "浴": "浴", "衛": "卫",
+    "客": "客", "餐": "餐",
+    "書": "书", "臥": "卧",
+    // 職業相關
+    "醫": "医", "律": "律", "警": "警",
+    "察": "察", "職": "职", "員": "员",
+    "工": "工", "作": "作", "者": "者", "藝": "艺",
+    "術": "术", "建": "建", "築": "筑",
+    "機": "机", "械": "械", "電": "电",
+    "程": "程", "式": "式",
+    "分": "分", "析": "析",
+    "會": "会", "財": "财", "務": "务",
+    "銷": "销", "售": "售",
+    "市": "市", "場": "场", "營": "营",
   };
   
   let result = text;
@@ -74,12 +111,14 @@ export const overseasEpisodes: Episode[] = animeEpisodes
 export const animeEpisodesSimplified = animeEpisodes.map(ep => ({
   ...ep,
   title_zh: ep.title_zh ? convertToSimplified(ep.title_zh) : '',
+  manga: ep.manga ? convertToSimplified(ep.manga) : '',
 }));
 
 // 為海外版動畫集數添加簡體中文版本
 export const overseasEpisodesSimplified = overseasEpisodes.map(ep => ({
   ...ep,
   title_zh: ep.title_zh ? convertToSimplified(ep.title_zh) : '',
+  manga: ep.manga ? convertToSimplified(ep.manga) : '',
 }));
 
 // 向後相容的匯出名稱
@@ -100,10 +139,8 @@ export const mangaVolumes: MangaVolume[] = [
   { id: 10, volume: 10, title: "Volume 10", titleZh: "真相大白", chapters: "46-50" },
 ];
 
-// 為漫畫卷數添加簡體中文版本
-export const mangaVolumesSimplified = mangaVolumes.map(vol => ({
+// 漫畫卷數簡體中文版本
+export const mangaVolumesZhCN = mangaVolumes.map(vol => ({
   ...vol,
-  titleZh: convertToSimplified(vol.titleZh)
+  titleZh: convertToSimplified(vol.titleZh),
 }));
-
-export const mangaVolumesZhCN = mangaVolumesSimplified;
