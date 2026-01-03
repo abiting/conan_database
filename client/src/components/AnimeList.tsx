@@ -1,6 +1,6 @@
 import { Input } from '@/components/ui/input';
 import { useAnimeSearch } from '@/hooks/useSearch';
-import { animeEpisodes, animeEpisodesZhCN, overseasEpisodes, overseasEpisodesZhCN } from '@/data/conanData';
+import { animeEpisodes, overseasEpisodes } from '@/data/conanData';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Search } from 'lucide-react';
 
@@ -11,8 +11,8 @@ interface AnimeListProps {
 export default function AnimeList({ version = 'official' }: AnimeListProps) {
   const { isSimplified } = useLanguage();
   const episodesData = version === 'official' 
-    ? (isSimplified ? animeEpisodesZhCN : animeEpisodes)
-    : (isSimplified ? overseasEpisodesZhCN : overseasEpisodes);
+    ? animeEpisodes
+    : overseasEpisodes;
   const { searchTerm, setSearchTerm, filteredEpisodes } = useAnimeSearch(episodesData);
 
   return (

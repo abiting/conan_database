@@ -50,6 +50,7 @@ export default function MangaList() {
                   <div className="text-xs text-muted-foreground mt-2">
                     {isSimplified ? `话数: ${vol.chapters}` : `話數: ${vol.chapters}`}
                   </div>
+
                 </div>
               </div>
             </div>
