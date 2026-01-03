@@ -54,51 +54,16 @@ export const animeEpisodes: AnimeEpisode[] = rawData
   });
 
 // 需要拆分的特別篇（1小時或以上）
-const specialEpisodesToSplit: Record<number, { start: number; count: number }> = {
-  11: { start: 11, count: 2 },    // 1小時特別篇（鋼琴奏鳴曲）
-  52: { start: 53, count: 2 },    // 1小時特別篇（霧天狗傳說）
-  61: { start: 63, count: 1 },    // 1小時特別篇（上集）
-  62: { start: 64, count: 1 },    // 1小時特別篇（下集）
-  109: { start: 114, count: 2 },  // 1小時特別篇
-  156: { start: 165, count: 2 },  // 1小時特別篇
-  185: { start: 199, count: 2 },  // 1小時特別篇
-  204: { start: 218, count: 2 },  // 1小時特別篇
-  129: { start: 136, count: 4 },  // 2小時特別篇（黑暗組織女子）
-  131: { start: 138, count: 4 },  // 2小時特別篇
-  176: { start: 187, count: 4 },  // 2小時特別篇
-  219: { start: 235, count: 4 },  // 2小時特別篇（名偵探齊聚）
-  227: { start: 243, count: 4 },  // 2小時特別篇
-  300: { start: 319, count: 4 },  // 2小時特別篇
-  314: { start: 336, count: 4 },  // 2小時特別篇
-  345: { start: 371, count: 5 },  // 2.5小時特別篇（黑暗組織對決）
-};
+// 已移除 specialEpisodesToSplit - 海外版集數不再拆分
 
-// 海外版集數資料（拆分特別篇）
-const overseasEpisodesArray: AnimeEpisode[] = [];
-
-animeEpisodes.forEach((ep) => {
-  if (!ep.overseas_ep || ep.overseas_ep <= 0) return;
-  
-  const splitInfo = specialEpisodesToSplit[ep.episode];
-  
-  if (splitInfo) {
-    // 拆分特別篇
-    for (let i = 0; i < splitInfo.count; i++) {
-      overseasEpisodesArray.push({
-        ...ep,
-        id: overseasEpisodesArray.length + 1,
-        episode: splitInfo.start + i,
-      });
-    }
-  } else {
-    // 普通集數
-    overseasEpisodesArray.push({
-      ...ep,
-      id: overseasEpisodesArray.length + 1,
-      episode: ep.overseas_ep,
-    });
-  }
-});
+// 海外版集數資料（不拆分，保持複合集數在同一欄位）
+const overseasEpisodesArray: AnimeEpisode[] = animeEpisodes
+  .filter(ep => ep.overseas_ep && ep.overseas_ep > 0)
+  .map((ep, idx) => ({
+    ...ep,
+    id: idx + 1,
+    episode: ep.overseas_ep as number,
+  }));
 
 export const overseasEpisodes = overseasEpisodesArray;
 
