@@ -2,12 +2,12 @@ import rawData from './conan_episodes.json';
 
 export interface AnimeEpisode {
   id: string | number;
-  episode: number;
+  episode: number | string;
   title_zh: string;
   title_ja: string;
   manga?: string;
   year: number;
-  overseas_ep?: number;
+  overseas_ep?: number | string;
   episode_digits?: number; // 官方版集數的位數
 }
 
@@ -48,7 +48,7 @@ export const animeEpisodes: AnimeEpisode[] = rawData
       title_ja: ep.title_jp || '',
       manga: ep.manga || undefined,
       year: parseInt(ep.year, 10),
-      overseas_ep: ep.overseas_ep ? parseInt(ep.overseas_ep, 10) : undefined,
+      overseas_ep: ep.overseas_ep ? ep.overseas_ep : undefined,
       episode_digits: episodeNum.toString().length,
     };
   });
@@ -58,11 +58,11 @@ export const animeEpisodes: AnimeEpisode[] = rawData
 
 // 海外版集數資料（不拆分，保持複合集數在同一欄位）
 const overseasEpisodesArray: AnimeEpisode[] = animeEpisodes
-  .filter(ep => ep.overseas_ep && ep.overseas_ep > 0)
+  .filter(ep => ep.overseas_ep && (typeof ep.overseas_ep === 'string' || (typeof ep.overseas_ep === 'number' && ep.overseas_ep > 0)))
   .map((ep, idx) => ({
     ...ep,
     id: idx + 1,
-    episode: ep.overseas_ep as number,
+    episode: ep.overseas_ep as string | number,
   }));
 
 export const overseasEpisodes = overseasEpisodesArray;
