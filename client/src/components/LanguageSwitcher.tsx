@@ -13,13 +13,6 @@ export default function LanguageSwitcher() {
       >
         繁體中文
       </Button>
-      <Button
-        variant={language === 'zh-CN' ? 'default' : 'outline'}
-        size="sm"
-        onClick={() => setLanguage('zh-CN')}
-      >
-        简体中文
-      </Button>
     </div>
   );
 }
