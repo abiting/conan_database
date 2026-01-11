@@ -62,11 +62,11 @@ export default function AnimeList({ version = 'official' }: AnimeListProps) {
                       : `第 ${ep.overseas_ep?.toString() || ep.episode.toString()} 集`
                     }
                   </div>
-                  <div className="text-sm text-foreground mt-1 whitespace-pre-line">
-                    {ep.title_zh.replace(/！ \n/g, '！\n')}
+                  <div className="text-sm text-foreground mt-1">
+                    {ep.title_zh.replace(/！ \n/g, '！').replace(/\n/g, '')}
                   </div>
                   <div className="text-xs text-muted-foreground mt-1">
-                    {ep.title_ja}
+                    {ep.title_ja.replace(/！ \n/g, '！').replace(/\n/g, '')}
                   </div>
                   {ep.manga && (
                     <div className="text-xs text-muted-foreground mt-2">
