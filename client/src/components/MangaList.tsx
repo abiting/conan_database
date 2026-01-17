@@ -1,4 +1,6 @@
+import { useMemo, useState } from 'react';
 import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
 import { useMangaSearch } from '@/hooks/useSearch';
 import { mangaVolumes, mangaVolumesZhCN } from '@/data/conanData';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -7,9 +9,19 @@ import { Search, Star } from 'lucide-react';
 
 export default function MangaList() {
   const { isSimplified } = useLanguage();
-  const { toggleFavorite, isFavorite } = useFavoritesContext();
+  const { toggleFavorite, isFavorite, favorites } = useFavoritesContext();
+  const [showOnlyFavorites, setShowOnlyFavorites] = useState(false);
+  
   const volumes = isSimplified ? mangaVolumesZhCN : mangaVolumes;
   const { searchTerm, setSearchTerm, filteredVolumes } = useMangaSearch(volumes);
+
+  // 根據最愛篩選進一步過濾結果
+  const displayedVolumes = useMemo(() => {
+    if (!showOnlyFavorites) {
+      return filteredVolumes;
+    }
+    return filteredVolumes.filter((vol) => isFavorite(String(vol.id)));
+  }, [filteredVolumes, showOnlyFavorites, favorites]);
 
   return (
     <div className="space-y-4">
@@ -23,17 +35,32 @@ export default function MangaList() {
         />
       </div>
 
-      <div className="text-sm text-muted-foreground">
-        {isSimplified ? `共 ${filteredVolumes.length} 卷` : `共 ${filteredVolumes.length} 卷`}
+      <div className="flex items-center justify-between gap-2">
+        <div className="text-sm text-muted-foreground">
+          {isSimplified ? `共 ${filteredVolumes.length} 卷` : `共 ${filteredVolumes.length} 卷`}
+          {showOnlyFavorites && ` · 最愛 ${displayedVolumes.length} 卷`}
+        </div>
+        <Button
+          variant={showOnlyFavorites ? "default" : "outline"}
+          size="sm"
+          onClick={() => setShowOnlyFavorites(!showOnlyFavorites)}
+          className="gap-2"
+        >
+          <Star size={16} className={showOnlyFavorites ? 'fill-current' : ''} />
+          {isSimplified ? "只顯示最愛" : "只顯示最愛"}
+        </Button>
       </div>
 
       <div className="space-y-2 max-h-[600px] overflow-y-auto">
-        {filteredVolumes.length === 0 ? (
+        {displayedVolumes.length === 0 ? (
           <div className="text-center py-8 text-muted-foreground">
-            {isSimplified ? "未找到匹配的卷数" : "未找到匹配的卷數"}
+            {showOnlyFavorites 
+              ? (isSimplified ? "還沒有加入最愛的卷數" : "還沒有加入最愛的卷數")
+              : (isSimplified ? "未找到匹配的卷数" : "未找到匹配的卷數")
+            }
           </div>
         ) : (
-          filteredVolumes.map((vol) => {
+          displayedVolumes.map((vol) => {
             const volumeId = String(vol.id);
             const favorited = isFavorite(volumeId);
             return (

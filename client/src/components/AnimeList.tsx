@@ -1,5 +1,6 @@
-import { useMemo, useEffect } from 'react';
+import { useMemo, useEffect, useState } from 'react';
 import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
 import { useAnimeSearch } from '@/hooks/useSearch';
 import { animeEpisodes, overseasEpisodes } from '@/data/conanData';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -13,7 +14,9 @@ interface AnimeListProps {
 
 export default function AnimeList({ version = 'official' }: AnimeListProps) {
   const { isSimplified } = useLanguage();
-  const { toggleFavorite, isFavorite } = useFavoritesContext();
+  const { toggleFavorite, isFavorite, favorites } = useFavoritesContext();
+  const [showOnlyFavorites, setShowOnlyFavorites] = useState(false);
+  
   const episodesData = useMemo(() => version === 'official' 
     ? animeEpisodes
     : overseasEpisodes, [version]);
@@ -27,6 +30,14 @@ export default function AnimeList({ version = 'official' }: AnimeListProps) {
     setSearchTerm('');
   }, [version]);
 
+  // 根據最愛篩選進一步過濾結果
+  const displayedEpisodes = useMemo(() => {
+    if (!showOnlyFavorites) {
+      return filteredEpisodes;
+    }
+    return filteredEpisodes.filter((ep) => isFavorite(String(ep.id)));
+  }, [filteredEpisodes, showOnlyFavorites, favorites]);
+
   return (
     <div className="space-y-4">
       <div className="relative">
@@ -39,19 +50,36 @@ export default function AnimeList({ version = 'official' }: AnimeListProps) {
         />
       </div>
 
-      {version === 'official' && (
+      <div className="flex items-center justify-between gap-2">
         <div className="text-sm text-muted-foreground">
-          共 {episodesData.length} 集
+          {version === 'official' && (
+            <>
+              共 {episodesData.length} 集
+              {showOnlyFavorites && ` · 最愛 ${displayedEpisodes.length} 集`}
+            </>
+          )}
         </div>
-      )}
+        <Button
+          variant={showOnlyFavorites ? "default" : "outline"}
+          size="sm"
+          onClick={() => setShowOnlyFavorites(!showOnlyFavorites)}
+          className="gap-2"
+        >
+          <Star size={16} className={showOnlyFavorites ? 'fill-current' : ''} />
+          {isSimplified ? "只顯示最愛" : "只顯示最愛"}
+        </Button>
+      </div>
 
       <div className="space-y-2 max-h-[600px] overflow-y-auto">
-        {filteredEpisodes.length === 0 ? (
+        {displayedEpisodes.length === 0 ? (
           <div className="text-center py-8 text-muted-foreground">
-            {isSimplified ? "未找到匹配的集数" : "未找到匹配的集數"}
+            {showOnlyFavorites 
+              ? (isSimplified ? "還沒有加入最愛的集數" : "還沒有加入最愛的集數")
+              : (isSimplified ? "未找到匹配的集数" : "未找到匹配的集數")
+            }
           </div>
         ) : (
-          filteredEpisodes.map((ep) => {
+          displayedEpisodes.map((ep) => {
             const episodeId = String(ep.id);
             const favorited = isFavorite(episodeId);
             return (
