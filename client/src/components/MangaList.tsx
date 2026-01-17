@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useRef, useCallback } from 'react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { useMangaSearch } from '@/hooks/useSearch';
@@ -7,10 +7,15 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { useFavoritesContext } from '@/contexts/FavoritesContext';
 import { Search, Star } from 'lucide-react';
 
+const ITEM_HEIGHT = 130; // 每個卷的高度（像素）
+const CONTAINER_HEIGHT = 600; // 容器高度（與 max-h-[600px] 對應）
+
 export default function MangaList() {
   const { isSimplified } = useLanguage();
   const { toggleFavorite, isFavorite, favorites } = useFavoritesContext();
   const [showOnlyFavorites, setShowOnlyFavorites] = useState(false);
+  const [scrollTop, setScrollTop] = useState(0);
+  const containerRef = useRef<HTMLDivElement>(null);
   
   const volumes = isSimplified ? mangaVolumesZhCN : mangaVolumes;
   const { searchTerm, setSearchTerm, filteredVolumes } = useMangaSearch(volumes);
@@ -22,6 +27,17 @@ export default function MangaList() {
     }
     return filteredVolumes.filter((vol) => isFavorite(String(vol.id)));
   }, [filteredVolumes, showOnlyFavorites, favorites]);
+
+  // 虛擬滾動計算
+  const visibleCount = Math.ceil(CONTAINER_HEIGHT / ITEM_HEIGHT) + 2;
+  const startIndex = Math.max(0, Math.floor(scrollTop / ITEM_HEIGHT) - 1);
+  const endIndex = Math.min(displayedVolumes.length, startIndex + visibleCount);
+  const visibleVolumes = displayedVolumes.slice(startIndex, endIndex);
+  const offsetY = startIndex * ITEM_HEIGHT;
+
+  const handleScroll = useCallback((e: React.UIEvent<HTMLDivElement>) => {
+    setScrollTop(e.currentTarget.scrollTop);
+  }, []);
 
   return (
     <div className="space-y-4">
@@ -51,7 +67,11 @@ export default function MangaList() {
         </Button>
       </div>
 
-      <div className="space-y-2 max-h-[600px] overflow-y-auto">
+      <div 
+        ref={containerRef}
+        className="space-y-2 max-h-[600px] overflow-y-auto"
+        onScroll={handleScroll}
+      >
         {displayedVolumes.length === 0 ? (
           <div className="text-center py-8 text-muted-foreground">
             {showOnlyFavorites 
@@ -60,47 +80,56 @@ export default function MangaList() {
             }
           </div>
         ) : (
-          displayedVolumes.map((vol) => {
-            const volumeId = String(vol.id);
-            const favorited = isFavorite(volumeId);
-            return (
-            <div
-              key={vol.id}
-              className="p-3 border rounded-lg hover:bg-accent transition-colors"
-            >
-              <div className="flex items-start justify-between gap-4">
-                <div className="flex-1">
-                  <div className="font-semibold text-sm">
-                    {isSimplified ? `第 ${vol.volume} 卷` : `第 ${vol.volume} 卷`}
+          <>
+            {/* 頂部占位符 */}
+            <div style={{ height: offsetY }} />
+            
+            {/* 可見項目 */}
+            {visibleVolumes.map((vol) => {
+              const volumeId = String(vol.id);
+              const favorited = isFavorite(volumeId);
+              return (
+              <div
+                key={vol.id}
+                className="p-3 border rounded-lg hover:bg-accent transition-colors"
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <div className="flex-1">
+                    <div className="font-semibold text-sm">
+                      {isSimplified ? `第 ${vol.volume} 卷` : `第 ${vol.volume} 卷`}
+                    </div>
+                    <div className="text-sm text-foreground mt-1">
+                      {vol.titleZh}
+                    </div>
+                    <div className="text-xs text-muted-foreground mt-1">
+                      {vol.title}
+                    </div>
+                    <div className="text-xs text-muted-foreground mt-2">
+                      {isSimplified ? `话数: ${vol.chapters}` : `話數: ${vol.chapters}`}
+                    </div>
                   </div>
-                  <div className="text-sm text-foreground mt-1">
-                    {vol.titleZh}
-                  </div>
-                  <div className="text-xs text-muted-foreground mt-1">
-                    {vol.title}
-                  </div>
-                  <div className="text-xs text-muted-foreground mt-2">
-                    {isSimplified ? `话数: ${vol.chapters}` : `話數: ${vol.chapters}`}
-                  </div>
+                  <button
+                    onClick={() => toggleFavorite(volumeId)}
+                    className="p-1.5 rounded-lg hover:bg-accent transition-colors"
+                    title={isSimplified ? "加入最愛" : "加入最愛"}
+                  >
+                    <Star
+                      size={18}
+                      className={`transition-all ${
+                        favorited
+                          ? 'fill-purple-400 text-purple-400'
+                          : 'text-muted-foreground hover:text-purple-400'
+                      }`}
+                    />
+                  </button>
                 </div>
-                <button
-                  onClick={() => toggleFavorite(volumeId)}
-                  className="p-1.5 rounded-lg hover:bg-accent transition-colors"
-                  title={isSimplified ? "加入最愛" : "加入最愛"}
-                >
-                  <Star
-                    size={18}
-                    className={`transition-all ${
-                      favorited
-                        ? 'fill-purple-400 text-purple-400'
-                        : 'text-muted-foreground hover:text-purple-400'
-                    }`}
-                  />
-                </button>
               </div>
-            </div>
-          );
-          })
+            );
+            })}
+            
+            {/* 底部占位符 */}
+            <div style={{ height: Math.max(0, (displayedVolumes.length - endIndex) * ITEM_HEIGHT) }} />
+          </>
         )}
       </div>
     </div>

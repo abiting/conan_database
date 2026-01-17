@@ -1,4 +1,4 @@
-import { useMemo, useEffect, useState } from 'react';
+import { useMemo, useEffect, useState, useRef, useCallback } from 'react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { useAnimeSearch } from '@/hooks/useSearch';
@@ -12,10 +12,15 @@ interface AnimeListProps {
   version?: 'official' | 'overseas';
 }
 
+const ITEM_HEIGHT = 130; // 每個集數卡片的高度（像素）
+const CONTAINER_HEIGHT = 600; // 容器高度（與 max-h-[600px] 對應）
+
 export default function AnimeList({ version = 'official' }: AnimeListProps) {
   const { isSimplified } = useLanguage();
   const { toggleFavorite, isFavorite, favorites } = useFavoritesContext();
   const [showOnlyFavorites, setShowOnlyFavorites] = useState(false);
+  const [scrollTop, setScrollTop] = useState(0);
+  const containerRef = useRef<HTMLDivElement>(null);
   
   const episodesData = useMemo(() => version === 'official' 
     ? animeEpisodes
@@ -28,7 +33,11 @@ export default function AnimeList({ version = 'official' }: AnimeListProps) {
   // 當版本改變時，重置搜尋狀態
   useEffect(() => {
     setSearchTerm('');
-  }, [version]);
+    setScrollTop(0);
+    if (containerRef.current) {
+      containerRef.current.scrollTop = 0;
+    }
+  }, [version, setSearchTerm]);
 
   // 根據最愛篩選進一步過濾結果
   const displayedEpisodes = useMemo(() => {
@@ -37,6 +46,17 @@ export default function AnimeList({ version = 'official' }: AnimeListProps) {
     }
     return filteredEpisodes.filter((ep) => isFavorite(String(ep.id)));
   }, [filteredEpisodes, showOnlyFavorites, favorites]);
+
+  // 虛擬滾動計算
+  const visibleCount = Math.ceil(CONTAINER_HEIGHT / ITEM_HEIGHT) + 2; // 多渲染 2 個以避免閃爍
+  const startIndex = Math.max(0, Math.floor(scrollTop / ITEM_HEIGHT) - 1);
+  const endIndex = Math.min(displayedEpisodes.length, startIndex + visibleCount);
+  const visibleEpisodes = displayedEpisodes.slice(startIndex, endIndex);
+  const offsetY = startIndex * ITEM_HEIGHT;
+
+  const handleScroll = useCallback((e: React.UIEvent<HTMLDivElement>) => {
+    setScrollTop(e.currentTarget.scrollTop);
+  }, []);
 
   return (
     <div className="space-y-4">
@@ -70,7 +90,11 @@ export default function AnimeList({ version = 'official' }: AnimeListProps) {
         </Button>
       </div>
 
-      <div className="space-y-2 max-h-[600px] overflow-y-auto">
+      <div 
+        ref={containerRef}
+        className="space-y-2 max-h-[600px] overflow-y-auto"
+        onScroll={handleScroll}
+      >
         {displayedEpisodes.length === 0 ? (
           <div className="text-center py-8 text-muted-foreground">
             {showOnlyFavorites 
@@ -79,57 +103,66 @@ export default function AnimeList({ version = 'official' }: AnimeListProps) {
             }
           </div>
         ) : (
-          displayedEpisodes.map((ep) => {
-            const episodeId = String(ep.id);
-            const favorited = isFavorite(episodeId);
-            return (
-            <div
-              key={ep.id}
-              className="p-3 border rounded-lg hover:bg-accent transition-colors"
-            >
-              <div className="flex items-start justify-between gap-4">
-                <div className="flex-1">
-                  <div className="font-semibold text-sm">
-                    {version === 'official'
-                      ? `第 ${ep.episode} 集`
-                      : `第 ${ep.overseas_ep?.toString() || ep.episode.toString()} 集`
-                    }
-                  </div>
-                  <div className="text-sm text-foreground mt-1">
-                    {ep.title_zh.replace(/！ \n/g, '！').replace(/\n/g, '')}
-                  </div>
-                  <div className="text-xs text-muted-foreground mt-1">
-                    {ep.title_ja.replace(/！ \n/g, '！').replace(/\n/g, '')}
-                  </div>
-                  {ep.manga && (
-                    <div className="text-xs text-muted-foreground mt-2">
-                      {isSimplified ? "对应漫画" : "對應漫畫"}：{ep.manga}
+          <>
+            {/* 頂部占位符 */}
+            <div style={{ height: offsetY }} />
+            
+            {/* 可見項目 */}
+            {visibleEpisodes.map((ep) => {
+              const episodeId = String(ep.id);
+              const favorited = isFavorite(episodeId);
+              return (
+              <div
+                key={ep.id}
+                className="p-3 border rounded-lg hover:bg-accent transition-colors"
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <div className="flex-1">
+                    <div className="font-semibold text-sm">
+                      {version === 'official'
+                        ? `第 ${ep.episode} 集`
+                        : `第 ${ep.overseas_ep?.toString() || ep.episode.toString()} 集`
+                      }
                     </div>
-                  )}
-                </div>
-                <div className="flex flex-col items-end gap-2">
-                  <div className="text-xs text-muted-foreground whitespace-nowrap">
-                    {ep.year}
+                    <div className="text-sm text-foreground mt-1">
+                      {ep.title_zh.replace(/！ \n/g, '！').replace(/\n/g, '')}
+                    </div>
+                    <div className="text-xs text-muted-foreground mt-1">
+                      {ep.title_ja.replace(/！ \n/g, '！').replace(/\n/g, '')}
+                    </div>
+                    {ep.manga && (
+                      <div className="text-xs text-muted-foreground mt-2">
+                        {isSimplified ? "对应漫画" : "對應漫畫"}：{ep.manga}
+                      </div>
+                    )}
                   </div>
-                  <button
-                    onClick={() => toggleFavorite(episodeId)}
-                    className="p-1.5 rounded-lg hover:bg-accent transition-colors"
-                    title={isSimplified ? "加入最愛" : "加入最愛"}
-                  >
-                    <Star
-                      size={18}
-                      className={`transition-all ${
-                        favorited
-                          ? 'fill-purple-400 text-purple-400'
-                          : 'text-muted-foreground hover:text-purple-400'
-                      }`}
-                    />
-                  </button>
+                  <div className="flex flex-col items-end gap-2">
+                    <div className="text-xs text-muted-foreground whitespace-nowrap">
+                      {ep.year}
+                    </div>
+                    <button
+                      onClick={() => toggleFavorite(episodeId)}
+                      className="p-1.5 rounded-lg hover:bg-accent transition-colors"
+                      title={isSimplified ? "加入最愛" : "加入最愛"}
+                    >
+                      <Star
+                        size={18}
+                        className={`transition-all ${
+                          favorited
+                            ? 'fill-purple-400 text-purple-400'
+                            : 'text-muted-foreground hover:text-purple-400'
+                        }`}
+                      />
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-          })
+            );
+            })}
+            
+            {/* 底部占位符 */}
+            <div style={{ height: Math.max(0, (displayedEpisodes.length - endIndex) * ITEM_HEIGHT) }} />
+          </>
         )}
       </div>
     </div>
