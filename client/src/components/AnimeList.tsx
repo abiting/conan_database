@@ -63,10 +63,10 @@ export default function AnimeList({ version = 'official' }: AnimeListProps) {
           variant={showOnlyFavorites ? "default" : "outline"}
           size="sm"
           onClick={() => setShowOnlyFavorites(!showOnlyFavorites)}
-          className="gap-2"
+          className="gap-1"
         >
-          <Star size={16} className={showOnlyFavorites ? 'fill-current' : ''} />
-          {isSimplified ? "只顯示最愛" : "只顯示最愛"}
+          <Star size={16} className="fill-purple-400 text-purple-400" />
+          {isSimplified ? "我的最愛" : "我的最愛"}
         </Button>
       </div>
 
