@@ -3,7 +3,8 @@ import { Input } from '@/components/ui/input';
 import { useAnimeSearch } from '@/hooks/useSearch';
 import { animeEpisodes, overseasEpisodes } from '@/data/conanData';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { Search } from 'lucide-react';
+import { useFavoritesContext } from '@/contexts/FavoritesContext';
+import { Search, Star } from 'lucide-react';
 import { formatCompositeEpisode } from '@/lib/episodeParser';
 
 interface AnimeListProps {
@@ -12,6 +13,7 @@ interface AnimeListProps {
 
 export default function AnimeList({ version = 'official' }: AnimeListProps) {
   const { isSimplified } = useLanguage();
+  const { toggleFavorite, isFavorite } = useFavoritesContext();
   const episodesData = useMemo(() => version === 'official' 
     ? animeEpisodes
     : overseasEpisodes, [version]);
@@ -49,7 +51,10 @@ export default function AnimeList({ version = 'official' }: AnimeListProps) {
             {isSimplified ? "未找到匹配的集数" : "未找到匹配的集數"}
           </div>
         ) : (
-          filteredEpisodes.map((ep) => (
+          filteredEpisodes.map((ep) => {
+            const episodeId = String(ep.id);
+            const favorited = isFavorite(episodeId);
+            return (
             <div
               key={ep.id}
               className="p-3 border rounded-lg hover:bg-accent transition-colors"
@@ -74,12 +79,29 @@ export default function AnimeList({ version = 'official' }: AnimeListProps) {
                     </div>
                   )}
                 </div>
-                <div className="text-xs text-muted-foreground whitespace-nowrap">
-                  {ep.year}
+                <div className="flex flex-col items-end gap-2">
+                  <div className="text-xs text-muted-foreground whitespace-nowrap">
+                    {ep.year}
+                  </div>
+                  <button
+                    onClick={() => toggleFavorite(episodeId)}
+                    className="p-1.5 rounded-lg hover:bg-accent transition-colors"
+                    title={isSimplified ? "加入最愛" : "加入最愛"}
+                  >
+                    <Star
+                      size={18}
+                      className={`transition-all ${
+                        favorited
+                          ? 'fill-purple-400 text-purple-400'
+                          : 'text-muted-foreground hover:text-purple-400'
+                      }`}
+                    />
+                  </button>
                 </div>
               </div>
             </div>
-          ))
+          );
+          })
         )}
       </div>
     </div>

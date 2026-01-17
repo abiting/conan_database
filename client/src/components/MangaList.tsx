@@ -2,10 +2,12 @@ import { Input } from '@/components/ui/input';
 import { useMangaSearch } from '@/hooks/useSearch';
 import { mangaVolumes, mangaVolumesZhCN } from '@/data/conanData';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { Search } from 'lucide-react';
+import { useFavoritesContext } from '@/contexts/FavoritesContext';
+import { Search, Star } from 'lucide-react';
 
 export default function MangaList() {
   const { isSimplified } = useLanguage();
+  const { toggleFavorite, isFavorite } = useFavoritesContext();
   const volumes = isSimplified ? mangaVolumesZhCN : mangaVolumes;
   const { searchTerm, setSearchTerm, filteredVolumes } = useMangaSearch(volumes);
 
@@ -31,7 +33,10 @@ export default function MangaList() {
             {isSimplified ? "未找到匹配的卷数" : "未找到匹配的卷數"}
           </div>
         ) : (
-          filteredVolumes.map((vol) => (
+          filteredVolumes.map((vol) => {
+            const volumeId = String(vol.id);
+            const favorited = isFavorite(volumeId);
+            return (
             <div
               key={vol.id}
               className="p-3 border rounded-lg hover:bg-accent transition-colors"
@@ -50,11 +55,25 @@ export default function MangaList() {
                   <div className="text-xs text-muted-foreground mt-2">
                     {isSimplified ? `话数: ${vol.chapters}` : `話數: ${vol.chapters}`}
                   </div>
-
                 </div>
+                <button
+                  onClick={() => toggleFavorite(volumeId)}
+                  className="p-1.5 rounded-lg hover:bg-accent transition-colors"
+                  title={isSimplified ? "加入最愛" : "加入最愛"}
+                >
+                  <Star
+                    size={18}
+                    className={`transition-all ${
+                      favorited
+                        ? 'fill-purple-400 text-purple-400'
+                        : 'text-muted-foreground hover:text-purple-400'
+                    }`}
+                  />
+                </button>
               </div>
             </div>
-          ))
+          );
+          })
         )}
       </div>
     </div>
