@@ -1,36 +1,53 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 const FAVORITES_STORAGE_KEY = 'conan_favorites';
+
+// 嘗試使用 localStorage，如果失敗則使用內存存儲
+function getStorageMethod() {
+  try {
+    const test = '__test__';
+    localStorage.setItem(test, test);
+    localStorage.removeItem(test);
+    return 'localStorage';
+  } catch (e) {
+    console.warn('localStorage not available, using sessionStorage as fallback');
+    return 'sessionStorage';
+  }
+}
 
 export function useFavorites() {
   const [favorites, setFavorites] = useState<Set<string>>(new Set());
   const [isLoaded, setIsLoaded] = useState(false);
+  const [storageMethod] = useState(() => getStorageMethod());
 
-  // 從 localStorage 載入最愛列表
+  // 從存儲中載入最愛列表
   useEffect(() => {
     try {
-      const stored = localStorage.getItem(FAVORITES_STORAGE_KEY);
+      const storage = storageMethod === 'localStorage' ? localStorage : sessionStorage;
+      const stored = storage.getItem(FAVORITES_STORAGE_KEY);
       if (stored) {
-        setFavorites(new Set(JSON.parse(stored)));
+        const parsed = JSON.parse(stored);
+        setFavorites(new Set(Array.isArray(parsed) ? parsed : []));
       }
     } catch (error) {
-      console.error('Failed to load favorites from localStorage:', error);
+      console.error('Failed to load favorites from storage:', error);
     }
     setIsLoaded(true);
-  }, []);
+  }, [storageMethod]);
 
-  // 當最愛列表改變時，保存到 localStorage
+  // 當最愛列表改變時，保存到存儲
   useEffect(() => {
     if (isLoaded) {
       try {
-        localStorage.setItem(FAVORITES_STORAGE_KEY, JSON.stringify(Array.from(favorites)));
+        const storage = storageMethod === 'localStorage' ? localStorage : sessionStorage;
+        storage.setItem(FAVORITES_STORAGE_KEY, JSON.stringify(Array.from(favorites)));
       } catch (error) {
-        console.error('Failed to save favorites to localStorage:', error);
+        console.error('Failed to save favorites to storage:', error);
       }
     }
-  }, [favorites, isLoaded]);
+  }, [favorites, isLoaded, storageMethod]);
 
-  const toggleFavorite = (episodeId: string) => {
+  const toggleFavorite = useCallback((episodeId: string) => {
     setFavorites((prev) => {
       const newFavorites = new Set(prev);
       if (newFavorites.has(episodeId)) {
@@ -40,9 +57,11 @@ export function useFavorites() {
       }
       return newFavorites;
     });
-  };
+  }, []);
 
-  const isFavorite = (episodeId: string) => favorites.has(episodeId);
+  const isFavorite = useCallback((episodeId: string) => {
+    return favorites.has(episodeId);
+  }, [favorites]);
 
   return {
     favorites,
