@@ -1,51 +1,112 @@
 import { useState, useEffect, useCallback } from 'react';
 
 const FAVORITES_STORAGE_KEY = 'conan_favorites';
+const DB_NAME = 'conan_db';
+const STORE_NAME = 'favorites';
 
-// 嘗試使用 localStorage，如果失敗則使用內存存儲
-function getStorageMethod() {
-  try {
-    const test = '__test__';
-    localStorage.setItem(test, test);
-    localStorage.removeItem(test);
-    return 'localStorage';
-  } catch (e) {
-    console.warn('localStorage not available, using sessionStorage as fallback');
-    return 'sessionStorage';
+// IndexedDB 操作
+class FavoritesDB {
+  private db: IDBDatabase | null = null;
+
+  async init(): Promise<void> {
+    return new Promise((resolve, reject) => {
+      const request = indexedDB.open(DB_NAME, 1);
+
+      request.onerror = () => reject(request.error);
+      request.onsuccess = () => {
+        this.db = request.result;
+        resolve();
+      };
+
+      request.onupgradeneeded = (event) => {
+        const db = (event.target as IDBOpenDBRequest).result;
+        if (!db.objectStoreNames.contains(STORE_NAME)) {
+          db.createObjectStore(STORE_NAME);
+        }
+      };
+    });
+  }
+
+  async getFavorites(): Promise<string[]> {
+    if (!this.db) await this.init();
+
+    return new Promise((resolve, reject) => {
+      const transaction = this.db!.transaction(STORE_NAME, 'readonly');
+      const store = transaction.objectStore(STORE_NAME);
+      const request = store.get(FAVORITES_STORAGE_KEY);
+
+      request.onerror = () => reject(request.error);
+      request.onsuccess = () => {
+        resolve(request.result?.data || []);
+      };
+    });
+  }
+
+  async saveFavorites(favorites: string[]): Promise<void> {
+    if (!this.db) await this.init();
+
+    return new Promise((resolve, reject) => {
+      const transaction = this.db!.transaction(STORE_NAME, 'readwrite');
+      const store = transaction.objectStore(STORE_NAME);
+      const request = store.put({ data: favorites }, FAVORITES_STORAGE_KEY);
+
+      request.onerror = () => reject(request.error);
+      request.onsuccess = () => resolve();
+    });
   }
 }
+
+const favoritesDB = new FavoritesDB();
 
 export function useFavorites() {
   const [favorites, setFavorites] = useState<Set<string>>(new Set());
   const [isLoaded, setIsLoaded] = useState(false);
-  const [storageMethod] = useState(() => getStorageMethod());
 
-  // 從存儲中載入最愛列表
+  // 從 IndexedDB 載入最愛列表
   useEffect(() => {
-    try {
-      const storage = storageMethod === 'localStorage' ? localStorage : sessionStorage;
-      const stored = storage.getItem(FAVORITES_STORAGE_KEY);
-      if (stored) {
-        const parsed = JSON.parse(stored);
-        setFavorites(new Set(Array.isArray(parsed) ? parsed : []));
+    const loadFavorites = async () => {
+      try {
+        const stored = await favoritesDB.getFavorites();
+        setFavorites(new Set(Array.isArray(stored) ? stored : []));
+      } catch (error) {
+        console.error('Failed to load favorites from IndexedDB:', error);
+        // 降級到 localStorage
+        try {
+          const stored = localStorage.getItem(FAVORITES_STORAGE_KEY);
+          if (stored) {
+            const parsed = JSON.parse(stored);
+            setFavorites(new Set(Array.isArray(parsed) ? parsed : []));
+          }
+        } catch (e) {
+          console.error('Failed to load favorites from localStorage:', e);
+        }
       }
-    } catch (error) {
-      console.error('Failed to load favorites from storage:', error);
-    }
-    setIsLoaded(true);
-  }, [storageMethod]);
+      setIsLoaded(true);
+    };
 
-  // 當最愛列表改變時，保存到存儲
+    loadFavorites();
+  }, []);
+
+  // 當最愛列表改變時，保存到 IndexedDB
   useEffect(() => {
     if (isLoaded) {
-      try {
-        const storage = storageMethod === 'localStorage' ? localStorage : sessionStorage;
-        storage.setItem(FAVORITES_STORAGE_KEY, JSON.stringify(Array.from(favorites)));
-      } catch (error) {
-        console.error('Failed to save favorites to storage:', error);
-      }
+      const saveFavorites = async () => {
+        try {
+          await favoritesDB.saveFavorites(Array.from(favorites));
+        } catch (error) {
+          console.error('Failed to save favorites to IndexedDB:', error);
+          // 降級到 localStorage
+          try {
+            localStorage.setItem(FAVORITES_STORAGE_KEY, JSON.stringify(Array.from(favorites)));
+          } catch (e) {
+            console.error('Failed to save favorites to localStorage:', e);
+          }
+        }
+      };
+
+      saveFavorites();
     }
-  }, [favorites, isLoaded, storageMethod]);
+  }, [favorites, isLoaded]);
 
   const toggleFavorite = useCallback((episodeId: string) => {
     setFavorites((prev) => {
