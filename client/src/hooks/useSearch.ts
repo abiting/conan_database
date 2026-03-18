@@ -1,4 +1,4 @@
-import { useMemo, useState, useCallback } from 'react';
+import { useMemo, useState, useCallback, useRef, useEffect } from 'react';
 import { AnimeEpisode, MangaVolume } from '@/data/conanData';
 
 // 快速包含檢查（不使用複雜的 Levenshtein 距離）
@@ -32,13 +32,38 @@ function calculateMatchScore(text: string, searchTerm: string): number {
 
 export function useAnimeSearch(episodes: AnimeEpisode[]) {
   const [searchTerm, setSearchTerm] = useState('');
+  const [debouncedSearchTerm, setDebouncedSearchTerm] = useState('');
+  const debounceTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const searchCacheRef = useRef<Map<string, AnimeEpisode[]>>(new Map());
+
+  // 防抖搜尋詞
+  useEffect(() => {
+    if (debounceTimerRef.current) {
+      clearTimeout(debounceTimerRef.current);
+    }
+
+    debounceTimerRef.current = setTimeout(() => {
+      setDebouncedSearchTerm(searchTerm);
+    }, 150); // 150ms 防抖
+
+    return () => {
+      if (debounceTimerRef.current) {
+        clearTimeout(debounceTimerRef.current);
+      }
+    };
+  }, [searchTerm]);
 
   const filteredEpisodes = useMemo(() => {
-    if (!searchTerm.trim()) {
+    if (!debouncedSearchTerm.trim()) {
       return episodes;
     }
 
-    const term = searchTerm.toLowerCase().trim();
+    // 檢查緩存
+    if (searchCacheRef.current.has(debouncedSearchTerm)) {
+      return searchCacheRef.current.get(debouncedSearchTerm)!;
+    }
+
+    const term = debouncedSearchTerm.toLowerCase().trim();
     
     // 快速過濾和排序
     const scored = episodes
@@ -67,21 +92,55 @@ export function useAnimeSearch(episodes: AnimeEpisode[]) {
       .sort((a, b) => b.score - a.score) // 按得分降序排列
       .map(({ ep }) => ep);
 
+    // 保存到緩存（最多保留 20 個搜尋結果）
+    if (searchCacheRef.current.size >= 20) {
+      const firstKey = searchCacheRef.current.keys().next().value;
+      if (firstKey !== undefined) {
+        searchCacheRef.current.delete(firstKey);
+      }
+    }
+    searchCacheRef.current.set(debouncedSearchTerm, scored);
+
     return scored;
-  }, [episodes, searchTerm]);
+  }, [episodes, debouncedSearchTerm]);
 
   return { searchTerm, setSearchTerm, filteredEpisodes };
 }
 
 export function useMangaSearch(volumes: MangaVolume[]) {
   const [searchTerm, setSearchTerm] = useState('');
+  const [debouncedSearchTerm, setDebouncedSearchTerm] = useState('');
+  const debounceTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const searchCacheRef = useRef<Map<string, MangaVolume[]>>(new Map());
+
+  // 防抖搜尋詞
+  useEffect(() => {
+    if (debounceTimerRef.current) {
+      clearTimeout(debounceTimerRef.current);
+    }
+
+    debounceTimerRef.current = setTimeout(() => {
+      setDebouncedSearchTerm(searchTerm);
+    }, 150); // 150ms 防抖
+
+    return () => {
+      if (debounceTimerRef.current) {
+        clearTimeout(debounceTimerRef.current);
+      }
+    };
+  }, [searchTerm]);
 
   const filteredVolumes = useMemo(() => {
-    if (!searchTerm.trim()) {
+    if (!debouncedSearchTerm.trim()) {
       return volumes;
     }
 
-    const term = searchTerm.toLowerCase().trim();
+    // 檢查緩存
+    if (searchCacheRef.current.has(debouncedSearchTerm)) {
+      return searchCacheRef.current.get(debouncedSearchTerm)!;
+    }
+
+    const term = debouncedSearchTerm.toLowerCase().trim();
     
     // 快速過濾和排序
     const scored = volumes
@@ -100,7 +159,7 @@ export function useMangaSearch(volumes: MangaVolume[]) {
         else {
           // 簡化的模糊匹配
           const zhScore = calculateMatchScore(titleZh, term);
-          const enScore = calculateMatchScore(titleEn, term);
+          const enScore = calculateMatchScore(titleEn || '', term);
           const volScore = volumeStr.includes(term) ? 50 : 0;
           
           score = Math.max(zhScore, enScore, volScore);
@@ -112,8 +171,17 @@ export function useMangaSearch(volumes: MangaVolume[]) {
       .sort((a, b) => b.score - a.score)
       .map(({ vol }) => vol);
 
+    // 保存到緩存（最多保留 20 個搜尋結果）
+    if (searchCacheRef.current.size >= 20) {
+      const firstKey = searchCacheRef.current.keys().next().value;
+      if (firstKey !== undefined) {
+        searchCacheRef.current.delete(firstKey);
+      }
+    }
+    searchCacheRef.current.set(debouncedSearchTerm, scored);
+
     return scored;
-  }, [volumes, searchTerm]);
+  }, [volumes, debouncedSearchTerm]);
 
   return { searchTerm, setSearchTerm, filteredVolumes };
 }

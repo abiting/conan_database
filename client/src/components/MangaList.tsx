@@ -1,4 +1,4 @@
-import { useMemo, useState, useRef, useCallback } from 'react';
+import { useMemo, useState, useRef, useCallback, memo } from 'react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { useMangaSearch } from '@/hooks/useSearch';
@@ -10,6 +10,55 @@ import { Search, Star } from 'lucide-react';
 const ITEM_HEIGHT = 130; // 每個卷的高度（像素）
 const CONTAINER_HEIGHT = 600; // 容器高度（與 max-h-[600px] 對應）
 
+// 優化的漫畫卷卡片組件
+interface MangaCardProps {
+  vol: any;
+  isSimplified: boolean;
+  favorited: boolean;
+  onToggleFavorite: (id: string) => void;
+}
+
+const MangaCard = memo(({ vol, isSimplified, favorited, onToggleFavorite }: MangaCardProps) => {
+  const volumeId = String(vol.id);
+  
+  return (
+    <div className="p-3 border rounded-lg hover:bg-accent transition-colors">
+      <div className="flex items-start justify-between gap-4">
+        <div className="flex-1">
+          <div className="font-semibold text-sm">
+            {isSimplified ? `第 ${vol.volume} 卷` : `第 ${vol.volume} 卷`}
+          </div>
+          <div className="text-sm text-foreground mt-1">
+            {vol.titleZh}
+          </div>
+          <div className="text-xs text-muted-foreground mt-1">
+            {vol.title}
+          </div>
+          <div className="text-xs text-muted-foreground mt-2">
+            {isSimplified ? `话数: ${vol.chapters}` : `話數: ${vol.chapters}`}
+          </div>
+        </div>
+        <button
+          onClick={() => onToggleFavorite(volumeId)}
+          className="p-1.5 rounded-lg hover:bg-accent transition-colors"
+          title={isSimplified ? "加入最愛" : "加入最愛"}
+        >
+          <Star
+            size={18}
+            className={`transition-all ${
+              favorited
+                ? 'fill-purple-400 text-purple-400'
+                : 'text-muted-foreground hover:text-purple-400'
+            }`}
+          />
+        </button>
+      </div>
+    </div>
+  );
+});
+
+MangaCard.displayName = 'MangaCard';
+
 export default function MangaList() {
   const { isSimplified } = useLanguage();
   const { toggleFavorite, isFavorite, favorites } = useFavoritesContext();
@@ -17,7 +66,10 @@ export default function MangaList() {
   const [scrollTop, setScrollTop] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
   
-  const volumes = isSimplified ? mangaVolumesZhCN : mangaVolumes;
+  const volumes = useMemo(() => 
+    isSimplified ? mangaVolumesZhCN : mangaVolumes,
+    [isSimplified]
+  );
   const { searchTerm, setSearchTerm, filteredVolumes } = useMangaSearch(volumes);
 
   // 根據最愛篩選進一步過濾結果
@@ -32,12 +84,19 @@ export default function MangaList() {
   const visibleCount = Math.ceil(CONTAINER_HEIGHT / ITEM_HEIGHT) + 2;
   const startIndex = Math.max(0, Math.floor(scrollTop / ITEM_HEIGHT) - 1);
   const endIndex = Math.min(displayedVolumes.length, startIndex + visibleCount);
-  const visibleVolumes = displayedVolumes.slice(startIndex, endIndex);
+  const visibleVolumes = useMemo(() => 
+    displayedVolumes.slice(startIndex, endIndex),
+    [displayedVolumes, startIndex, endIndex]
+  );
   const offsetY = startIndex * ITEM_HEIGHT;
 
   const handleScroll = useCallback((e: React.UIEvent<HTMLDivElement>) => {
     setScrollTop(e.currentTarget.scrollTop);
   }, []);
+
+  const handleToggleFavorite = useCallback((volumeId: string) => {
+    toggleFavorite(volumeId);
+  }, [toggleFavorite]);
 
   return (
     <div className="space-y-4">
@@ -89,42 +148,14 @@ export default function MangaList() {
               const volumeId = String(vol.id);
               const favorited = isFavorite(volumeId);
               return (
-              <div
-                key={vol.id}
-                className="p-3 border rounded-lg hover:bg-accent transition-colors"
-              >
-                <div className="flex items-start justify-between gap-4">
-                  <div className="flex-1">
-                    <div className="font-semibold text-sm">
-                      {isSimplified ? `第 ${vol.volume} 卷` : `第 ${vol.volume} 卷`}
-                    </div>
-                    <div className="text-sm text-foreground mt-1">
-                      {vol.titleZh}
-                    </div>
-                    <div className="text-xs text-muted-foreground mt-1">
-                      {vol.title}
-                    </div>
-                    <div className="text-xs text-muted-foreground mt-2">
-                      {isSimplified ? `话数: ${vol.chapters}` : `話數: ${vol.chapters}`}
-                    </div>
-                  </div>
-                  <button
-                    onClick={() => toggleFavorite(volumeId)}
-                    className="p-1.5 rounded-lg hover:bg-accent transition-colors"
-                    title={isSimplified ? "加入最愛" : "加入最愛"}
-                  >
-                    <Star
-                      size={18}
-                      className={`transition-all ${
-                        favorited
-                          ? 'fill-purple-400 text-purple-400'
-                          : 'text-muted-foreground hover:text-purple-400'
-                      }`}
-                    />
-                  </button>
-                </div>
-              </div>
-            );
+                <MangaCard
+                  key={vol.id}
+                  vol={vol}
+                  isSimplified={isSimplified}
+                  favorited={favorited}
+                  onToggleFavorite={handleToggleFavorite}
+                />
+              );
             })}
             
             {/* 底部占位符 */}

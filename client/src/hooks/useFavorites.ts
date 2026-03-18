@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 
 const FAVORITES_STORAGE_KEY = 'conan_favorites';
 const DB_NAME = 'conan_db';
@@ -7,9 +7,15 @@ const STORE_NAME = 'favorites';
 // IndexedDB 操作
 class FavoritesDB {
   private db: IDBDatabase | null = null;
+  private initPromise: Promise<void> | null = null;
 
   async init(): Promise<void> {
-    return new Promise((resolve, reject) => {
+    // 使用單例模式確保只初始化一次
+    if (this.initPromise) {
+      return this.initPromise;
+    }
+
+    this.initPromise = new Promise((resolve, reject) => {
       const request = indexedDB.open(DB_NAME, 1);
 
       request.onerror = () => reject(request.error);
@@ -25,6 +31,8 @@ class FavoritesDB {
         }
       };
     });
+
+    return this.initPromise;
   }
 
   async getFavorites(): Promise<string[]> {
@@ -61,9 +69,15 @@ const favoritesDB = new FavoritesDB();
 export function useFavorites() {
   const [favorites, setFavorites] = useState<Set<string>>(new Set());
   const [isLoaded, setIsLoaded] = useState(false);
+  const saveTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const isInitializingRef = useRef(false);
 
-  // 從 IndexedDB 載入最愛列表
+  // 從 IndexedDB 載入最愛列表（使用單例模式避免重複初始化）
   useEffect(() => {
+    // 避免重複初始化
+    if (isInitializingRef.current) return;
+    isInitializingRef.current = true;
+
     const loadFavorites = async () => {
       try {
         const stored = await favoritesDB.getFavorites();
@@ -87,25 +101,35 @@ export function useFavorites() {
     loadFavorites();
   }, []);
 
-  // 當最愛列表改變時，保存到 IndexedDB
+  // 當最愛列表改變時，保存到 IndexedDB（使用防抖避免頻繁寫入）
   useEffect(() => {
-    if (isLoaded) {
-      const saveFavorites = async () => {
-        try {
-          await favoritesDB.saveFavorites(Array.from(favorites));
-        } catch (error) {
-          console.error('Failed to save favorites to IndexedDB:', error);
-          // 降級到 localStorage
-          try {
-            localStorage.setItem(FAVORITES_STORAGE_KEY, JSON.stringify(Array.from(favorites)));
-          } catch (e) {
-            console.error('Failed to save favorites to localStorage:', e);
-          }
-        }
-      };
+    if (!isLoaded) return;
 
-      saveFavorites();
+    // 清除之前的計時器
+    if (saveTimerRef.current) {
+      clearTimeout(saveTimerRef.current);
     }
+
+    // 設置新的防抖計時器
+    saveTimerRef.current = setTimeout(async () => {
+      try {
+        await favoritesDB.saveFavorites(Array.from(favorites));
+      } catch (error) {
+        console.error('Failed to save favorites to IndexedDB:', error);
+        // 降級到 localStorage
+        try {
+          localStorage.setItem(FAVORITES_STORAGE_KEY, JSON.stringify(Array.from(favorites)));
+        } catch (e) {
+          console.error('Failed to save favorites to localStorage:', e);
+        }
+      }
+    }, 500); // 500ms 防抖
+
+    return () => {
+      if (saveTimerRef.current) {
+        clearTimeout(saveTimerRef.current);
+      }
+    };
   }, [favorites, isLoaded]);
 
   const toggleFavorite = useCallback((episodeId: string) => {

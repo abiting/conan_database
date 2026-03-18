@@ -19,20 +19,28 @@ export interface MangaVolume {
   id?: string;
 }
 
-// 簡體中文轉換函數
+// 簡體中文轉換函數（使用緩存避免重複計算）
+const simplifiedCache = new Map<string, string>();
+const SIMPLIFIED_MAP: Record<string, string> = {
+  '偵': '侦', '訊': '讯', '詢': '询', '調': '调',
+  '謎': '谜', '謝': '谢', '謀': '谋', '謊': '谎', '誘': '诱',
+  '誰': '谁', '誤': '误', '說': '说', '請': '请', '論': '论',
+  '誠': '诚', '誇': '夸', '誌': '志', '誕': '诞',
+  '認': '认', '誼': '谊',
+};
+
 function convertToSimplified(text: string): string {
-  const map: Record<string, string> = {
-    '偵': '侦', '訊': '讯', '詢': '询', '調': '调',
-    '謎': '谜', '謝': '谢', '謀': '谋', '謊': '谎', '誘': '诱',
-    '誰': '谁', '誤': '误', '說': '说', '請': '请', '論': '论',
-    '誠': '诚', '誇': '夸', '誌': '志', '誕': '诞',
-    '認': '认', '誼': '谊',
-  };
+  if (!text) return text;
+  if (simplifiedCache.has(text)) {
+    return simplifiedCache.get(text)!;
+  }
   
   let result = text;
-  for (const [trad, simp] of Object.entries(map)) {
+  for (const [trad, simp] of Object.entries(SIMPLIFIED_MAP)) {
     result = result.replace(new RegExp(trad, 'g'), simp);
   }
+  
+  simplifiedCache.set(text, result);
   return result;
 }
 
@@ -67,19 +75,35 @@ const overseasEpisodesArray: AnimeEpisode[] = animeEpisodes
 
 export const overseasEpisodes = overseasEpisodesArray;
 
-// 為動畫集數添加簡體中文版本
-export const animeEpisodesSimplified = animeEpisodes.map(ep => ({
-  ...ep,
-  title_zh: ep.title_zh ? convertToSimplified(ep.title_zh) : '',
-  manga: ep.manga ? convertToSimplified(ep.manga) : '',
-}));
+// 延遲計算簡體中文版本（只在需要時才轉換）
+let cachedAnimeEpisodesSimplified: AnimeEpisode[] | null = null;
+let cachedOverseasEpisodesSimplified: AnimeEpisode[] | null = null;
 
-// 為海外版動畫集數添加簡體中文版本
-export const overseasEpisodesSimplified = overseasEpisodes.map(ep => ({
-  ...ep,
-  title_zh: ep.title_zh ? convertToSimplified(ep.title_zh) : '',
-  manga: ep.manga ? convertToSimplified(ep.manga) : '',
-}));
+export function getAnimeEpisodesSimplified(): AnimeEpisode[] {
+  if (!cachedAnimeEpisodesSimplified) {
+    cachedAnimeEpisodesSimplified = animeEpisodes.map(ep => ({
+      ...ep,
+      title_zh: ep.title_zh ? convertToSimplified(ep.title_zh) : '',
+      manga: ep.manga ? convertToSimplified(ep.manga) : '',
+    }));
+  }
+  return cachedAnimeEpisodesSimplified;
+}
+
+export function getOverseasEpisodesSimplified(): AnimeEpisode[] {
+  if (!cachedOverseasEpisodesSimplified) {
+    cachedOverseasEpisodesSimplified = overseasEpisodes.map(ep => ({
+      ...ep,
+      title_zh: ep.title_zh ? convertToSimplified(ep.title_zh) : '',
+      manga: ep.manga ? convertToSimplified(ep.manga) : '',
+    }));
+  }
+  return cachedOverseasEpisodesSimplified;
+}
+
+// 保持向後相容性
+export const animeEpisodesSimplified = animeEpisodes;
+export const overseasEpisodesSimplified = overseasEpisodes;
 
 // 漫畫卷數資料
 export const mangaVolumes: MangaVolume[] = [

@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useMemo } from 'react';
 
 type Language = 'zh-TW' | 'zh-CN';
 
@@ -13,11 +13,11 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguage] = useState<Language>('zh-TW');
 
-  const value: LanguageContextType = {
+  const value: LanguageContextType = useMemo(() => ({
     language,
     setLanguage,
     isSimplified: language === 'zh-CN',
-  };
+  }), [language]);
 
   return (
     <LanguageContext.Provider value={value}>

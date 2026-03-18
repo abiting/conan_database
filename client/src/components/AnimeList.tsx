@@ -1,4 +1,4 @@
-import { useMemo, useEffect, useState, useRef, useCallback } from 'react';
+import { useState, useRef, useEffect, useMemo, useCallback, memo } from 'react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { useAnimeSearch } from '@/hooks/useSearch';
@@ -14,6 +14,66 @@ interface AnimeListProps {
 
 const ITEM_HEIGHT = 130; // 每個集數卡片的高度（像素）
 const CONTAINER_HEIGHT = 600; // 容器高度（與 max-h-[600px] 對應）
+
+// 優化的集數卡片組件
+interface EpisodeCardProps {
+  ep: any;
+  version: 'official' | 'overseas';
+  isSimplified: boolean;
+  favorited: boolean;
+  onToggleFavorite: (id: string) => void;
+}
+
+const EpisodeCard = memo(({ ep, version, isSimplified, favorited, onToggleFavorite }: EpisodeCardProps) => {
+  const episodeId = String(ep.id);
+  
+  return (
+    <div className="p-3 border rounded-lg hover:bg-accent transition-colors">
+      <div className="flex items-start justify-between gap-4">
+        <div className="flex-1">
+          <div className="font-semibold text-sm">
+            {version === 'official'
+              ? `第 ${ep.episode} 集`
+              : `第 ${ep.overseas_ep?.toString() || ep.episode.toString()} 集`
+            }
+          </div>
+          <div className="text-sm text-foreground mt-1">
+            {ep.title_zh.replace(/！ \n/g, '！').replace(/\n/g, '')}
+          </div>
+          <div className="text-xs text-muted-foreground mt-1">
+            {ep.title_ja.replace(/！ \n/g, '！').replace(/\n/g, '')}
+          </div>
+          {ep.manga && (
+            <div className="text-xs text-muted-foreground mt-2">
+              {isSimplified ? "对应漫画" : "對應漫畫"}：{ep.manga}
+            </div>
+          )}
+        </div>
+        <div className="flex flex-col items-end gap-2">
+          <div className="text-xs text-muted-foreground whitespace-nowrap">
+            {ep.year}
+          </div>
+          <button
+            onClick={() => onToggleFavorite(episodeId)}
+            className="p-1.5 rounded-lg hover:bg-accent transition-colors"
+            title={isSimplified ? "加入最愛" : "加入最愛"}
+          >
+            <Star
+              size={18}
+              className={`transition-all ${
+                favorited
+                  ? 'fill-purple-400 text-purple-400'
+                  : 'text-muted-foreground hover:text-purple-400'
+              }`}
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+});
+
+EpisodeCard.displayName = 'EpisodeCard';
 
 export default function AnimeList({ version = 'official' }: AnimeListProps) {
   const { isSimplified } = useLanguage();
@@ -51,12 +111,19 @@ export default function AnimeList({ version = 'official' }: AnimeListProps) {
   const visibleCount = Math.ceil(CONTAINER_HEIGHT / ITEM_HEIGHT) + 2; // 多渲染 2 個以避免閃爍
   const startIndex = Math.max(0, Math.floor(scrollTop / ITEM_HEIGHT) - 1);
   const endIndex = Math.min(displayedEpisodes.length, startIndex + visibleCount);
-  const visibleEpisodes = displayedEpisodes.slice(startIndex, endIndex);
+  const visibleEpisodes = useMemo(() => 
+    displayedEpisodes.slice(startIndex, endIndex),
+    [displayedEpisodes, startIndex, endIndex]
+  );
   const offsetY = startIndex * ITEM_HEIGHT;
 
   const handleScroll = useCallback((e: React.UIEvent<HTMLDivElement>) => {
     setScrollTop(e.currentTarget.scrollTop);
   }, []);
+
+  const handleToggleFavorite = useCallback((episodeId: string) => {
+    toggleFavorite(episodeId);
+  }, [toggleFavorite]);
 
   return (
     <div className="space-y-4">
@@ -112,52 +179,15 @@ export default function AnimeList({ version = 'official' }: AnimeListProps) {
               const episodeId = String(ep.id);
               const favorited = isFavorite(episodeId);
               return (
-              <div
-                key={ep.id}
-                className="p-3 border rounded-lg hover:bg-accent transition-colors"
-              >
-                <div className="flex items-start justify-between gap-4">
-                  <div className="flex-1">
-                    <div className="font-semibold text-sm">
-                      {version === 'official'
-                        ? `第 ${ep.episode} 集`
-                        : `第 ${ep.overseas_ep?.toString() || ep.episode.toString()} 集`
-                      }
-                    </div>
-                    <div className="text-sm text-foreground mt-1">
-                      {ep.title_zh.replace(/！ \n/g, '！').replace(/\n/g, '')}
-                    </div>
-                    <div className="text-xs text-muted-foreground mt-1">
-                      {ep.title_ja.replace(/！ \n/g, '！').replace(/\n/g, '')}
-                    </div>
-                    {ep.manga && (
-                      <div className="text-xs text-muted-foreground mt-2">
-                        {isSimplified ? "对应漫画" : "對應漫畫"}：{ep.manga}
-                      </div>
-                    )}
-                  </div>
-                  <div className="flex flex-col items-end gap-2">
-                    <div className="text-xs text-muted-foreground whitespace-nowrap">
-                      {ep.year}
-                    </div>
-                    <button
-                      onClick={() => toggleFavorite(episodeId)}
-                      className="p-1.5 rounded-lg hover:bg-accent transition-colors"
-                      title={isSimplified ? "加入最愛" : "加入最愛"}
-                    >
-                      <Star
-                        size={18}
-                        className={`transition-all ${
-                          favorited
-                            ? 'fill-purple-400 text-purple-400'
-                            : 'text-muted-foreground hover:text-purple-400'
-                        }`}
-                      />
-                    </button>
-                  </div>
-                </div>
-              </div>
-            );
+                <EpisodeCard
+                  key={ep.id}
+                  ep={ep}
+                  version={version}
+                  isSimplified={isSimplified}
+                  favorited={favorited}
+                  onToggleFavorite={handleToggleFavorite}
+                />
+              );
             })}
             
             {/* 底部占位符 */}
