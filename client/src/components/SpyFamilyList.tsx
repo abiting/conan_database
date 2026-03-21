@@ -28,13 +28,14 @@ const EpisodeCard = memo(({ ep, isSimplified, favorited, onToggleFavorite }: Epi
   };
   
   const season = getSeason(ep.episode);
+  const seasonText = season === 1 ? '第一季' : season === 2 ? '第二季' : '第三季';
   
   return (
     <div className="p-3 border rounded-lg hover:bg-accent transition-colors">
       <div className="flex items-start justify-between gap-4">
         <div className="flex-1">
           <div className="font-semibold text-sm">
-            第 {season} 季 第 {ep.episode_season} 集 (總第 {ep.episode} 集)
+            第 {ep.episode} 集
           </div>
           <div className="text-sm text-foreground mt-1">
             {ep.title_zh.replace(/！ \n/g, '！').replace(/\n/g, '')}
@@ -49,6 +50,9 @@ const EpisodeCard = memo(({ ep, isSimplified, favorited, onToggleFavorite }: Epi
           )}
         </div>
         <div className="flex flex-col items-end gap-2">
+          <div className="text-xs text-muted-foreground whitespace-nowrap">
+            {seasonText} 第 {ep.episode_season} 集
+          </div>
           <button
             onClick={() => onToggleFavorite(episodeId)}
             className="p-1.5 rounded-lg hover:bg-accent transition-colors"
