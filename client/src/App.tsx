@@ -7,12 +7,14 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import { FavoritesProvider } from "./contexts/FavoritesContext";
 import Home from "./pages/Home";
+import SpyFamily from "./pages/SpyFamily";
 
 
 function Router() {
   return (
     <Switch>
       <Route path={"/"} component={Home} />
+      <Route path={"/spy-family"} component={SpyFamily} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
