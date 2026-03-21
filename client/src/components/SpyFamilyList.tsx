@@ -50,8 +50,8 @@ const EpisodeCard = memo(({ ep, isSimplified, favorited, onToggleFavorite }: Epi
           )}
         </div>
         <div className="flex flex-col items-end gap-2">
-          <div className="text-xs text-muted-foreground whitespace-nowrap">
-            {seasonText} 第 {ep.episode_season} 集
+          <div className="inline-block px-2 py-1 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-200 rounded text-xs font-medium whitespace-nowrap">
+            {seasonText}
           </div>
           <button
             onClick={() => onToggleFavorite(episodeId)}
