@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect, useMemo, useCallback, memo } from 'react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
-import { useAnimeSearch } from '@/hooks/useSearch';
 import { spyFamilyEpisodes } from '@/data/spyFamilyData';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useFavoritesContext } from '@/contexts/FavoritesContext';
@@ -21,12 +20,21 @@ interface EpisodeCardProps {
 const EpisodeCard = memo(({ ep, isSimplified, favorited, onToggleFavorite }: EpisodeCardProps) => {
   const episodeId = String(ep.id);
   
+  // 判斷季數
+  const getSeason = (episodeNum: number) => {
+    if (episodeNum <= 25) return 1;
+    if (episodeNum <= 37) return 2;
+    return 3;
+  };
+  
+  const season = getSeason(ep.episode);
+  
   return (
     <div className="p-3 border rounded-lg hover:bg-accent transition-colors">
       <div className="flex items-start justify-between gap-4">
         <div className="flex-1">
           <div className="font-semibold text-sm">
-            第 {ep.episode} 集
+            第 {season} 季 第 {ep.episode_season} 集 (總第 {ep.episode} 集)
           </div>
           <div className="text-sm text-foreground mt-1">
             {ep.title_zh.replace(/！ \n/g, '！').replace(/\n/g, '')}
@@ -36,14 +44,11 @@ const EpisodeCard = memo(({ ep, isSimplified, favorited, onToggleFavorite }: Epi
           </div>
           {ep.chapters && (
             <div className="text-xs text-muted-foreground mt-2">
-              {isSimplified ? "对应漫画" : "對應漫畫"}：{ep.chapters}
+              {isSimplified ? "漫画话数" : "漫畫話數"}：{ep.chapters}
             </div>
           )}
         </div>
         <div className="flex flex-col items-end gap-2">
-          <div className="text-xs text-muted-foreground whitespace-nowrap">
-            {ep.year}
-          </div>
           <button
             onClick={() => onToggleFavorite(episodeId)}
             className="p-1.5 rounded-lg hover:bg-accent transition-colors"
@@ -71,20 +76,37 @@ export default function SpyFamilyList() {
   const { toggleFavorite, isFavorite, favorites } = useFavoritesContext();
   const [showOnlyFavorites, setShowOnlyFavorites] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
+  const [searchTerm, setSearchTerm] = useState('');
   const containerRef = useRef<HTMLDivElement>(null);
   
   const episodesData = useMemo(() => spyFamilyEpisodes, []);
-  const { searchTerm, setSearchTerm: updateSearchTerm, filteredEpisodes } = useAnimeSearch(episodesData);
-  
-  // 使用穩定的 setter 引用
-  const setSearchTerm = updateSearchTerm;
+
+  // 簡單的搜尋過濾
+  const filteredEpisodes = useMemo(() => {
+    if (!searchTerm.trim()) {
+      return episodesData;
+    }
+    
+    const term = searchTerm.toLowerCase();
+    return episodesData.filter((ep: any) => {
+      const episodeStr = String(ep.episode).toLowerCase();
+      const titleZh = ep.title_zh.toLowerCase();
+      const titleJa = ep.title_ja.toLowerCase();
+      
+      return (
+        episodeStr.includes(term) ||
+        titleZh.includes(term) ||
+        titleJa.includes(term)
+      );
+    });
+  }, [episodesData, searchTerm]);
 
   // 根據最愛篩選進一步過濾結果
   const displayedEpisodes = useMemo(() => {
     if (!showOnlyFavorites) {
       return filteredEpisodes;
     }
-    return filteredEpisodes.filter((ep) => isFavorite(String(ep.id)));
+    return filteredEpisodes.filter((ep: any) => isFavorite(String(ep.id)));
   }, [filteredEpisodes, showOnlyFavorites, favorites]);
 
   // 虛擬滾動計算
@@ -151,7 +173,7 @@ export default function SpyFamilyList() {
             <div style={{ height: offsetY }} />
             
             {/* 可見項目 */}
-            {visibleEpisodes.map((ep) => {
+            {visibleEpisodes.map((ep: any) => {
               const episodeId = String(ep.id);
               const favorited = isFavorite(episodeId);
               return (

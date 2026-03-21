@@ -1,352 +1,352 @@
 [
   {
     "episode": 1,
+    "episode_season": 1,
     "title_zh": "行動代號〈梟〉",
-    "title_ja": "ジェット コースター殺人事件",
-    "chapters": "第 1~2 話",
-    "year": 2022
+    "title_ja": "オペレーション〈梟〉",
+    "chapters": "1"
   },
   {
     "episode": 2,
-    "title_zh": "我的房間孩子的入把",
-    "title_ja": "社長令嬢誘拐事件",
-    "chapters": "第 2 話、第 3 話",
-    "year": 2022
+    "episode_season": 2,
+    "title_zh": "找好扮演妻子的人吧",
+    "title_ja": "妻役を確保せよ",
+    "chapters": "2"
   },
   {
     "episode": 3,
-    "title_zh": "幽谷家庭連鎖",
-    "title_ja": "タイトル詐欺殺人事件",
-    "chapters": "第 3~4 話",
-    "year": 2022
+    "episode_season": 3,
+    "title_zh": "做好考前準備吧",
+    "title_ja": "受験対策をせよ",
+    "chapters": "3"
   },
   {
     "episode": 4,
+    "episode_season": 4,
     "title_zh": "名校面試",
-    "title_ja": "長井造成",
-    "chapters": "第 4~5 話",
-    "year": 2022
+    "title_ja": "名門校面接試験",
+    "chapters": "4~5"
   },
   {
     "episode": 5,
-    "title_zh": "放探結果",
-    "title_ja": "高橋連",
-    "chapters": "第 6 話",
-    "year": 2022
+    "episode_season": 5,
+    "title_zh": "放榜結果",
+    "title_ja": "合否の行方",
+    "chapters": "6"
   },
   {
     "episode": 6,
+    "episode_season": 6,
     "title_zh": "好朋友大作戰",
-    "title_ja": "山本隆介",
-    "chapters": "第 7~8 話",
-    "year": 2022
+    "title_ja": "ナカヨシ作戦",
+    "chapters": "7~8"
   },
   {
     "episode": 7,
-    "title_zh": "目標的女子",
-    "title_ja": "古橋一浩",
-    "chapters": "第 9~10 話",
-    "year": 2022
+    "episode_season": 7,
+    "title_zh": "目標的次子",
+    "title_ja": "標的",
+    "chapters": "9~10"
   },
   {
     "episode": 8,
-    "title_zh": "對秘密暗殺偵探作戰",
-    "title_ja": "令井友紀子",
-    "chapters": "第 11~12 話",
-    "year": 2022
+    "episode_season": 8,
+    "title_zh": "對祕密警察偽裝作戰",
+    "title_ja": "対秘密警察偽装作戦",
+    "chapters": "11~12"
   },
   {
     "episode": 9,
-    "title_zh": "紅山慈悲的課題",
-    "title_ja": "片桐兼",
-    "chapters": "第 13~14 話",
-    "year": 2022
+    "episode_season": 9,
+    "title_zh": "裝出恩愛的模樣吧",
+    "title_ja": "ラブラブを見せつけよ",
+    "chapters": "13~14"
   },
   {
     "episode": 10,
-    "title_zh": "統國球大作戰",
-    "title_ja": "高橋連",
-    "chapters": "短篇 4、第 15 話",
-    "year": 2022
+    "episode_season": 10,
+    "title_zh": "躲避球大作戰",
+    "title_ja": "ドッジボール大作戦",
+    "chapters": ""
   },
   {
     "episode": 11,
-    "title_zh": "Stella 星座",
-    "title_ja": "赤井秀文",
-    "chapters": "第 16~17 話",
-    "year": 2022
+    "episode_season": 11,
+    "title_zh": "星星",
+    "title_ja": "星",
+    "chapters": "16~17"
   },
   {
     "episode": 12,
-    "title_zh": "企業團",
-    "title_ja": "北川照隆",
-    "chapters": "短篇 1、第 1 話",
-    "year": 2022
+    "episode_season": 12,
+    "title_zh": "企鵝園",
+    "title_ja": "ペンギンパーク",
+    "chapters": ""
   },
   {
     "episode": 13,
-    "title_zh": "（APPLE）計劃",
-    "title_ja": "久保雄介",
-    "chapters": "第 18~19 話",
-    "year": 2022
+    "episode_season": 13,
+    "title_zh": "〈APPLE〉計劃",
+    "title_ja": "プロジェクト〈アップル〉",
+    "chapters": "18~19"
   },
   {
     "episode": 14,
-    "title_zh": "解除定時炸彈",
-    "title_ja": "三連賢門",
-    "chapters": "第 20~21 話",
-    "year": 2022
+    "episode_season": 14,
+    "title_zh": "解除定時炸彈吧",
+    "title_ja": "時限爆弾を解除せよ",
+    "chapters": "20~21"
   },
   {
     "episode": 15,
+    "episode_season": 15,
     "title_zh": "新的家人",
-    "title_ja": "片桐兼",
-    "chapters": "第 22~23 話",
-    "year": 2022
+    "title_ja": "新しい家族",
+    "chapters": "22~23"
   },
   {
     "episode": 16,
-    "title_zh": "約的看房",
-    "title_ja": "都築陸",
-    "chapters": "短篇 2、第 24 話",
-    "year": 2022
+    "episode_season": 16,
+    "title_zh": "約兒's 廚房 / 情報商的戀愛大作戰",
+    "title_ja": "ヨル's キッチン / 情報屋の恋愛大作戦",
+    "chapters": "24、短篇2"
   },
   {
     "episode": 17,
-    "title_zh": "進來家的野外活動",
-    "title_ja": "本郷孝",
-    "chapters": "短篇 5、後記",
-    "year": 2022
+    "episode_season": 17,
+    "title_zh": "進行獅啾作戰吧 / 〈鋼鐵淑女〉 / 蛋包飯♡",
+    "title_ja": "ぐりほんさくせんを決行せよ / 〈 / オムライス♡",
+    "chapters": "25、短篇5、後記"
   },
   {
     "episode": 18,
-    "title_zh": "家庭物語闊闊",
-    "title_ja": "兒玉英",
-    "chapters": "第 26~27 話",
-    "year": 2022
+    "episode_season": 18,
+    "title_zh": "家庭教師舅舅 / 〈東雲〉",
+    "title_ja": "家庭教師の叔父 / 〈",
+    "chapters": "26、27"
   },
   {
     "episode": 19,
-    "title_zh": "對戰斯堡的偵探小計劃",
-    "title_ja": "原英紀",
-    "chapters": "第 28 話、原創",
-    "year": 2022
+    "episode_season": 19,
+    "title_zh": "對戴斯蒙德的復仇計劃 / 母親，化為一陣風",
+    "title_ja": "デズモンドへの復讐計画 / 母、風になる",
+    "chapters": "28、原創"
   },
   {
     "episode": 20,
-    "title_zh": "調查綜合題院院",
-    "title_ja": "令井友紀子",
-    "chapters": "第 29 話、原創",
-    "year": 2022
+    "episode_season": 20,
+    "title_zh": "調查綜合醫院吧 / 解讀難懂的暗號吧",
+    "title_ja": "総合病院を調査せよ / 難解な暗号を解読せよ",
+    "chapters": "29、原創"
   },
   {
     "episode": 21,
-    "title_zh": "Nightfall（夜備）",
-    "title_ja": "大雄經2",
-    "chapters": "短篇 3、第 30 話",
-    "year": 2022
+    "episode_season": 21,
+    "title_zh": "〈夜帷〉 / 第一次的嫉妒",
+    "title_ja": "〈夜帷 / はじめての嫉妬",
+    "chapters": "30、短篇3"
   },
   {
     "episode": 22,
-    "title_zh": "地下開採 炎黑戰線",
-    "title_ja": "三連賢門",
-    "chapters": "第 31~32 話",
-    "year": 2022
+    "episode_season": 22,
+    "title_zh": "地下網球賽 坎貝爾頓",
+    "title_ja": "地下テニス大会 キャンベルトン",
+    "chapters": "31~32"
   },
   {
     "episode": 23,
-    "title_zh": "家庭不科學的執情",
-    "title_ja": "本橋家里",
-    "chapters": "第 33~34 話",
-    "year": 2022
+    "episode_season": 23,
+    "title_zh": "堅定不移的軌道",
+    "title_ja": "揺るがぬ軌道",
+    "chapters": "33~34"
   },
   {
     "episode": 24,
-    "title_zh": "母親的急速車票方的色彩",
-    "title_ja": "黑木美香",
-    "chapters": "第 35~36 話",
-    "year": 2022
+    "episode_season": 24,
+    "title_zh": "母親的角色與妻子的角色 / 和朋友去購物",
+    "title_ja": "母役と妻役 / ともだちとかいもの",
+    "chapters": "35、36"
   },
   {
     "episode": 25,
-    "title_zh": "接觸作戰",
-    "title_ja": "古橋一浩",
-    "chapters": "第 37~38 話",
-    "year": 2022
+    "episode_season": 25,
+    "title_zh": "接敵作戰",
+    "title_ja": "接敵作戰",
+    "chapters": "37~38"
   },
   {
     "episode": 26,
-    "title_zh": "跟隨父親母親吧",
-    "title_ja": "古橋一浩、大雄經2",
-    "chapters": "短篇 2",
-    "year": 2023
+    "episode_season": 1,
+    "title_zh": "跟蹤父親與母親吧",
+    "title_ja": "ちちとははをびこうせよ",
+    "chapters": "番外2"
   },
   {
     "episode": 27,
-    "title_zh": "彭德的生存戰線",
-    "title_ja": "黑木美香",
-    "chapters": "第 39~40 話",
-    "year": 2023
+    "episode_season": 2,
+    "title_zh": "彭德的生存戰略 / 達米安的野外學習",
+    "title_ja": "ボンドの生存戦略 / ダミアンの野外学習",
+    "chapters": "39、40"
   },
   {
     "episode": 28,
-    "title_zh": "草藥的妙德德",
-    "title_ja": "提携人",
-    "chapters": "第 41 話、短篇 7、後記（第 2 卷、第 7 卷）",
-    "year": 2023
+    "episode_season": 3,
+    "title_zh": "任務與家人 / 華麗的彭德曼 / 童心／鬧鐘",
+    "title_ja": "任務と家族 / 華麗なるボンドマン / 子ども心／目覚まし",
+    "chapters": "41、短篇7、"
   },
   {
     "episode": 29,
-    "title_zh": "智單招品",
-    "title_ja": "細川應兆",
-    "chapters": "第 42~43 話",
-    "year": 2023
+    "episode_season": 4,
+    "title_zh": "智慧甜品 / 情報商的戀愛大作戰Ⅱ",
+    "title_ja": "知恵の甘味 / 情報屋の恋愛大作戦Ⅱ",
+    "chapters": "42、43"
   },
   {
     "episode": 30,
-    "title_zh": "超級作戰",
-    "title_ja": "都築陸",
-    "chapters": "第 44~45 話",
-    "year": 2023
+    "episode_season": 5,
+    "title_zh": "越境作戰",
+    "title_ja": "越境作戰",
+    "chapters": "44~45"
   },
   {
     "episode": 31,
-    "title_zh": "戰爭的美麗戰線",
-    "title_ja": "頸馬可",
-    "chapters": "第 46~48 話",
-    "year": 2023
+    "episode_season": 6,
+    "title_zh": "戰慄的豪華郵輪",
+    "title_ja": "戦慄の豪華客船",
+    "chapters": "46~48"
   },
   {
     "episode": 32,
-    "title_zh": "為了被的住居",
-    "title_ja": "小野勝義",
-    "chapters": "第 48~50 話",
-    "year": 2023
+    "episode_season": 7,
+    "title_zh": "為了誰的任務",
+    "title_ja": "誰がための任務",
+    "chapters": "48~50"
   },
   {
     "episode": 33,
-    "title_zh": "組織的轉業",
-    "title_ja": "林昂雄",
-    "chapters": "短篇 6、第 51~53 話",
-    "year": 2023
+    "episode_season": 8,
+    "title_zh": "船上的交響曲 / 姐姐的藥草茶",
+    "title_ja": "船上の交響曲 / 姉のハーブティー",
+    "chapters": "51~53、短篇6"
   },
   {
     "episode": 34,
-    "title_zh": "鹿未來的約手",
-    "title_ja": "黑木美香",
-    "chapters": "第 54~55 話",
-    "year": 2023
+    "episode_season": 9,
+    "title_zh": "維繫未來的手",
+    "title_ja": "未来を繋ぐ手",
+    "chapters": "54~55"
   },
   {
     "episode": 35,
-    "title_zh": "享受度假鄉地鄉",
-    "title_ja": "提携人",
-    "chapters": "第 56~57 話",
-    "year": 2023
+    "episode_season": 10,
+    "title_zh": "享受度假勝地吧 / 炫耀休假",
+    "title_ja": "リゾートを満喫せよ / 休暇自慢",
+    "chapters": "56、57"
   },
   {
     "episode": 36,
-    "title_zh": "伯林鈴鐵曲",
-    "title_ja": "山本隆介",
-    "chapters": "第 59 話、原創",
-    "year": 2023
+    "episode_season": 11,
+    "title_zh": "伯林特戀曲 / 〈夜帷〉的日常",
+    "title_ja": "バーリント・ラブ / 〈夜帷",
+    "chapters": "59、原創"
   },
   {
     "episode": 37,
-    "title_zh": "家庭的一員",
-    "title_ja": "令井友紀子",
-    "chapters": "第 58 話",
-    "year": 2023
+    "episode_season": 12,
+    "title_zh": "家族的一員",
+    "title_ja": "家族の一員",
+    "chapters": "58"
   },
   {
     "episode": 38,
-    "title_zh": "伯林鈴鐵動",
-    "title_ja": "古橋一浩、片桐兼",
-    "chapters": "第 60 話",
-    "year": 2025
+    "episode_season": 1,
+    "title_zh": "伯林特大騷動 / 情報商與〈夜帷〉",
+    "title_ja": "バーリント・パニック / 情報屋と〈夜帷",
+    "chapters": "原創、60"
   },
   {
     "episode": 39,
-    "title_zh": "●●●的認識",
-    "title_ja": "曾田雅子",
-    "chapters": "第 61~62 話",
-    "year": 2025
+    "episode_season": 2,
+    "title_zh": "迴避〈雷電〉吧 / ■■■■的記憶I",
+    "title_ja": "〈雷 / ■■■■の記憶I",
+    "chapters": "61、62"
   },
   {
     "episode": 40,
-    "title_zh": "●●●的認識Ⅱ",
-    "title_ja": "令井友紀子",
-    "chapters": "第 62 話",
-    "year": 2025
+    "episode_season": 3,
+    "title_zh": "■■■■的記憶II",
+    "title_ja": "■■■■の記憶II",
+    "chapters": "62"
   },
   {
     "episode": 41,
-    "title_zh": "蝴蝶的內幕",
-    "title_ja": "三宮堂太",
-    "chapters": "第 63~64 話",
-    "year": 2025
+    "episode_season": 4,
+    "title_zh": "緋聞的內幕 / 通往皇帝的學徒的道路",
+    "title_ja": "スキャンダルの裏側 / インペリアル・スカラーへの道",
+    "chapters": "63、64"
   },
   {
     "episode": 42,
-    "title_zh": "連續朋友大作戰",
-    "title_ja": "長井龍一",
-    "chapters": "第 65~66 話",
-    "year": 2025
+    "episode_season": 5,
+    "title_zh": "媽媽朋友大作戰",
+    "title_ja": "ママ友作戦",
+    "chapters": "65~66"
   },
   {
     "episode": 43,
-    "title_zh": "百色護衛",
-    "title_ja": "佐佐木忍",
-    "chapters": "第 67 話、第 69 話",
-    "year": 2025
+    "episode_season": 6,
+    "title_zh": "白色嫉妒 / 伊甸學園巴士劫持事件",
+    "title_ja": "白い嫉妬 / イーデン校バスジャック事件",
+    "chapters": "67、69"
   },
   {
     "episode": 44,
-    "title_zh": "赤紅馬會團",
-    "title_ja": "原田孝宏",
-    "chapters": "第 69~72 話",
-    "year": 2025
+    "episode_season": 7,
+    "title_zh": "赤紅馬戲團",
+    "title_ja": "赤いサーカス",
+    "chapters": "69~72"
   },
   {
     "episode": 45,
-    "title_zh": "制伏巴士的組隊",
-    "title_ja": "金澤子",
-    "chapters": "第 72~74 話",
-    "year": 2025
+    "episode_season": 8,
+    "title_zh": "制伏巴士劫匪吧",
+    "title_ja": "バスジャック犯を制圧せよ",
+    "chapters": "72~74"
   },
   {
     "episode": 46,
-    "title_zh": "安娜亞的時代來了",
-    "title_ja": "令井友紀子",
-    "chapters": "第 75~77 話",
-    "year": 2025
+    "episode_season": 9,
+    "title_zh": "安妮亞的時代來了",
+    "title_ja": "アーニャのじだい きちゃった",
+    "chapters": "75~77"
   },
   {
     "episode": 47,
-    "title_zh": "黃昏打的爆爆",
-    "title_ja": "岩同學子",
-    "chapters": "第 77 話、第 79 話、短篇 10",
-    "year": 2025
+    "episode_season": 10,
+    "title_zh": "奧斯汀的煩惱 / 普通的聚餐 / 登陸月球表面",
+    "title_ja": "オースティンの苦悩 / フツーの飲み会 / げつめんちゃくりく",
+    "chapters": "77、79、短篇10"
   },
   {
     "episode": 48,
-    "title_zh": "等等 3 整備狀況",
-    "title_ja": "北井昌樹",
-    "chapters": "第 80~82 話、後記（第 12 卷）",
-    "year": 2025
+    "episode_season": 11,
+    "title_zh": "等級3緊急狀況",
+    "title_ja": "レベル3非常事態",
+    "chapters": "80~82|後記（第12卷）"
   },
   {
     "episode": 49,
-    "title_zh": "下水道的奔門",
-    "title_ja": "令井友紀子",
-    "chapters": "第 82~85 話",
-    "year": 2025
+    "episode_season": 12,
+    "title_zh": "下水道的死鬥",
+    "title_ja": "下水道の死闘",
+    "chapters": "82~85"
   },
   {
     "episode": 50,
+    "episode_season": 13,
     "title_zh": "無法生存下來的世界",
-    "title_ja": "中島亞沙美",
-    "chapters": "第 85~87 話",
-    "year": 2025
+    "title_ja": "生き残れない世界",
+    "chapters": "85~87"
   }
 ]

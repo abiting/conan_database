@@ -2,11 +2,11 @@ import rawData from './spy_family_episodes.json';
 
 export interface SpyFamilyEpisode {
   id: string | number;
-  episode: number | string;
+  episode: number;
+  episode_season: number;
   title_zh: string;
   title_ja: string;
   chapters: string;
-  year: number;
 }
 
 // 簡體中文轉換函數（使用緩存避免重複計算）
@@ -42,10 +42,10 @@ export const spyFamilyEpisodes: SpyFamilyEpisode[] = rawData
     return {
       id: index + 1,
       episode: episodeNum,
+      episode_season: ep.episode_season || episodeNum,
       title_zh: ep.title_zh || '',
       title_ja: ep.title_ja || '',
       chapters: ep.chapters || '',
-      year: parseInt(ep.year, 10),
     };
   });
 
@@ -62,6 +62,21 @@ export function getSpyFamilyEpisodesSimplified(): SpyFamilyEpisode[] {
   }
   return cachedSpyFamilyEpisodesSimplified;
 }
+
+// 按季度分組
+export const spyFamilySeasons = {
+  season1: spyFamilyEpisodes.filter(ep => ep.episode <= 25),
+  season2: spyFamilyEpisodes.filter(ep => ep.episode > 25 && ep.episode <= 37),
+  season3: spyFamilyEpisodes.filter(ep => ep.episode > 37),
+};
+
+// 統計資訊
+export const spyFamilyStats = {
+  totalEpisodes: spyFamilyEpisodes.length,
+  season1Count: spyFamilySeasons.season1.length,
+  season2Count: spyFamilySeasons.season2.length,
+  season3Count: spyFamilySeasons.season3.length,
+};
 
 // 保持向後相容性
 export const spyFamilyEpisodesSimplified = spyFamilyEpisodes;
