@@ -49,13 +49,14 @@ export const animeEpisodes: AnimeEpisode[] = rawData
   .filter((ep: any) => ep.episode && parseInt(ep.episode, 10) > 0)
   .map((ep: any, index: number) => {
     const episodeNum = parseInt(ep.episode, 10);
+    const yearValue = ep.year ? parseInt(ep.year, 10) : 0;
     return {
       id: index + 1,
       episode: episodeNum,
       title_zh: ep.title_zh || '',
-      title_ja: ep.title_jp || '',
+      title_ja: ep.title_ja || '',
       manga: ep.manga || undefined,
-      year: parseInt(ep.year, 10),
+      year: isNaN(yearValue) ? 0 : yearValue,
       overseas_ep: ep.overseas_ep ? ep.overseas_ep : undefined,
       episode_digits: episodeNum.toString().length,
     };
