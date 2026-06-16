@@ -46,19 +46,20 @@ function convertToSimplified(text: string): string {
 
 // 官方版集數資料
 export const animeEpisodes: AnimeEpisode[] = rawData
-  .filter((ep: any) => ep.episode && parseInt(ep.episode, 10) > 0)
+  .filter((ep: any) => ep.episode)
   .map((ep: any, index: number) => {
     const episodeNum = parseInt(ep.episode, 10);
+    const isSpecial = isNaN(episodeNum); // 特別篇（如「光美特別篇」）
     const yearValue = ep.year ? parseInt(ep.year, 10) : 0;
     return {
-      id: index + 1,
-      episode: episodeNum,
+      id: ep.id ?? index + 1,
+      episode: isSpecial ? ep.episode : episodeNum,
       title_zh: ep.title_zh || '',
       title_ja: ep.title_ja || '',
       manga: ep.manga || undefined,
       year: isNaN(yearValue) ? 0 : yearValue,
       overseas_ep: ep.overseas_ep ? ep.overseas_ep : undefined,
-      episode_digits: episodeNum.toString().length,
+      episode_digits: isSpecial ? 0 : episodeNum.toString().length,
     };
   });
 

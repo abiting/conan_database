@@ -9595,5 +9595,52 @@
     "year": "",
     "id": 1199,
     "overseas_ep": 1258
+  },
+  {
+    "episode": 1200,
+    "manga": "動畫原創",
+    "title_zh": "快遞失竊頻發",
+    "title_ja": "置き配泥棒多発中",
+    "year": "",
+    "id": 1200,
+    "overseas_ep": 1259
+  },
+  {
+    "episode": 1201,
+    "manga": "動畫原創",
+    "title_zh": "我是犯人",
+    "title_ja": "私が犯人です",
+    "year": "",
+    "id": 1201,
+    "overseas_ep": 1260
+  },
+  {
+    "episode": 1202,
+    "manga": "動畫原創",
+    "title_zh": "競技射箭容不得造假",
+    "title_ja": "アーチェリーに嘘はつけない",
+    "year": "",
+    "id": 1202,
+    "overseas_ep": 1261
+  },
+  {
+    "episode": "光美特別篇",
+    "manga": "動畫原創",
+    "title_zh": "完美的答案",
+    "title_ja": "はなまるな真実",
+    "year": "",
+    "id": "special_miwako",
+    "overseas_ep": 1262,
+    "is_special": true,
+    "special_label": "光美特別篇"
+  },
+  {
+    "episode": 1203,
+    "manga": "動畫原創",
+    "title_zh": "園子與柯南的怪談之夜",
+    "title_ja": "園子とコナンの怪談ナイト",
+    "year": "",
+    "id": 1203,
+    "overseas_ep": 1263
   }
 ]
