@@ -33,7 +33,9 @@ const EpisodeCard = memo(({ ep, version, isSimplified, favorited, onToggleFavori
         <div className="flex-1">
           <div className="font-semibold text-sm">
             {version === 'official'
-              ? `第 ${ep.episode} 集`
+              ? ep.is_special
+                ? ep.episode  // 特別篇：直接顯示標籤（如「光美特別篇」）
+                : `第 ${ep.episode} 集`
               : `第 ${ep.overseas_ep?.toString() || ep.episode.toString()} 集`
             }
           </div>

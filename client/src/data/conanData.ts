@@ -9,6 +9,7 @@ export interface AnimeEpisode {
   year: number;
   overseas_ep?: number | string;
   episode_digits?: number; // 官方版集數的位數
+  is_special?: boolean; // 特別篇（不佔日版集數）
 }
 
 export interface MangaVolume {
@@ -46,20 +47,21 @@ function convertToSimplified(text: string): string {
 
 // 官方版集數資料
 export const animeEpisodes: AnimeEpisode[] = rawData
-  .filter((ep: any) => ep.episode)
+  .filter((ep: any) => ep.episode || ep.is_special)
   .map((ep: any, index: number) => {
     const episodeNum = parseInt(ep.episode, 10);
-    const isSpecial = isNaN(episodeNum); // 特別篇（如「光美特別篇」）
+    const isSpecial = ep.is_special || isNaN(episodeNum); // 特別篇（episode 為 null 或非數字）
     const yearValue = ep.year ? parseInt(ep.year, 10) : 0;
     return {
       id: ep.id ?? index + 1,
-      episode: isSpecial ? ep.episode : episodeNum,
+      episode: isSpecial ? (ep.special_label || ep.episode || '') : episodeNum,
       title_zh: ep.title_zh || '',
       title_ja: ep.title_ja || '',
       manga: ep.manga || undefined,
       year: isNaN(yearValue) ? 0 : yearValue,
       overseas_ep: ep.overseas_ep ? ep.overseas_ep : undefined,
       episode_digits: isSpecial ? 0 : episodeNum.toString().length,
+      is_special: isSpecial,
     };
   });
 
