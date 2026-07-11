@@ -9624,6 +9624,15 @@
     "overseas_ep": 1261
   },
   {
+    "episode": 1203,
+    "manga": "動畫原創",
+    "title_zh": "園子與柯南的怪談之夜",
+    "title_ja": "園子とコナンの怪談ナイト",
+    "year": 2026,
+    "id": 1203,
+    "overseas_ep": 1263
+  },
+  {
     "id": "1204",
     "episode": 1204,
     "overseas_ep": 1264,
@@ -9660,14 +9669,5 @@
     "overseas_ep": 1262,
     "is_special": true,
     "special_label": "光之美少女特別篇"
-  },
-  {
-    "episode": 1203,
-    "manga": "動畫原創",
-    "title_zh": "園子與柯南的怪談之夜",
-    "title_ja": "園子とコナンの怪談ナイト",
-    "year": 2026,
-    "id": 1203,
-    "overseas_ep": 1263
   }
 ]

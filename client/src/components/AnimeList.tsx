@@ -42,9 +42,11 @@ const EpisodeCard = memo(({ ep, version, isSimplified, favorited, onToggleFavori
           <div className="text-sm text-foreground mt-1">
             {ep.title_zh.replace(/！ \n/g, '！').replace(/\n/g, '')}
           </div>
-          <div className="text-xs text-muted-foreground mt-1">
-            {ep.title_ja.replace(/！ \n/g, '！').replace(/\n/g, '')}
-          </div>
+          {ep.title_ja && (
+            <div className="text-xs text-muted-foreground mt-1">
+              {ep.title_ja.replace(/！ \n/g, '！').replace(/\n/g, '')}
+            </div>
+          )}
           {ep.manga && (
             <div className="text-xs text-muted-foreground mt-2">
               {isSimplified ? "对应漫画" : "對應漫畫"}：{ep.manga}

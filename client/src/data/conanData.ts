@@ -63,6 +63,15 @@ export const animeEpisodes: AnimeEpisode[] = rawData
       episode_digits: isSpecial ? 0 : episodeNum.toString().length,
       is_special: isSpecial,
     };
+  })
+  .sort((a, b) => {
+    // 特別篇排最後
+    if (a.is_special && !b.is_special) return 1;
+    if (!a.is_special && b.is_special) return -1;
+    // 一般集數按集數排序
+    const aNum = typeof a.episode === 'number' ? a.episode : 0;
+    const bNum = typeof b.episode === 'number' ? b.episode : 0;
+    return aNum - bNum;
   });
 
 // 需要拆分的特別篇（1小時或以上）
@@ -75,7 +84,16 @@ const overseasEpisodesArray: AnimeEpisode[] = animeEpisodes
     ...ep,
     id: idx + 1,
     episode: ep.overseas_ep as string | number,
-  }));
+  }))
+  .sort((a, b) => {
+    // 特別篇排最後
+    if (a.is_special && !b.is_special) return 1;
+    if (!a.is_special && b.is_special) return -1;
+    // 按海外集數排序
+    const aNum = typeof a.episode === 'number' ? a.episode : parseInt(String(a.episode), 10) || 0;
+    const bNum = typeof b.episode === 'number' ? b.episode : parseInt(String(b.episode), 10) || 0;
+    return aNum - bNum;
+  });
 
 export const overseasEpisodes = overseasEpisodesArray;
 
