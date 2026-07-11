@@ -86,10 +86,7 @@ const overseasEpisodesArray: AnimeEpisode[] = animeEpisodes
     episode: ep.overseas_ep as string | number,
   }))
   .sort((a, b) => {
-    // 特別篇排最後
-    if (a.is_special && !b.is_special) return 1;
-    if (!a.is_special && b.is_special) return -1;
-    // 按海外集數排序
+    // 海外版一律按 overseas_ep 數字順序，特別篇也依照數字嵌入對應位置
     const aNum = typeof a.episode === 'number' ? a.episode : parseInt(String(a.episode), 10) || 0;
     const bNum = typeof b.episode === 'number' ? b.episode : parseInt(String(b.episode), 10) || 0;
     return aNum - bNum;
