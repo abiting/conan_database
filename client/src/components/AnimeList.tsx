@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, useMemo, useCallback, memo } from 'react';
+import { useState, useEffect, useMemo, useCallback, memo } from 'react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { useAnimeSearch } from '@/hooks/useSearch';
@@ -6,14 +6,10 @@ import { animeEpisodes, overseasEpisodes } from '@/data/conanData';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useFavoritesContext } from '@/contexts/FavoritesContext';
 import { Search, Star } from 'lucide-react';
-import { formatCompositeEpisode } from '@/lib/episodeParser';
 
 interface AnimeListProps {
   version?: 'official' | 'overseas';
 }
-
-const ITEM_HEIGHT = 130; // 每個集數卡片的高度（像素）
-const CONTAINER_HEIGHT = 600; // 容器高度（與 max-h-[600px] 對應）
 
 // 優化的集數卡片組件
 interface EpisodeCardProps {
@@ -34,7 +30,7 @@ const EpisodeCard = memo(({ ep, version, isSimplified, favorited, onToggleFavori
           <div className="font-semibold text-sm">
             {version === 'official'
               ? ep.is_special
-                ? ep.episode  // 特別篇：直接顯示標籤（如「光美特別篇」）
+                ? ep.episode  // 特別篇：直接顯示標籤（如「光之美少女特別篇」）
                 : `第 ${ep.episode} 集`
               : `第 ${ep.overseas_ep?.toString() || ep.episode.toString()} 集`
             }
@@ -56,7 +52,7 @@ const EpisodeCard = memo(({ ep, version, isSimplified, favorited, onToggleFavori
           <button
             onClick={() => onToggleFavorite(episodeId)}
             className="p-1.5 rounded-lg hover:bg-accent transition-colors"
-            title={isSimplified ? "加入最愛" : "加入最愛"}
+            title="加入最愛"
           >
             <Star
               size={18}
@@ -79,24 +75,17 @@ export default function AnimeList({ version = 'official' }: AnimeListProps) {
   const { isSimplified } = useLanguage();
   const { toggleFavorite, isFavorite, favorites } = useFavoritesContext();
   const [showOnlyFavorites, setShowOnlyFavorites] = useState(false);
-  const [scrollTop, setScrollTop] = useState(0);
-  const containerRef = useRef<HTMLDivElement>(null);
   
   const episodesData = useMemo(() => version === 'official' 
     ? animeEpisodes
     : overseasEpisodes, [version]);
   const { searchTerm, setSearchTerm: updateSearchTerm, filteredEpisodes } = useAnimeSearch(episodesData);
   
-  // 使用穩定的 setter 引用
   const setSearchTerm = updateSearchTerm;
 
   // 當版本改變時，重置搜尋狀態
   useEffect(() => {
     setSearchTerm('');
-    setScrollTop(0);
-    if (containerRef.current) {
-      containerRef.current.scrollTop = 0;
-    }
   }, [version, setSearchTerm]);
 
   // 根據最愛篩選進一步過濾結果
@@ -106,20 +95,6 @@ export default function AnimeList({ version = 'official' }: AnimeListProps) {
     }
     return filteredEpisodes.filter((ep) => isFavorite(String(ep.id)));
   }, [filteredEpisodes, showOnlyFavorites, favorites]);
-
-  // 虛擬滾動計算
-  const visibleCount = Math.ceil(CONTAINER_HEIGHT / ITEM_HEIGHT) + 2; // 多渲染 2 個以避免閃爍
-  const startIndex = Math.max(0, Math.floor(scrollTop / ITEM_HEIGHT) - 1);
-  const endIndex = Math.min(displayedEpisodes.length, startIndex + visibleCount);
-  const visibleEpisodes = useMemo(() => 
-    displayedEpisodes.slice(startIndex, endIndex),
-    [displayedEpisodes, startIndex, endIndex]
-  );
-  const offsetY = startIndex * ITEM_HEIGHT;
-
-  const handleScroll = useCallback((e: React.UIEvent<HTMLDivElement>) => {
-    setScrollTop(e.currentTarget.scrollTop);
-  }, []);
 
   const handleToggleFavorite = useCallback((episodeId: string) => {
     toggleFavorite(episodeId);
@@ -157,42 +132,29 @@ export default function AnimeList({ version = 'official' }: AnimeListProps) {
         </Button>
       </div>
 
-      <div 
-        ref={containerRef}
-        className="space-y-2 max-h-[600px] overflow-y-auto"
-        onScroll={handleScroll}
-      >
+      <div className="space-y-2 max-h-[600px] overflow-y-auto">
         {displayedEpisodes.length === 0 ? (
           <div className="text-center py-8 text-muted-foreground">
             {showOnlyFavorites 
-              ? (isSimplified ? "還沒有加入最愛的集數" : "還沒有加入最愛的集數")
+              ? "還沒有加入最愛的集數"
               : (isSimplified ? "未找到匹配的集数" : "未找到匹配的集數")
             }
           </div>
         ) : (
-          <>
-            {/* 頂部占位符 */}
-            <div style={{ height: offsetY }} />
-            
-            {/* 可見項目 */}
-            {visibleEpisodes.map((ep) => {
-              const episodeId = String(ep.id);
-              const favorited = isFavorite(episodeId);
-              return (
-                <EpisodeCard
-                  key={ep.id}
-                  ep={ep}
-                  version={version}
-                  isSimplified={isSimplified}
-                  favorited={favorited}
-                  onToggleFavorite={handleToggleFavorite}
-                />
-              );
-            })}
-            
-            {/* 底部占位符 */}
-            <div style={{ height: Math.max(0, (displayedEpisodes.length - endIndex) * ITEM_HEIGHT) }} />
-          </>
+          displayedEpisodes.map((ep) => {
+            const episodeId = String(ep.id);
+            const favorited = isFavorite(episodeId);
+            return (
+              <EpisodeCard
+                key={ep.id}
+                ep={ep}
+                version={version}
+                isSimplified={isSimplified}
+                favorited={favorited}
+                onToggleFavorite={handleToggleFavorite}
+              />
+            );
+          })
         )}
       </div>
     </div>
