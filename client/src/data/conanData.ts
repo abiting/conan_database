@@ -64,15 +64,7 @@ export const animeEpisodes: AnimeEpisode[] = rawData
       is_special: isSpecial,
     };
   })
-  .sort((a, b) => {
-    // 特別篇排最後
-    if (a.is_special && !b.is_special) return 1;
-    if (!a.is_special && b.is_special) return -1;
-    // 一般集數按集數排序
-    const aNum = typeof a.episode === 'number' ? a.episode : 0;
-    const bNum = typeof b.episode === 'number' ? b.episode : 0;
-    return aNum - bNum;
-  });
+  // 保持 JSON 原始順序（特別篇依播出時間嵌入對應位置）
 
 // 需要拆分的特別篇（1小時或以上）
 // 已移除 specialEpisodesToSplit - 海外版集數不再拆分
