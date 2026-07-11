@@ -9624,6 +9624,33 @@
     "overseas_ep": 1261
   },
   {
+    "id": "1204",
+    "episode": 1204,
+    "overseas_ep": 1264,
+    "manga": "Vol. 106",
+    "title_ja": "コナンと梓 誘拐したのは誰（前編）",
+    "title_zh": "誰綁架了柯南與小梓（上集）",
+    "year": 2026
+  },
+  {
+    "id": "1205",
+    "episode": 1205,
+    "overseas_ep": 1265,
+    "manga": "Vol. 106",
+    "title_ja": "コナンと梓 誘拐したのは誰（後編）",
+    "title_zh": "誰綁架了柯南與小梓（下集）",
+    "year": 2026
+  },
+  {
+    "id": "1206",
+    "episode": 1206,
+    "overseas_ep": 1266,
+    "manga": "動畫原創",
+    "title_ja": "転げ落ちてきた男",
+    "title_zh": "翻滾跌落的男子",
+    "year": 2026
+  },
+  {
     "episode": null,
     "manga": "動畫原創",
     "title_zh": "完美的答案",
