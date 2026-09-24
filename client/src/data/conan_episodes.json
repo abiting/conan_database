@@ -10863,5 +10863,95 @@
     "title_ja": "転げ落ちてきた男",
     "title_zh": "翻滾跌落的男子",
     "year": 2026
+  },
+  {
+    "id": "1207",
+    "episode": 1207,
+    "overseas_ep": 1267,
+    "manga": "動畫原創",
+    "title_ja": "J リーグ 開幕の警笛",
+    "title_zh": "J 聯賽 開幕的警笛",
+    "year": 2026
+  },
+  {
+    "id": "1208",
+    "episode": 1208,
+    "overseas_ep": 1268,
+    "manga": "動畫原創",
+    "title_ja": "おいでよ石器人の里",
+    "title_zh": "歡迎來石器人之村",
+    "year": 2026
+  },
+  {
+    "id": "1209",
+    "episode": 1209,
+    "overseas_ep": 1269,
+    "manga": "動畫原創",
+    "title_ja": "狙われたのは誰？",
+    "title_zh": "被盯上的是誰？",
+    "year": 2026
+  },
+  {
+    "id": "1210",
+    "episode": 1210,
+    "overseas_ep": 1270,
+    "manga": "動畫原創",
+    "title_ja": "呪いの隣家",
+    "title_zh": "被詛咒的鄰居家",
+    "year": 2026
+  },
+  {
+    "id": "1211",
+    "episode": 1211,
+    "overseas_ep": 1271,
+    "manga": "動畫原創",
+    "title_ja": "鳥人間コンテスト爆破事件（前編）",
+    "title_zh": "鳥人大賽爆炸事件（上集）",
+    "year": 2026
+  },
+  {
+    "id": "1212",
+    "episode": 1212,
+    "overseas_ep": 1272,
+    "manga": "動畫原創",
+    "title_ja": "鳥人間コンテスト爆破事件（後編）",
+    "title_zh": "鳥人大賽爆炸事件（下集）",
+    "year": 2026
+  },
+  {
+    "id": "1213",
+    "episode": 1213,
+    "overseas_ep": 1273,
+    "manga": "動畫原創",
+    "title_ja": "目撃者、毛利蘭",
+    "title_zh": "目擊者，毛利蘭",
+    "year": 2026
+  },
+  {
+    "id": "1214",
+    "episode": 1214,
+    "overseas_ep": 1274,
+    "manga": "Vol. 106",
+    "title_ja": "茜色の千秋楽（初日）",
+    "title_zh": "茜色的千秋樂（初日）",
+    "year": 2026
+  },
+  {
+    "id": "1215",
+    "episode": 1215,
+    "overseas_ep": 1275,
+    "manga": "Vol. 106",
+    "title_ja": "茜色の千秋楽（前楽）",
+    "title_zh": "茜色的千秋樂（前樂）",
+    "year": 2026
+  },
+  {
+    "id": "1216",
+    "episode": 1216,
+    "overseas_ep": 1276,
+    "manga": "Vol. 106",
+    "title_ja": "茜色の千秋楽（大楽）",
+    "title_zh": "茜色的千秋樂（大樂）",
+    "year": 2026
   }
 ]
