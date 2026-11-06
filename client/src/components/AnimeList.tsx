@@ -109,7 +109,8 @@ export default function AnimeList({ version = 'official' }: AnimeListProps) {
       <div className="relative">
         <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
         <Input
-          placeholder={isSimplified ? "搜索集数、标题..." : "搜尋集數、標題..."}
+          placeholder={isSimplified ? "搜索集数、标题" : "搜尋集數、標題"}
+          aria-label={isSimplified ? "搜索集数、标题" : "搜尋集數、標題"}
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           className="pl-10"
